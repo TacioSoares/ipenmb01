@@ -8,6 +8,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 10px;
+    box-sizing: border-box;
 }
 section {
     background-color: white;
@@ -17,10 +18,27 @@ span {
     margin-right: 20px;
     color: blue;
 }
+.seta {
+    display: block;
+    font-size: 1.5em;
+    color: black;
+    margin-top: 10px;
+    border: 1px solid gray;
+    width: 33px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: auto;
+}
+.seta:hover {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+}
 section > h1 {
     text-align: center;
-    padding: 10px;
-    
+    padding: 30px;
+    color: white;
+    background-color: darkslategray;
+    margin-bottom: 20px;
 }
 section > h4 {
     padding: 5px;
@@ -42,4 +60,11 @@ div {
 }
 .res {
     display: none;
+    color: darkslategray;
+    border: 1px solid darkred;
+    border-radius: 15px;
+}
+li {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

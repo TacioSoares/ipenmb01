@@ -15,7 +15,7 @@
                 <span class="numero">1 -</span> Quais sistemas compõe o conjunto elétrico do Reator IPEN/MB-01?
             </h4>
 
-            <input type="button" value="Ver resposta" onclick="resposta(1)" onmouseout="apagar(1)">
+            <input type="button" value="Ver resposta" onclick="resposta(1)">
 
             <div id="res1" class="res">
                 <ul>
@@ -24,13 +24,16 @@
                     <li>Sistema de aterramento
                     <li>Proteção contra descargas atmosféricas
                 </ul>
+                <span class="seta" onclick="apagar(1)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>2 -</span> Descreva de forma detalhada as possíveis fontes de  alimentação elétrica do Reator IPEN/MB-01.
             </h4>
 
-            <input type="button" value="Ver resposta" onclick="resposta(2)" onmouseout="apagar(2)">
+            <input type="button" value="Ver resposta" onclick="resposta(2)">
 
             <div id="res2" class="res">
                 <ul>
@@ -38,60 +41,76 @@
                     <li>GDG-01 157 kVa - 220/127v - 3@ - 60hz 
                     <li>GDG-02 250 kVa - 380V - 3@ - 60H
                 </ul>
-                <p>O geradores tem diário de 500litros e o de armazenagem principal com 5000litros</p>    
+                <p>O geradores tem diário de 500litros e o de armazenagem principal com 5000litros</p> 
+                <span class="seta" onclick="apagar(2)">^</span>   
             </div>
 
+            <hr><br>
 
             <h4>
                 <span>3 -</span> É recomendável que a potência instalada do Reator IPEN/MB-01 seja superior a 1300kVA? Justifique?.
             </h4>
 
 
-            <input type="button" value="Ver resposta" onclick="resposta(3)" onmouseout="apagar(3)">
+            <input type="button" value="Ver resposta" onclick="resposta(3)">
 
             <div id="res3" class="res">
-                <p>Não, porque ultrapassa a potência dos geradores e dos transformadores.</p>    
+                <p>Não, porque ultrapassa a potência dos geradores e dos transformadores.</p> 
+                <span class="seta" onclick="apagar(3)">^</span>   
             </div>
 
+            <hr><br>
 
             <h4>
                 <span>4 -</span> Que níveis de tensão a Cabine Primária F13 entrega à Sala de Eletrotécnica doReator?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(4)" onmouseout="apagar(4)">   
+            <input type="button" value="Ver resposta" onclick="resposta(4)">   
             <div id="res4" class="res">
                 <p>
                     A cabine primária F13 é interligada a rede de distribuição subterrânea do IPEN em 13,2 kV, para recebimento de energia através de uma entrada subterrânea, possibilitando alimentar:
-                </p>
+                </p> <br>
                 <ul>
                     <li>As cargas de processo do Prédio do Reator IPEN/MB-01 em 380/220V;</li>
                     <li>A iluminação do Prédio do Reator IPEN/MB-01, em 220/127V e;</li>
                     <li>As cargas dos serviços gerais e de iluminação dos prédios do CEN, em 220/127V</li>
                 </ul>
+                <span class="seta" onclick="apagar(4)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>5 -</span> Caso o disjuntor de média tensão da Cabine Primária de Transformação (F13) tenha sido avariado e esteja fora de operação, qual deve ser a fonte de alimentação do Reator IPEN/MB-01? Justifique sua resposta.
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(5)" onmouseout="apagar(5)">
+            <input type="button" value="Ver resposta" onclick="resposta(5)">
             <div id="res5" class="res">
-                DG-02, pois ele é capaz de alimentar o CCM2 diretamente 
+                DG-02, pois ele é capaz de alimentar o CCM2 diretamente.
+                <span class="seta" onclick="apagar(5)">^</span> 
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>6 -</span> Qual as possíveis fontes de alimentação diesel dos GDG-01 e GDG-02 e quais as capacidades desses reservatórios?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(6)" onmouseout="(6)"><br><br>
+            <input type="button" value="Ver resposta" onclick="resposta(6)">
             <div id="res6" class="res">
-                Tanque diário de 500 e Tanque de armazenagem principal 5000 litros
+                Tanque diário de 500 e Tanque de armazenagem principal 5000 litros <br>
+                <span class="seta" onclick="apagar(6)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>7 -</span> Onde estão instalados os CCM do Reator IPEN/MB-01?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(7)" onmouseout="(7)">
+            <input type="button" value="Ver resposta" onclick="resposta(7)">
             <div id="res7" class="res">
                 Na sala de eletrotécnica
+                <span class="seta" onclick="apagar(7)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>8 -</span> Sobre subsistemas: <br><br>
@@ -99,38 +118,48 @@
             <h4>
                 a) Qual a diferença entre os Subsistemas de Energia Elétrica Essencial e de Serviço?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(8)" onmouseout="(8)">
+            <input type="button" value="Ver resposta" onclick="resposta(8)">
             <div id="res8a" class="res">
                 Essencial - São  religadas pelo gerador e o de serviço; alimentados por fonte externa
+                <span class="seta" onclick="apagar(8)">^</span>
             </div>
             <h4>
                 b) O Subsistema de Energia Elétrica Essencial possui algum equipamento classe 1E? Caso sim, cite um exemplo.
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(88)" onmouseout="(88)">
+            <input type="button" value="Ver resposta" onclick="resposta(88)">
             <div id="res8b" class="res">
                 Não, é essencial mas não é 1E
+                <span class="seta" onclick="apagar(88)">^</span>
             </div>    
+
+            <hr><br>
 
             <h4>
                 <span>9 -</span> O CCM-1 é considerado essencial?Esse CCM é alimentado em que nível de tensão e por qual CBT? Justifique suas respostas 
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(9)" onmouseout="(9)">
+            <input type="button" value="Ver resposta" onclick="resposta(9)">
             <div id="res9" class="res">
                 CCM1 não é essencial porque possui somente cargas de serviço. CBT-02 e 380V por que não tem cargas essenciais e é alimentado pela fonte externa.
+                <span class="seta" onclick="apagar(9)">^</span>
             </div>
 
+            <hr><br>
+
             <h4>
-                <span>10 -</span> diagrama unifilar simplificado
+                <span>10 -</span> Faça um diagrama unifilar simplificado de todo o sistema
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(10)" onmouseout="(10)">
+            <input type="button" value="Ver resposta" onclick="resposta(10)">
             <div id="res10" class="res">
                 Aqui virá o diagrama
+                <span class="seta" onclick="apagar(10)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>11 -</span> Cite duas carga alimentadas CCM-3
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(11)" onmouseout="(11)">
+            <input type="button" value="Ver resposta" onclick="resposta(11)">
             <div id="res11" class="res">
                 <ul>
                     <li>QL-NB1 (Quadro de Luz). <br><br>
@@ -141,36 +170,48 @@
                     <li> TC 111 A Aquecedor de Proteção dos Filtros Absolutos. <br><br>
                     <li> TC 111 B Aquecedor de Proteção dos Filtros Absolutos <br><br>
                 </ul>
+                <span class="seta" onclick="apagar(11)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>12 -</span> Qual é o possível motivo da instrumentação do Reator IPEN/MB-01 ser alimentada pelo CCM-4?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(12)" onmouseout="(12)">
+            <input type="button" value="Ver resposta" onclick="resposta(12)">
             <div id="res12" class="res">
-                A instrumentação nuclear precisa de estabilizadores de tensão para garantir seu funcionamento ideal. Somente o CCM4 possui estabilizadores antes da sua alimentação. 
+                A instrumentação nuclear precisa de estabilizadores de tensão para garantir seu funcionamento ideal. Somente o CCM4 possui estabilizadores antes da sua alimentação.
+                <span class="seta" onclick="apagar(12)">^</span> 
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>13 -</span> Quais as alternativas de acionamento do GDG-02?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(13)" onmouseout="(13)">
+            <input type="button" value="Ver resposta" onclick="resposta(13)">
             <div id="res13" class="res">
                 partida e parada automática, manual e revezando
+                <span class="seta" onclick="apagar(13)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>14 -</span> Qual a potência do GDG-02 e qual é o nível de tensão fornecido por esse gerador?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(14)" onmouseout="(14)">
+            <input type="button" value="Ver resposta" onclick="resposta(14)">
             <div id="res14" class="res">
                 250kva e 380V trifásico
+                <span class="seta" onclick="apagar(14)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>15 -</span> Quais quadros do Sistema de Iluminação estão localizados na Sala de Eletrotécnica.
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(15)" onmouseout="(15)">
+            <input type="button" value="Ver resposta" onclick="resposta(15)">
             <div id="res15" class="res">
                 <ul>
                     <li>QL-E1
@@ -179,7 +220,10 @@
                     <li>QL-NB2
                     <li>QL-NB7
                 </ul>
+                <span class="seta" onclick="apagar(15)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>16 -</span> Sobre o QL-1 responda: <br><br>
@@ -187,38 +231,45 @@
             <h4>
                 a) Que cubículo alimenta o QL-1?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(16)" onmouseout="(16)">
+            <input type="button" value="Ver resposta" onclick="resposta(16)">
             <div id="res16a" class="res">
                 CBT-01
+                <span class="seta" onclick="apagar(16)">^</span>
             </div>
             <h4>
                 b) Quais quadros de serviço (não essenciais) podem ser alimentados pelo QL-1?
             </h4>
-            <input type="button" value="Ver resposta"  onclick="resposta(1616)" onmouseout="(1616)">
+            <input type="button" value="Ver resposta"  onclick="resposta(1616)">
             <div id="res16b" class="res">
                 <ul>
                     <li>QL2
                     <li>QL3
                     <li>Ilum. Externa
                 </ul>
+                <span class="seta" onclick="apagar(1616)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>17 -</span> Quais as possíveis fonte de alimentação dos quadros QL-E1, QL-NB1 e QL-NB2? Como é realizada a transferência entre suas fontes?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(17)" onmouseout="(17)">
+            <input type="button" value="Ver resposta" onclick="resposta(17)">
             <div id="res17" class="res">
                 <ul>
-                    <li>O QL1 pode ser alimentado pelo CCM2, <br><br>
-                    <li>O QL-NB01 pode ser alimentado pelo CCM3 ou QL-E1 <br><br>
-                    <li>O QL-NB02 pode ser alimentado pelo CCM4 ou QL-E1 <br><br>
+                    <li>O QL1 pode ser alimentado pelo CCM2,
+                    <li>O QL-NB01 pode ser alimentado pelo CCM3 ou QL-E1
+                    <li>O QL-NB02 pode ser alimentado pelo CCM4 ou QL-E1
                 </ul>
+                <span class="seta" onclick="apagar(17)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>18 -</span> Quais quadros de iluminação estão localizados na Célula Crítica? Esses quadros são de serviço?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(18)" onmouseout="(18)">
+            <input type="button" value="Ver resposta" onclick="resposta(18)">
             <div id="res18" class="res">
                 <ul>
                     <li>QL-E3 
@@ -226,37 +277,49 @@
                     <li>QL-NB6
                 </ul>
                 <p>São todos quadros essenciais</p>
+                <span class="seta" onclick="apagar(18)">^</span>
             </div>
                 
+            <hr><br>
+
             <h4>
                 <span>19 -</span> Qual a autonomia das luminárias de emergência?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(19)" onmouseout="(19)">
+            <input type="button" value="Ver resposta" onclick="resposta(19)">
             <div id="res19" class="res">
                 8 horas
+                <span class="seta" onclick="apagar(19)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>20 -</span> Por qual razão os CCM-2, 3 e 4 possuem transformadores abaixadores?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(20)" onmouseout="(20)">
+            <input type="button" value="Ver resposta" onclick="resposta(20)">
             <div id="res20" class="res">
                 Pra ser compatível com o sistema de iluminação
+                <span class="seta" onclick="apagar(20)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>21 -</span> Quais as possíveis formas de alimentação do quadro QL-NB7? Em qual compartimento do  Reator IPEN/MB-01 esse quadro está localizado?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(21)" onmouseout="(21)">
+            <input type="button" value="Ver resposta" onclick="resposta(21)">
             <div id="res21" class="res">
                 Pelo QL-NB01 ou QL-NB02, fica na sala de eletrotécnica.
+                <span class="seta" onclick="apagar(21)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>22 -</span> Quais as malhas de aterramento existentes no Reator IPEN/MB-01? Essas malhas são 
                 interligadas?                    
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(22)" onmouseout="(22)">
+            <input type="button" value="Ver resposta" onclick="resposta(22)">
             <div id="res22" class="res"> 
                 <ul>
                     <li>Força
@@ -265,40 +328,53 @@
                     <li>Descargas atmosféricas
                 </ul>
                 <p>Todas interligadas, exceto a de telefonia.</p>
+                <span class="seta" onclick="apagar(22)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>23 -</span> Onde estão interligados e centralizados os aterramentos dos equipamentos eletrônicos e de instrumentação do Reator IPEN/MB-01
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(23)" onmouseout="(23)">
+            <input type="button" value="Ver resposta" onclick="resposta(23)">
             <div id="res23" class="res">
-                CCM4
+                CCM4.
+                <span class="seta" onclick="apagar(23)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>24 -</span> O tipo de aterramento utilizado para o Sistema de Energia Elétrica é o mesmo para o Sistema de iluminação? Explique
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(24)" onmouseout="(24)">
+            <input type="button" value="Ver resposta" onclick="resposta(24)">
             <div id="res24" class="res">
                 Não! <br> 
                 Um é do tipo TT e outro do tipo NS. <br>
                 O TT é mais eficiente, porém é mais caro. Por isso não são ambos do tipo TT.
+                <span class="seta" onclick="apagar(24)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>25 -</span> Qual a função e onde estão instalados os varistores no Reator IPEN/MB-01?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(25)" onmouseout="(25)">
+            <input type="button" value="Ver resposta" onclick="resposta(25)">
             <div id="res25" class="res">
-                A função é impedir a propagação de sobretensão e estão no QL-1 QLB1 e QLB2, sala de eletrotécnica
+                A função é impedir a propagação de sobretensão e estão no QL-1 QLB1 e QLB2, sala de eletrotécnica.
+                <span class="seta" onclick="apagar(25)">^</span>
             </div>
+
+            <hr><br>
 
             <h4>
                 <span>26 -</span> Quantos são,qual o tipo e onde estão instalados os captores do SPDA do IPEN/MB-01?
             </h4>
-            <input type="button" value="Ver resposta" onclick="resposta(26)" onmouseout="(26)">
+            <input type="button" value="Ver resposta" onclick="resposta(26)">
             <div id="res26" class="res">
-                Um na chaminé e 3 no topo da célula crítica. ao total são 4 captores tipo franklin.
+                1 na chaminé e 3 no topo da célula crítica. ao total são 4 captores tipo franklin.
+                <span class="seta" onclick="apagar(26)">^</span>
             </div>  
         </div>
     </section>
