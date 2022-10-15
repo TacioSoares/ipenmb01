@@ -67,4 +67,8 @@ div {
 li {
     margin-bottom: 10px;
     margin-top: 10px;
+    list-style-position: inside;
+}
+img {
+    width: 500px;
 }
