@@ -60,13 +60,14 @@ function embaralha(lista) {
     q18.innerHTML = questao[17].innerHTML
     q19.innerHTML = questao[18].innerHTML
     q20.innerHTML = questao[19].innerHTML
-    q22.innerHTML = questao[20].innerHTML
-    q23.innerHTML = questao[21].innerHTML
-    q24.innerHTML = questao[22].innerHTML
-    q25.innerHTML = questao[23].innerHTML
-    q26.innerHTML = questao[24].innerHTML
-    q27.innerHTML = questao[25].innerHTML
-    q28.innerHTML = questao[26].innerHTML
+    q21.innerHTML = questao[20].innerHTML
+    q22.innerHTML = questao[21].innerHTML
+    q23.innerHTML = questao[22].innerHTML
+    q24.innerHTML = questao[23].innerHTML
+    q25.innerHTML = questao[24].innerHTML
+    q26.innerHTML = questao[25].innerHTML
+    q27.innerHTML = questao[26].innerHTML
+    q28.innerHTML = questao[27].innerHTML
     return 
 } 
 
