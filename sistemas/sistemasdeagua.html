@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <input type="button" value="Embaralhar Questões" onclick="embaralha(questao)">
+        
+    
     <section>
+        <h1>Yeah Yeah Sistema de Água</h1>
+        <p id="menu"><input type="button" id="embaralhar" value="Embaralhar Questões" onclick="embaralha(questao)"> </p>
         <span>
             Questão 01
         </span>
@@ -26,6 +29,9 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+        
         <span>
             Questão 02
         </span>
@@ -47,6 +53,9 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+
         <span>
             Questão 03
         </span>
@@ -63,6 +72,9 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+
         <span>
             Questão 04
         </span>
@@ -78,12 +90,15 @@
                 </div>
             </div>
         </div>
+
+        <hr>
+
         <span>
             Questão 05
         </span>
         <div id="cinco">
             
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest05">
                <h4>
                 Quais os intertravamentos existentes no STAA?
                </h4>
@@ -108,26 +123,31 @@
             </div>
         </div>
 
+        <hr>
+
         <span>
             Questão 06
         </span>
         <div id="seis">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest06">
                 <h4>
                     Esquematize o Sistema de Controle de Temperatura da Água e Eenchimento Rápido (SCTAER)
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(6)">
                 <div id="res6" class="res">
                     <img src="imagens/sistemaSCTAER.jpg" alt="Esquemático SCTAER">
+                    <span class="seta" onclick="apagar(6)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 07
         </span>
         <div id="sete">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest07">
                 <h4>
                     Qual o Volume do Tanque do Moderador TQ-201 (total) do SCTAER e onde ele está localizado.
                 </h4>
@@ -137,15 +157,18 @@
                     <p>Localização: Térreo da Célula Crítica</p>
                     <p>Volume Operacional: 4500 litros</p> <br>
                     <p>O volume operacional pode ser alterado com o setpoint mecânico do ladrão móve</p>
+                    <span class="seta" onclick="apagar(7)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 08
         </span>
         <div id="oito">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest08">
                 <h4>
                     Qual o Volume Tanque de Estocagem TQ-202 do SCTAER e onde ele está localizado.
                 </h4>
@@ -153,16 +176,18 @@
                 <div id="res8" class="res">
                     <p>Volume: 21800 litros</p>
                     <p>Localização: 1° Subsolo</p>
-
+                    <span class="seta" onclick="apagar(8)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 09
         </span>
         <div id="nove">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest09">
                 <h4>
                     Qual o nível máximo no TQ-202. Qual a razão deste limite?
                 </h4>
@@ -170,16 +195,18 @@
                 <div id="res9" class="res">
                     <p>Volume operacional: 40%</p> <br>
                     <p>Para evitar obstrução no esgotamento, o volume operacional é reduzido a 40%</p>
-
+                    <span class="seta" onclick="apagar(9)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 10
         </span>
         <div id="dez">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest10">
                 <h4>
                     Explique por que não é possível “resfriar” a água do Tanque do Moderador
                     durante a operação do Reator?
@@ -187,15 +214,18 @@
                 <input type="button" value="Ver resposta" onclick="resposta(10)">
                 <div id="res10" class="res">
                     É operacionalmente possível mas administrativamente é errado, pois a água gelada insere reatividade positiva.
+                    <span class="seta" onclick="apagar(10)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 11
         </span>
         <div id="onze">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest11">
                 <h4>
                     Quais os intertravamentos do SCTAER?
                 </h4>
@@ -205,16 +235,18 @@
                         <li>Bombas:</li><br>
                         Nível no Tanque de Estocagem abaixo de 10% não habilita as bombas de enchimento do Tanque do Moderador;
                     </ul>
-
+                    <span class="seta" onclick="apagar(11)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 12
         </span>
         <div id="doze">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest12">
                 <h4>
                     Qual a função do Sistema de Tratamento da Água do Moderador (STAM)? E quais bombas ele utiliza?
                 </h4>
@@ -222,60 +254,72 @@
                 <div id="res12" class="res">
                     <p>Tratar a água de moderação após os experimentos para garantir a manutenção da qualidade da água igual à definida pelo STAA.</p> <br>
                     <p>Utiliza as bombas de enchimento rápido.</p>
+                    <span class="seta" onclick="apagar(12)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 13
         </span>
         <div id="treze">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest13">
                 <h4>
                     Quais são os componentes do STAM?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(13)">
                 <div id="res13" class="res">
-                    Condutivímetro, Filtro de cartucho, filtro de carvão ativado, leito de resina mista
+                    Condutivímetro, Filtro de cartucho, filtro de carvão ativado, leito de resina mista.
+                    <span class="seta" onclick="apagar(13)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 14
         </span>
         <div id="quatorze">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest14">
                 <h4>
                     Quando se deve operar o STAM?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(14)">
                 <div id="res14" class="res">
                     Quando os condutivímetros (02 no total) apontam uma condutividade maior que 5uS/cm um alarme é gerado para o operador e, então, esse sistema deve ser alinhado.
+                    <span class="seta" onclick="apagar(14)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 15
         </span>
         <div id="quinze">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest15">
                 <h4>
                     Qual a função do SAG?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(15)">
                 <div id="res15" class="res">
                     Produzir e fornecer água gelada para o SCTAER e para o Sistema de Condicionamento de Ar da Célula Crítica (Insuflamento e Recirculação).
+                    <span class="seta" onclick="apagar(15)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 16
         </span>
         <div id="deseseis">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest16">
                 <h4>
                     Quais são os circuitos do SAG? Descreva cada um deles.
                 </h4>
@@ -287,46 +331,54 @@
                     <p>B-112A e B-112B</p> <br>
                     <li>Circuito de Distribuição:</li>
                     <p>TC-113 B-113A e B-113B</p>
-
+                    <span class="seta" onclick="apagar(16)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 17
         </span>
         <div id="desessete">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest17">
                 <h4>
                     Faça um desenho esquemático do SAG.
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(17)">
                 <div id="res17" class="res">
                     <img src="imagens/sistemaSAG.jpg" alt="Esquemático SAG">
+                    <span class="seta" onclick="apagar(17)">^</span>
                 </div>
             </div>
         </div>
 
+        <hr>
+        
         <span>
             Questão 18
         </span>
         <div id="dezoito">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest18">
                 <h4>
                     Qual a função do Sistema de Dosagem de Boro (SDB)?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(18)">
                 <div id="res18" class="res">
                     Preparar soluções de Boro para experimentos específicos.
+                    <span class="seta" onclick="apagar(18)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 19
         </span>
         <div id="dezenove">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest19">
                 <h4>
                     Como funciona o Sistema de Dosagem de Boro (SDB)?
                 </h4>
@@ -337,60 +389,71 @@
                     3. A adição de ácido bórico é feita manualmente e diretamente no tanque TQ-204; <br><br>
                     4. A solução é enviada, por gravidade, ao Tanque de Estocagem (VS270) ou descartada para o Tanque de Decaimento (VS-269). <br><br>
                     5. Após o experimento, a água Borada será descartada do Tanque de Estocagem (TQ-202) para o Tanque de Decaimento (TQ-203) por meio da válvula HV-212.
+                    <span class="seta" onclick="apagar(19)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 20
         </span>
         <div id="vinte">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest20">
                 <h4>
                     Qual a função do Sistema de Lavagem de Equipamentos (SLE) e quais são os seus principais componentes?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(20)">
                 <div id="res20" class="res">
                     Distribuir água fria ou água quente, utilizando mangueiras flexíveis, para lavagem do Tanque do Moderador (TQ-201) e equipamentos auxiliares após experimentação com Boro.
+                    <span class="seta" onclick="apagar(20)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 21
         </span>
         <div id="vinteeum">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest21">
                 <h4>
                     Como funciona o SLE?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(21)">
                 <div id="res21" class="res">
-                    
+                    <span class="seta" onclick="apagar(21)">^</span>    
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 22
         </span>
         <div id="vinteedois">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest22">
                 <h4>
                     Qual a função do Sistema de Drenagem da Célula Crítica (SDCC)?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(22)">
                 <div id="res22" class="res">
                     Coletar, armazenar, recircular e destinar todos os efluentes líquidos gerados na célula crítica.
+                    <span class="seta" onclick="apagar(22)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 23
         </span>
         <div id="vinteetres">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest23">
                 <h4>
                     Descreva como funciona o SDCC?
                 </h4>
@@ -399,15 +462,18 @@
                     A água originária dos TQ-202 e TQ-204 é enviada ao TQ-203. <br>
                     Toda água acumulada nos pocetos também são destinadas ao TQ203. <br>
                     A água dos pocetos é oriunda da condensação da umidade do ar no TC-212 (Sistema de Água Gelada), no manuseio do Sistema de Tratamento de Água, etc.
+                    <span class="seta" onclick="apagar(23)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 24
         </span>
         <div id="vinteequatro">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest24">
                 <h4>
                     Quais são as possíveis destinações da água coletada no Sistema de Drenagem da Célula Crítica (SDCC)?
                 </h4>
@@ -416,61 +482,70 @@
                     Após análises químicas e radiológicas, a água poderá ter 02 destinos: <br><br>
                     <li>Rede de águas pluviais, se o pH e os radionuclídeos estiverem dentro dos padrões;</li>
                     <li>Armazenamento Externo, se as condições não estiverem dentro dos padrões.</li>
-
+                    <span class="seta" onclick="apagar(24)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 25
         </span>
         <div id="vinteecinco">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest25">
                 <h4>
                     Qual a função do Sistema de Drenagem do Edifício de Apoio (SDEA)?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(25)">
                 <div id="res25" class="res">
                     Reter e diluir com água limpa os esgotos quentes e transferir para rede pública de esgoto sanitário ou para tambores especiais havendo excesso nos níveis de radioatividade.
+                    <span class="seta" onclick="apagar(25)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 26
         </span>
         <div id="vinteeseis">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest26">
                 <h4>
                     Cite alguns possíveis modos de operação do SDEA?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(26)">
                 <div id="res26" class="res">
-                    
+                    <span class="seta" onclick="apagar(26)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 27
         </span>
         <div id="vinteesete">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest27">
                 <h4>
                     Quais são as possíveis destinações da água coletada no SDEA?
                 </h4>
                 <input type="button" value="Ver resposta" onclick="resposta(27)">
                 <div id="res27" class="res">
-                    
+                    <span class="seta" onclick="apagar(27)">^</span>
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <span>
             Questão 28
         </span>
         <div id="vinteeoito">
-            <div class="sumir" class="questoes">
+            <div class="sumir" id="quest28">
                 <h4>
                     Quais os principais equipamentos do SDEA?
                 </h4>
@@ -480,6 +555,7 @@
                     <li>Tanque de Retenção TQ-01</li>
                     <li>Tanque de Mistura TQ-02</li>
                     <li>Bombas Auto escorvante B-001 e B-002</li>
+                    <span class="seta" onclick="apagar(28)">^</span>
                 </div>
             </div>
         </div>

@@ -11,6 +11,20 @@ html {
     text-indent: 10px;
     box-sizing: border-box;
 }
+#menu {
+    background-color: darkslategray;
+    margin: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#embaralhar {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#icone {
+    width: 20px;
+}
 section {
     background-color: white;
 }
@@ -18,6 +32,7 @@ span {
     display: inline-block;
     margin-right: 20px;
     color: blue;
+    font-weight: bolder;
 }
 .seta {
     display: block;
@@ -39,7 +54,6 @@ section > h1 {
     padding: 30px;
     color: white;
     background-color: darkslategray;
-    margin-bottom: 20px;
 }
 section > h4 {
     padding: 5px;
@@ -64,7 +78,7 @@ div {
     margin-bottom: 10px;
 }
 .res {
-    display: block;
+    display: none;
     color: darkslategray;
     border: 1px solid darkred;
     border-radius: 15px;
