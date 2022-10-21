@@ -23,10 +23,9 @@
                 <h4>
                     Qual a função do Sistema de Tratamento da Água de Alimentação (STAA)? 
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(01)">
+                <input id="b1" type="button" value="Ver resposta" onclick="resposta(0)">
                 <div id="res1" class="res">
                     Fornecer água tratada aos sistemas do Reator IPEN/MB-01.
-                    <span class="seta" onclick="apagar(1)">^</span>
                 </div>
             </div>
         </div>
@@ -42,7 +41,7 @@
                 <h4>
                     Quem são os consumidores do Sistema de Tratamento de Água de Alimentação (STAA)?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(2)">
+                <input id="b2" type="button" value="Ver resposta" onclick="resposta(1)">
                 <div id="res2" class="res">
                     <ul>
                         <li>Tanque de Estocagem (TQ-202) (SCTAER)</li>
@@ -50,7 +49,6 @@
                         <li>Sistema de Água Gelada (SAG)</li>
                         <li>Sistema de Dosagem de Boro (SDB)</li>
                     </ul>
-                    <span class="seta" onclick="apagar(2)">^</span>
                 </div>
             </div>
         </div>
@@ -66,10 +64,9 @@
                <h4>
                     Faça um desenho esquemático do STAA
                </h4>
-               <input type="button" value="Ver resposta" onclick="resposta(3)">
+               <input id="b3" type="button" value="Ver resposta" onclick="resposta(2)">
                <div id="res3" class="res">
                     <img src="imagens/sistemaSTAA.jpg" alt="esquemático STAA">
-                    <span class="seta" onclick="apagar(3)">^</span>
                 </div>
             </div>
         </div>
@@ -84,13 +81,17 @@
                 <h4>
                     Quais os modos de Operação do STAA? Quais os alinhamentos possíveis e em qual modo de operação é mantido o alinhamento deste sistema quando o mesmo está desligado? Por que?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(4)">
+                <input id="b4" type="button" value="Ver resposta" onclick="resposta(3)">
                 <div id="res4" class="res">
+                    Modos de operação são dois possíveis:
                     <li>Modo de Enchimento</li> 
-                    <li>Modo de Retratamento (recirculação)</li>
-
-                    Quando esta desligado ele é mantido no modo de retratamento, pois caso deixe no modo enchimento haveria enchimento do tanque por gravidade.
-                    <span class="seta" onclick="apagar(4)">^</span>
+                    <li>Modo de Recirculação</li> <br>
+                    Os alinhamentos possíveis são dois: <br>
+                    <ul>
+                        <li>Enchimento do Tanque</li>
+                        <li>Retratamento da água</li>
+                    </ul> 
+                    Quando esta desligado ele é mantido no modo de recirculação, pois caso deixe no modo enchimento haveria enchimento do tanque por gravidade e consequente transbordamento.
                 </div>
             </div>
         </div>
@@ -106,7 +107,7 @@
                <h4>
                 Quais os intertravamentos existentes no STAA?
                </h4>
-               <input type="button" value="Ver resposta" onclick="resposta(5)">
+               <input id="b5" type="button" value="Ver resposta" onclick="resposta(4)">
                <div id="res5" class="res">
                     <ul>
                         <li>Válvulas</li> <br>
@@ -122,7 +123,6 @@
 
                         <li type="circle"> Nível alto do TQ-102 (LSH-110) aproximadamente 4.500L desliga a bomba.</li>
                     </ul>
-                    <span class="seta" onclick="apagar(5)">^</span>
                 </div>
             </div>
         </div>
@@ -137,10 +137,9 @@
                 <h4>
                     Esquematize o Sistema de Controle de Temperatura da Água e Enchimento Rápido (SCTAER)
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(6)">
+                <input id="b6" type="button" value="Ver resposta" onclick="resposta(5)">
                 <div id="res6" class="res">
                     <img src="imagens/sistemaSCTAER.jpg" alt="Esquemático SCTAER">
-                    <span class="seta" onclick="apagar(6)">^</span>
                 </div>
             </div>
         </div>
@@ -155,13 +154,12 @@
                 <h4>
                     Qual o Volume do Tanque do Moderador TQ-201 (total) do SCTAER e onde ele está localizado.
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(7)">
+                <input id="b7" type="button" value="Ver resposta" onclick="resposta(6)">
                 <div id="res7" class="res">
                     <p>Volume: 7420 litros</p>
                     <p>Localização: Térreo da Célula Crítica</p>
                     <p>Volume Operacional: 4500 litros</p> <br>
                     <p>O volume operacional pode ser alterado com o setpoint mecânico do ladrão móvel</p>
-                    <span class="seta" onclick="apagar(7)">^</span>
                 </div>
             </div>
         </div>
@@ -176,11 +174,10 @@
                 <h4>
                     Qual o Volume Tanque de Estocagem TQ-202 do SCTAER e onde ele está localizado.
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(8)">
+                <input id="b8" type="button" value="Ver resposta" onclick="resposta(7)">
                 <div id="res8" class="res">
                     <p>Volume: 21800 litros</p>
                     <p>Localização: 1° Subsolo</p>
-                    <span class="seta" onclick="apagar(8)">^</span>
                 </div>
             </div>
         </div>
@@ -195,11 +192,12 @@
                 <h4>
                     Qual o nível máximo no TQ-202. Qual a razão deste limite?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(9)">
+                <input id="b9" type="button" value="Ver resposta" onclick="resposta(8)">
                 <div id="res9" class="res">
                     <p>Volume operacional: 40%</p> <br>
-                    <p>Para evitar obstrução no esgotamento, o volume operacional é reduzido a 40%</p>
-                    <span class="seta" onclick="apagar(9)">^</span>
+                    <p>Para evitar obstrução no esgotamento, o volume operacional é reduzido a 40% o que é suficiente também para garantir nível para a aspiração das bombas.
+                        
+                    </p>
                 </div>
             </div>
         </div>
@@ -215,10 +213,13 @@
                     Explique por que não é possível “resfriar” a água do Tanque do Moderador
                     durante a operação do Reator?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(10)">
+                <input id="b10" type="button" value="Ver resposta" onclick="resposta(9)">
                 <div id="res10" class="res">
-                    É operacionalmente possível mas administrativamente é errado, pois a água gelada insere reatividade positiva.
-                    <span class="seta" onclick="apagar(10)">^</span>
+                    Não é possível nem permitido, resfriar a água do tanque do moderador devido ao fenômeno
+                    de estratificação da água quente na parte superior do nível de água do tanque quando é
+                    injetada água fria pelo difusor existente na base do Tanque moderador (devido ao fenômeno
+                    de convecção natural
+                    na água). A injeção de água fria provoca também inserção de reatividade.
                 </div>
             </div>
         </div>
@@ -233,13 +234,12 @@
                 <h4>
                     Quais os intertravamentos do SCTAER?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(11)">
+                <input id="b11" type="button" value="Ver resposta" onclick="resposta(10)">
                 <div id="res11" class="res">
                     <ul>
                         <li>Bombas:</li><br>
                         Nível no Tanque de Estocagem abaixo de 10% não habilita as bombas de enchimento do Tanque do Moderador;
                     </ul>
-                    <span class="seta" onclick="apagar(11)">^</span>
                 </div>
             </div>
         </div>
@@ -254,11 +254,10 @@
                 <h4>
                     Qual a função do Sistema de Tratamento da Água do Moderador (STAM)? E quais bombas ele utiliza?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(12)">
+                <input id="b12" type="button" value="Ver resposta" onclick="resposta(11)">
                 <div id="res12" class="res">
                     <p>Tratar a água de moderação após os experimentos para garantir a manutenção da qualidade da água igual à definida pelo STAA.</p> <br>
                     <p>Utiliza as bombas de enchimento rápido.</p>
-                    <span class="seta" onclick="apagar(12)">^</span>
                 </div>
             </div>
         </div>
@@ -273,15 +272,14 @@
                 <h4>
                     Quais são os componentes do STAM?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(13)">
+                <input id="b13" type="button" value="Ver resposta" onclick="resposta(12)">
                 <div id="res13" class="res">
                     <lu>
-                        <li>Condutivímetro</li>
                         <li>Filtro de cartucho</li>
                         <li>Filtro de carvão ativado</li>
                         <li>Leito de resina mista</li>
+                        <li>Uma válvula de três vias (HV-226)</li>
                     </lu>
-                    <span class="seta" onclick="apagar(13)">^</span>
                 </div>
             </div>
         </div>
@@ -296,10 +294,9 @@
                 <h4>
                     Quando se deve operar o STAM?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(14)">
+                <input id="b14" type="button" value="Ver resposta" onclick="resposta(13)">
                 <div id="res14" class="res">
                     Quando os condutivímetros (02 no total) apontam uma condutividade maior que 5uS/cm um alarme é gerado para o operador e, então, esse sistema deve ser alinhado.
-                    <span class="seta" onclick="apagar(14)">^</span>
                 </div>
             </div>
         </div>
@@ -314,10 +311,10 @@
                 <h4>
                     Qual a função do SAG?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(15)">
+                <input id="b15" type="button" value="Ver resposta" onclick="resposta(14)">
                 <div id="res15" class="res">
-                    Produzir e fornecer água gelada para o SCTAER e para o Sistema de Condicionamento de Ar da Célula Crítica (Insuflamento e Recirculação).
-                    <span class="seta" onclick="apagar(15)">^</span>
+                    Produzir e fornecer água gelada para o SCTAER e para o Sistema de Condicionamento de Ar da Célula Crítica (Insuflamento e Recirculação). <br> Secundariamente fornecer água de
+                    resfriamento para os Self contained do S-2, S-3 e S-4 através do circuito de condensação
                 </div>
             </div>
         </div>
@@ -332,15 +329,29 @@
                 <h4>
                     Quais são os circuitos do SAG? Descreva cada um deles.
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(16)">
+                <input id="b16" type="button" value="Ver resposta" onclick="resposta(15)">
                 <div id="res16" class="res">
                     <li>Circuito de Água de Condensação:</li> 
-                    <p>Duas Torres de Resfriamento, Ventilador da torre, Duas unidades de resfriamento (UR-101 e UR-102), Duas bombas (B-111A e B-111B) e CCM#2</p> <br>
+                    <p>
+                        É um circuito aberto, formado por 2 torres (TR-101A/B) com seus respectivos ventiladores e
+                        dotadas de duas bombas centrífugas (B-111A/B). Estas torres também são utilizadas para o
+                        Sistema de Condicionamento de Ar da Sala de Controle (Setor 2), Salas e Laboratório (Setor
+                        3) e Administração (Setor 4).
+
+                    </p> <br>
                     <li>Circuito Intermediário:</li>
-                    <p>Duas bombas (B-112A e B-112B)</p> <br>
+                    <p>
+                        É um circuito fechado cuja tubulação é em aço carbono com água comum, dotada de duas bombas centrífugas (B-112A/B) e um tanque de expansão (TE-01), cuja função é repor água
+                        para circuito e compensar as dilatações volumétricas da água desse circuito, o volume total
+                        deste tanque também é de 80 litros.
+                    </p> <br>
                     <li>Circuito de Distribuição:</li>
-                    <p>Trocador de calor (TC-113) e Duas bombas (B-113A e B-113B)</p>
-                    <span class="seta" onclick="apagar(16)">^</span>
+                    <p>
+                        É um circuito fechado cuja tubulação é toda em aço inoxidável, inclusive suas duas bombas
+                        centrífugas (B-113A/B), e um tanque de expansão (TE-02) cuja função é repor o circuito de
+                        água desmineralizada e compensar as dilatações volumétricas da água desse circuito, o
+                        volume total deste tanque é de 80 litros.
+                    </p>
                 </div>
             </div>
         </div>
@@ -355,10 +366,9 @@
                 <h4>
                     Faça um desenho esquemático do SAG.
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(17)">
+                <input id="b17" type="button" value="Ver resposta" onclick="resposta(16)">
                 <div id="res17" class="res">
                     <img src="imagens/sistemaSAG.jpg" alt="Esquemático SAG">
-                    <span class="seta" onclick="apagar(17)">^</span>
                 </div>
             </div>
         </div>
@@ -373,10 +383,9 @@
                 <h4>
                     Qual a função do Sistema de Dosagem de Boro (SDB)?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(18)">
+                <input id="b18" type="button" value="Ver resposta" onclick="resposta(17)">
                 <div id="res18" class="res">
                     Preparar soluções de Boro para experimentos específicos.
-                    <span class="seta" onclick="apagar(18)">^</span>
                 </div>
             </div>
         </div>
@@ -391,14 +400,13 @@
                 <h4>
                     Como funciona o Sistema de Dosagem de Boro (SDB)?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(19)">
+                <input id="b19" type="button" value="Ver resposta" onclick="resposta(18)">
                 <div id="res19" class="res">
                     1. Abastecido pelo TQ-102 (STAA) por meio da válvula HV-235; <br><br>
                     2. A água é colocada no tanque por meio de mangueiras flexíveis; <br><br>
                     3. A adição de ácido bórico é feita manualmente e diretamente no tanque TQ-204; <br><br>
                     4. A solução é enviada, por gravidade, ao Tanque de Estocagem (VS270) ou descartada para o Tanque de Decaimento (VS-269). <br><br>
                     5. Após o experimento, a água Borada será descartada do Tanque de Estocagem (TQ-202) para o Tanque de Decaimento (TQ-203) por meio da válvula HV-212.
-                    <span class="seta" onclick="apagar(19)">^</span>
                 </div>
             </div>
         </div>
@@ -413,10 +421,11 @@
                 <h4>
                     Qual a função do Sistema de Lavagem de Equipamentos (SLE) e quais são os seus principais componentes?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(20)">
+                <input id="b20" type="button" value="Ver resposta" onclick="resposta(19)">
                 <div id="res20" class="res">
-                    Distribuir água fria ou água quente, utilizando mangueiras flexíveis, para lavagem do Tanque do Moderador (TQ-201) e equipamentos auxiliares após experimentação com Boro.
-                    <span class="seta" onclick="apagar(20)">^</span>
+                    Distribuir água fria ou água quente, utilizando mangueiras flexíveis, para lavagem do Tanque do Moderador (TQ-201) e equipamentos auxiliares após experimentação com Boro. <br><br>
+                    É composto basicamente por uma bomba B-203 e um aquecedor TC-203.
+
                 </div>
             </div>
         </div>
@@ -431,11 +440,10 @@
                 <h4>
                     Como funciona o SLE?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(21)">
+                <input id="b21" type="button" value="Ver resposta" onclick="resposta(20)">
                 <div id="res21" class="res">
-                    A bomba B-203 aspira do tanque do STAA e pressuriza uma rede onde estão conectadas duas mangueiras flexíveis, essa água passa por um aquecedor que é ligado em caso de necessidade de utilizar água quente. <br>
-                    <p>Com as mangueiras o operador pode realizar a lavagem dos equipamentos. </p>
-                    <span class="seta" onclick="apagar(21)">^</span>    
+                    A bomba B-203 aspira do tanque do TQ-102 (STAA) e pressuriza uma rede onde estão conectadas duas mangueiras flexíveis, essa água passa por um aquecedor que é ligado em caso de necessidade de utilizar água quente. <br>
+                    <p>Com as mangueiras o operador pode realizar a lavagem dos equipamentos. </p>   
                 </div>
             </div>
         </div>
@@ -450,10 +458,9 @@
                 <h4>
                     Qual a função do Sistema de Drenagem da Célula Crítica (SDCC)?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(22)">
+                <input id="b22" type="button" value="Ver resposta" onclick="resposta(21)">
                 <div id="res22" class="res">
                     Coletar, armazenar, recircular e destinar todos os efluentes líquidos gerados na célula crítica.
-                    <span class="seta" onclick="apagar(22)">^</span>
                 </div>
             </div>
         </div>
@@ -468,12 +475,11 @@
                 <h4>
                     Descreva como funciona o SDCC?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(23)">
+                <input id="b23" type="button" value="Ver resposta" onclick="resposta(22)">
                 <div id="res23" class="res">
                     A água originária dos TQ-202 e TQ-204 é enviada ao TQ-203. <br>
                     Toda água acumulada nos pocetos também são destinadas ao TQ203. <br>
                     A água dos pocetos é oriunda da condensação da umidade do ar no TC-212 (Sistema de Água Gelada), no manuseio do Sistema de Tratamento de Água, etc.
-                    <span class="seta" onclick="apagar(23)">^</span>
                 </div>
             </div>
         </div>
@@ -488,12 +494,11 @@
                 <h4>
                     Quais são as possíveis destinações da água coletada no Sistema de Drenagem da Célula Crítica (SDCC)?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(24)">
+                <input id="b24" type="button" value="Ver resposta" onclick="resposta(23)">
                 <div id="res24" class="res">
                     Após análises químicas e radiológicas, a água poderá ter 02 destinos: <br><br>
                     <li>Rede de águas pluviais, se o pH e os radionuclídeos estiverem dentro dos padrões;</li>
                     <li>Armazenamento Externo, se as condições não estiverem dentro dos padrões.</li>
-                    <span class="seta" onclick="apagar(24)">^</span>
                 </div>
             </div>
         </div>
@@ -508,10 +513,9 @@
                 <h4>
                     Qual a função do Sistema de Drenagem do Edifício de Apoio (SDEA)?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(25)">
+                <input id="b25" type="button" value="Ver resposta" onclick="resposta(24)">
                 <div id="res25" class="res">
                     Reter e diluir com água limpa os esgotos quentes e transferir para rede pública de esgoto sanitário ou para tambores especiais havendo excesso nos níveis de radioatividade.
-                    <span class="seta" onclick="apagar(25)">^</span>
                 </div>
             </div>
         </div>
@@ -526,10 +530,14 @@
                 <h4>
                     Cite alguns possíveis modos de operação do SDEA?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(26)">
+                <input id="b26" type="button" value="Ver resposta" onclick="resposta(25)">
                 <div id="res26" class="res">
-                    Drenagem e recirculação
-                    <span class="seta" onclick="apagar(26)">^</span>
+                    <lu>
+                        <li>Recirculação do TQ de Retenção.</li>
+                        <li>Envio do tanque de retenção para rede de esgoto</li>
+                        <li>Envio do tanque de retenção para o tanque de mistura</li>
+                        <li>Diluição do tanque de mistura com água proveniente da caixa d’água.</li>
+                    </lu>
                 </div>
             </div>
         </div>
@@ -544,12 +552,11 @@
                 <h4>
                     Quais são as possíveis destinações da água coletada no SDEA?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(27)">
+                <input id="b27" type="button" value="Ver resposta" onclick="resposta(26)">
                 <div id="res27" class="res">
-                    Para rede pública de esgoto sanitário ou para tambores especiais havendo 
-                    excesso nos níveis de radioatividade.
+                    Para rede pública de esgoto sanitário caso a análise (química e radioquímica) e
+                    autorização do Departamento de monitoração ambiental do IPEN permita, caso não haja essa autorização, são colocados em recipientes apropriadas e encaminhadas para a Gerência de Rejeito Radiológico (GRR) do IPEN.
 
-                    <span class="seta" onclick="apagar(27)">^</span>
                 </div>
             </div>
         </div>
@@ -564,13 +571,12 @@
                 <h4>
                     Quais os principais equipamentos do SDEA?
                 </h4>
-                <input type="button" value="Ver resposta" onclick="resposta(28)">
+                <input id="b28" type="button" value="Ver resposta" onclick="resposta(27)">
                 <div id="res28" class="res">
                     <li>Caixa D’água</li>
                     <li>Tanque de Retenção TQ-01</li>
                     <li>Tanque de Mistura TQ-02</li>
                     <li>Bombas Auto escorvante B-001 e B-002</li>
-                    <span class="seta" onclick="apagar(28)">^</span>
                 </div>
             </div>
         </div>

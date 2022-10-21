@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#principal {
+    padding: 50px;
+}
+#someeaparece {
+    display: block;
+    padding: 5px;
+    margin: auto;
+}
+#res {
+    display: none;
+}

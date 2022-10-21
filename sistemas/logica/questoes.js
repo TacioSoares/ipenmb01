@@ -75,6 +75,8 @@ function embaralha(lista) {
 
 
 function resposta(n) {
+
+    var botao = [document.querySelector('#b1'), document.querySelector('#b2'), document.querySelector('#b3'), document.querySelector('#b4'), document.querySelector('#b5'), document.querySelector('#b6'), document.querySelector('#b7'), document.querySelector('#b8'), document.querySelector('#b9'), document.querySelector('#b10'), document.querySelector('#b11'), document.querySelector('#b12'), document.querySelector('#b13'), document.querySelector('#b14'), document.querySelector('#b15'), document.querySelector('#b16'), document.querySelector('#b17'), document.querySelector('#b18'), document.querySelector('#b19'), document.querySelector('#b20'), document.querySelector('#b21'), document.querySelector('#b22'), document.querySelector('#b23'), document.querySelector('#b24'), document.querySelector('#b25'), document.querySelector('#b26'), document.querySelector('#b27'), document.querySelector('#b28')]
     var res1 = document.querySelector('#res1')
     var res2 = document.querySelector('#res2')
     var res3 = document.querySelector('#res3')
@@ -103,151 +105,126 @@ function resposta(n) {
     var res26 = document.querySelector('#res26')
     var res27 = document.querySelector('#res27')
     var res28 = document.querySelector('#res28')
-
-    if (n == 1) {
-        res1.style.display = 'block'
-    } else if (n == 2) {
-        res2.style.display = 'block'
-    } else if (n == 3) {
-        res3.style.display = 'block'
-    } else if (n == 4) {
-        res4.style.display = 'block'
-    } else if (n == 5) {
-        res5.style.display = 'block'
-    } else if (n == 6) {
-        res6.style.display = 'block'
-    } else if (n == 7) {
-        res7.style.display = 'block'
-    } else if (n == 8) {
-        res8.style.display = 'block'
-    } else if (n == 9) {
-        res9.style.display = 'block'
-    } else if (n == 10) {
-        res10.style.display = 'block'
-    } else if (n == 11) {
-        res11.style.display = 'block'
-    } else if (n == 12) {
-        res12.style.display = 'block'
-    } else if (n == 13) {
-        res13.style.display = 'block'
-    } else if (n == 14) {
-        res14.style.display = 'block'
-    } else if (n == 15) {
-        res15.style.display = 'block'
-    } else if (n == 16) {
-        res16.style.display = 'block'
-    } else if (n == 17) {
-        res17.style.display = 'block'
-    } else if (n == 18) {
-        res18.style.display = 'block'
-    } else if (n == 19) {
-        res19.style.display = 'block'
-    } else if (n == 20) {
-        res20.style.display = 'block'
-    } else if (n == 21) {
-        res21.style.display = 'block'
-    } else if (n == 22) {
-        res22.style.display = 'block'
-    } else if (n == 23) {
-        res23.style.display = 'block'
-    } else if (n == 24) {
-        res24.style.display = 'block'
-    } else if (n == 25) {
-        res25.style.display = 'block'
-    } else if (n==26) {
-        res26.style.display = 'block'
-    } else if (n==27) {
-        res27.style.display = 'block'
+    if (botao[n].value == 'Ver resposta') {
+        if (n == 0) {
+            res1.style.display = 'block'
+        } else if (n == 1) {
+            res2.style.display = 'block'
+        } else if (n == 2) {
+            res3.style.display = 'block'
+        } else if (n == 3) {
+            res4.style.display = 'block'
+        } else if (n == 4) {
+            res5.style.display = 'block'
+        } else if (n == 5) {
+            res6.style.display = 'block'
+        } else if (n == 6) {
+            res7.style.display = 'block'
+        } else if (n == 7) {
+            res8.style.display = 'block'
+        } else if (n == 8) {
+            res9.style.display = 'block'
+        } else if (n == 9) {
+            res10.style.display = 'block'
+        } else if (n == 10) {
+            res11.style.display = 'block'
+        } else if (n == 11) {
+            res12.style.display = 'block'
+        } else if (n == 12) {
+            res13.style.display = 'block'
+        } else if (n == 13) {
+            res14.style.display = 'block'
+        } else if (n == 14) {
+            res15.style.display = 'block'
+        } else if (n == 15) {
+            res16.style.display = 'block'
+        } else if (n == 16) {
+            res17.style.display = 'block'
+        } else if (n == 17) {
+            res18.style.display = 'block'
+        } else if (n == 18) {
+            res19.style.display = 'block'
+        } else if (n == 19) {
+            res20.style.display = 'block'
+        } else if (n == 20) {
+            res21.style.display = 'block'
+        } else if (n == 21) {
+            res22.style.display = 'block'
+        } else if (n == 22) {
+            res23.style.display = 'block'
+        } else if (n == 23) {
+            res24.style.display = 'block'
+        } else if (n == 24) {
+            res25.style.display = 'block'
+        } else if (n==25) {
+            res26.style.display = 'block'
+        } else if (n==26) {
+            res27.style.display = 'block'
+        } else {
+            res28.style.display = 'block'
+        }
+        botao[n].value = 'Ocultar resposta' 
+        botao[n].style.background = 'darkgray'
     } else {
-        res28.style.display = 'block'
-    }
-
-}
-
-function apagar(n) {
-    var res1 = document.querySelector('#res1')
-    var res2 = document.querySelector('#res2')
-    var res3 = document.querySelector('#res3')
-    var res4 = document.querySelector('#res4')
-    var res5 = document.querySelector('#res5')
-    var res6 = document.querySelector('#res6')
-    var res7 = document.querySelector('#res7')
-    var res8 = document.querySelector('#res8')
-    var res9 = document.querySelector('#res9')
-    var res10 = document.querySelector('#res10')
-    var res11 = document.querySelector('#res11')
-    var res12 = document.querySelector('#res12')
-    var res13 = document.querySelector('#res13')
-    var res14 = document.querySelector('#res14')
-    var res15 = document.querySelector('#res15')
-    var res16 = document.querySelector('#res16')
-    var res17 = document.querySelector('#res17')
-    var res18 = document.querySelector('#res18')
-    var res19 = document.querySelector('#res19')
-    var res20 = document.querySelector('#res20')
-    var res21 = document.querySelector('#res21')
-    var res22 = document.querySelector('#res22')
-    var res23 = document.querySelector('#res23')
-    var res24 = document.querySelector('#res24')
-    var res25 = document.querySelector('#res25')
-    var res26 = document.querySelector('#res26')
-    var res27 = document.querySelector('#res27')
-    var res28 = document.querySelector('#res28')
-    if (n == 1) {
-        res1.style.display = 'none'
-    } else if (n == 2) {
-        res2.style.display = 'none'
-    } else if (n == 3) {
-        res3.style.display = 'none'
-    } else if (n == 4) {
-        res4.style.display = 'none'
-    } else if (n == 5) {
-        res5.style.display = 'none'
-    } else if (n == 6) {
-        res6.style.display = 'none'
-    } else if (n == 7) {
-        res7.style.display = 'none'
-    } else if (n == 8) {
-        res8.style.display = 'none'
-    } else if (n == 9) {
-        res9.style.display = 'none'
-    } else if (n == 10) {
-        res10.style.display = 'none'
-    } else if (n == 11) {
-        res11.style.display = 'none'
-    } else if (n == 12) {
-        res12.style.display = 'none'
-    } else if (n == 13) {
-        res13.style.display = 'none'
-    } else if (n == 14) {
-        res14.style.display = 'none'
-    } else if (n == 15) {
-        res15.style.display = 'none'
-    } else if (n == 16) {
-        res16.style.display = 'none'
-    } else if (n == 17) {
-        res17.style.display = 'none'
-    } else if (n == 18) {
-        res18.style.display = 'none'
-    } else if (n == 19) {
-        res19.style.display = 'none'
-    } else if (n == 20) {
-        res20.style.display = 'none'
-    } else if (n == 21) {
-        res21.style.display = 'none'
-    } else if (n == 22) {
-        res22.style.display = 'none'
-    } else if (n == 23) {
-        res23.style.display = 'none'
-    } else if (n == 24) {
-        res24.style.display = 'none'
-    } else if (n == 25) {
-        res25.style.display = 'none'
-    } else if (n==26) {
-        res26.style.display = 'none'
-    } else if (n==27) {
-        res27.style.display = 'none'
-    } else {
-        res28.style.display = 'none'
+        if (n == 0) {
+            res1.style.display = 'none'
+        } else if (n == 1) {
+            res2.style.display = 'none'
+        } else if (n == 2) {
+            res3.style.display = 'none'
+        } else if (n == 3) {
+            res4.style.display = 'none'
+        } else if (n == 4) {
+            res5.style.display = 'none'
+        } else if (n == 5) {
+            res6.style.display = 'none'
+        } else if (n == 6) {
+            res7.style.display = 'none'
+        } else if (n == 7) {
+            res8.style.display = 'none'
+        } else if (n == 8) {
+            res9.style.display = 'none'
+        } else if (n == 9) {
+            res10.style.display = 'none'
+        } else if (n == 10) {
+            res11.style.display = 'none'
+        } else if (n == 11) {
+            res12.style.display = 'none'
+        } else if (n == 12) {
+            res13.style.display = 'none'
+        } else if (n == 13) {
+            res14.style.display = 'none'
+        } else if (n == 14) {
+            res15.style.display = 'none'
+        } else if (n == 15) {
+            res16.style.display = 'none'
+        } else if (n == 16) {
+            res17.style.display = 'none'
+        } else if (n == 17) {
+            res18.style.display = 'none'
+        } else if (n == 18) {
+            res19.style.display = 'none'
+        } else if (n == 19) {
+            res20.style.display = 'none'
+        } else if (n == 20) {
+            res21.style.display = 'none'
+        } else if (n == 21) {
+            res22.style.display = 'none'
+        } else if (n == 22) {
+            res23.style.display = 'none'
+        } else if (n == 23) {
+            res24.style.display = 'none'
+        } else if (n == 24) {
+            res25.style.display = 'none'
+        } else if (n == 25) {
+            res26.style.display = 'none'
+        } else if (n == 26) {
+            res27.style.display = 'none'
+        } else {
+            res28.style.display = 'none'
+        }
+        botao[n].value = 'Ver resposta'
+        botao[n].style.background = 'lightgray'
     }
 }
+
