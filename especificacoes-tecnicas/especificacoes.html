@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeah Yeah Sistemas de Especificações Técnicas</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/yeahyeah.png" type="image/x-icon">
+</head>
+<body>
+        
+    
+    <section>
+        <h1>Yeah Yeah Sistema de Especificações Técnicas</h1>
+        <p id="menu"><input type="button" id="embaralhar" value="Embaralhar Questões" onclick="embaralha(questao)"> </p>
+        <span>
+            Questão 01
+        </span>
+        <div id="um" class="questoes">
+            
+            <div class="sumir" id="quest01">
+                <h4>
+                    Explique o que é limite de segurança exemplificando um dispositivo no qual é aplicado esse conceito no reator IPEN/MB-01
+                </h4>
+                <input id="b1" type="button" value="Ver resposta" onclick="resposta(0)">
+                <div id="res1" class="res">
+                    São limites impostos a variáveis importantes do processo os quais se excedidos
+                    poderão causar perda de integridade das barreiras físicas que impedem a
+                    liberação de produtos radioativos para o ambiente externo. <br>
+                    É aplicado ao revestimento de alumínio do combustível.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        
+        <span>
+            Questão 02
+        </span>
+        <div id="dois">
+            
+            <div class="sumir" id="quest02">
+                <h4>
+                    Como é constituído o Sistema de proteção do reator IPEN/MB-01?
+                </h4>
+                <input id="b2" type="button" value="Ver resposta" onclick="resposta(1)">
+                <div id="res2" class="res">
+                    <ul>
+                        <li>Sistemas de intertravamento de segurança</li> 
+                        Intertravamento de partida
+                        (SCRAM de partida), intertravamento de magnetos (SCRAM de magnetos) e
+                        intertravamento de válvulas de abertura rápida (SCRAM de válvulas)
+                        
+                        <li>Intertravamento nuclear</li> 
+                        Canais 1, 2 e 9 da instrumentação nuclear (faixa
+                        de partida) e canais 3, 4, 7, 8 e 10 da instrumentação nuclear (faixa
+                        potência)
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 03
+        </span>
+        <div id="tres">
+            
+            <div class="sumir" id="quest03">
+               <h4>
+                    Qual a função do Sistema de segurança no reator IPEN/MB-01?
+               </h4>
+               <input id="b3" type="button" value="Ver resposta" onclick="resposta(2)">
+               <div id="res3" class="res">
+
+                    Não permitir a liberação descontrolada de produtos radioativos para o meio ambiente externo mesmo com perda da integridade das varetas combustíveis
+                
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 04
+        </span>
+        <div id="quatro">
+            <div class="sumir" id="quest04">
+                <h4>
+                    Como é constituído o Sistema de segurança no reator IPEN/MB-01?
+                </h4>
+                <input id="b4" type="button" value="Ver resposta" onclick="resposta(3)">
+                <div id="res4" class="res">
+                    <ul>
+                        <li>Estrutura da célula crítica</li>
+                        <li> Vedação das portas de acesso à célula crítica</li>
+                        <li>Penetração dos cabos para a célula crítica</li>
+                        <li>Filtros do sistema de exaustão da célula crítica</li>
+                        <li>Detector de radiação da chaminé – RITH-156</li>
+                        <li>Dampers de isolamento das linhas de insuflamento e exaustão de ar do sistema de ventilação da célula crítica</li>
+                        <li>Válvulas de isolamento das linhas de água e ar comprimido para a célula crítica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 05
+        </span>
+        <div id="cinco">
+            
+            <div class="sumir" id="quest05">
+               <h4>
+                Quais os canais utilizados e qual a potência na qual o SCRAM de magnetos atua dentro da faixa de partida?
+               </h4>
+               <input id="b5" type="button" value="Ver resposta" onclick="resposta(4)">
+               <div id="res5" class="res">
+                    Canais 1, 2 e 9 com a potência de 2,2mW
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 06
+        </span>
+        <div id="seis">
+            <div class="sumir" id="quest06">
+                <h4>
+                    Quais os canais utilizados e qual a potência na qual o SCRAM de magnetos atua dentro da faixa de potência?
+                </h4>
+                <input id="b6" type="button" value="Ver resposta" onclick="resposta(5)">
+                <div id="res6" class="res">
+                    Canais 3, 4, 7, 8 e 10 com a potência de 110W
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 07
+        </span>
+        <div id="sete">
+            <div class="sumir" id="quest07">
+                <h4>
+                    Quais os canais utilizados e qual a potência na qual o SCRAM de válvulas atua dentro da faixa de partida?
+                </h4>
+                <input id="b7" type="button" value="Ver resposta" onclick="resposta(6)">
+                <div id="res7" class="res">
+                    Canais 1, 2 e 9 com a potência de 2,4mW
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 08
+        </span>
+        <div id="oito">
+            <div class="sumir" id="quest08">
+                <h4>
+                    Quais os canais utilizados e qual a potência na qual o SCRAM de válvulas atua dentro da faixa de potência?
+                </h4>
+                <input id="b8" type="button" value="Ver resposta" onclick="resposta(7)">
+                <div id="res8" class="res">
+                    <p>
+                        Canais 3, 4, 7, 8 e 10 com a potência de 120W
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 09
+        </span>
+        <div id="nove">
+            <div class="sumir" id="quest09">
+                <h4>
+                    Quais canais na faixa de partida gera sinais de período?
+                </h4>
+                <input id="b9" type="button" value="Ver resposta" onclick="resposta(8)">
+                <div id="res9" class="res">
+                    Canais nucleares 1, 2 e 9
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 10
+        </span>
+        <div id="dez">
+            <div class="sumir" id="quest10">
+                <h4>
+                    Quais canais na faixa de potência gera sinais de período?
+                </h4>
+                <input id="b10" type="button" value="Ver resposta" onclick="resposta(9)">
+                <div id="res10" class="res">
+                    Canais nucleares 3, 4, 9 e 10
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 11
+        </span>
+        <div id="onze">
+            <div class="sumir" id="quest11">
+                <h4>
+                    Cite quais os valores do período para ocorrer um SCRAM de magnetos e para ocorrer o SCRAM de válvulas.
+                </h4>
+                <input id="b11" type="button" value="Ver resposta" onclick="resposta(10)">
+                <div id="res11" class="res">
+                    O SCRAM de magnetos ocorre quando período for menor ou igual a 17 segundos. <br><br>
+                    O SCRAM de magnetos e válvulas ocorre quando período do reator for menor ou igual 14 segundos. 
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 12
+        </span>
+        <div id="doze">
+            <div class="sumir" id="quest12">
+                <h4>
+                    Qual deve ser o valor da depressão no interior da célula crítica?
+                </h4>
+                <input id="b12" type="button" value="Ver resposta" onclick="resposta(11)">
+                <div id="res12" class="res">
+                    A depressão na célula crítica deve ser maior ou igual a 5 mm de coluna de água (~ 50 Pa) para habilitar a partida do reator
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 13
+        </span>
+        <div id="treze">
+            <div class="sumir" id="quest13">
+                <h4>
+                    O monitor de dutos da chaminé (RITH-156) detectou um valor de 10<sup>4</sup> cpm, qual a sequência de acontecimentos após isso?
+                </h4>
+                <input id="b13" type="button" value="Ver resposta" onclick="resposta(12)">
+                <div id="res13" class="res">
+                    É enviado um sinal para desligamento automático dos ventiladores do subsistema de exaustão da célula
+                    crítica <i>e para fechamento dos dampers de isolamento da célula crítica</i> isso resulta no desligamento dos ventiladores do subsistema de insuflamento para a célula crítica e desligamento do reator por alta pressão.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 14
+        </span>
+        <div id="quatorze">
+            <div class="sumir" id="quest14">
+                <h4>
+                    Qual o excesso de reatividade total do núcleo sem experimentos com uma temperatura de 20˚C para o reator IPEN/MB-01?
+                </h4>
+                <input id="b14" type="button" value="Ver resposta" onclick="resposta(13)">
+                <div id="res14" class="res">
+                    O excesso de reatividade não deverá exceder 4000 pcm para a configuração com 19 EC e 6500 pcm
+                    para configuração com 20 EC
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 15
+        </span>
+        <div id="quinze">
+            <div class="sumir" id="quest15">
+                <h4>
+                    Qual o valor mínimo da margem de desligamento para manter os critérios de segurança do reator IPEN/MB-01?
+                </h4>
+                <input id="b15" type="button" value="Ver resposta" onclick="resposta(14)">
+                <div id="res15" class="res">
+                    100% superior ao máximo de excesso de reatividade observando ainda o critério da barra presa, reator desligado (keff &lt 0,98) mesmo com a barra mais reativa presa na posição mais retirada do núcleo.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 16
+        </span>
+        <div id="deseseis">
+            <div class="sumir" id="quest16">
+                <h4>
+                    Qual a máxima taxa de inserção de reatividade pela movimentação de uma barra? 
+                </h4>
+                <input id="b16" type="button" value="Ver resposta" onclick="resposta(15)">
+                <div id="res16" class="res">
+                    Deve ser inferior a 20pcm/s, caso seja maior o reator não poderá entrar em operação.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 17
+        </span>
+        <div id="desessete">
+            <div class="sumir" id="quest17">
+                <h4>
+                    Qual o valor máximo de reatividade permitido durante um experimento e qual o motivo desse limite?
+                </h4>
+                <input id="b17" type="button" value="Ver resposta" onclick="resposta(16)">
+                <div id="res17" class="res">
+                    Não pode ser superior a 500pcm para garantir que caso haja algum transiente de reatividade não provoque nenhum transiente de potência em caso de deslocamento de algum objeto inserido no núcleo ou inundações de vazios.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        
+        <span>
+            Questão 18
+        </span>
+        <div id="dezoito">
+            <div class="sumir" id="quest18">
+                <h4>
+                    Quais valores limites para a qualidade da água?
+                </h4>
+                <input id="b18" type="button" value="Ver resposta" onclick="resposta(17)">
+                <div id="res18" class="res">
+                    <ul>
+                        <li>Condutividade da água</li> 
+                        Antes de entrar em operação: ≤ 5 μS/cm <br> 
+                        Durante a operação: ≤ 6 μS/cm
+                        <li>pH da água</li>
+                        Antes de entrar em operação: 5,5 a 6,5 <br>
+                        Durante a operação: 5,0 a 7,0
+                        <li>Cloretos na água</li> 
+                        Antes de entrar em operação: 0,2 ppm <br>
+                        Durante a operação: 0,3 ppm
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 19
+        </span>
+        <div id="dezenove">
+            <div class="sumir" id="quest19">
+                <h4>
+                    Qual a razão para o controle da água do reator IPEN/MB-01?
+                </h4>
+                <input id="b19" type="button" value="Ver resposta" onclick="resposta(18)">
+                <div id="res19" class="res">
+                    Minimizar a corrosão do revestimento de alumínio da placa de combustível, da estrutura do elemento combustível e dos elementos estruturais do núcleo e minimizar os níveis de contaminação devido a ativação de impurezas contidas na água.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 20
+        </span>
+        <div id="vinte">
+            <div class="sumir" id="quest20">
+                <h4>
+                    A partir do sinal de desligamento até o início do trecho de amortecimento da barra no núcleo, qual o tempo máximo de desligamento do reator?
+
+                </h4>
+                <input id="b20" type="button" value="Ver resposta" onclick="resposta(19)">
+                <div id="res20" class="res">
+                    1 segundo
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 21
+        </span>
+        <div id="vinteeum">
+            <div class="sumir" id="quest21">
+                <h4>
+                    Qual o número máximo de varetas combustíveis que poderão ser transportadas ou armazenadas em um único cesto?
+                </h4>
+                <input id="b21" type="button" value="Ver resposta" onclick="resposta(20)">
+                <div id="res21" class="res">
+                    170 varetas
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 22
+        </span>
+        <div id="vinteedois">
+            <div class="sumir" id="quest22">
+                <h4>
+                    Qual a razão para limitar o número de varetas que podem ser transportadas dentro de um único cesto?
+                </h4>
+                <input id="b22" type="button" value="Ver resposta" onclick="resposta(21)">
+                <div id="res22" class="res">
+                    Evitar acidente de criticalidade na região das covas de armazenamento mesmo que haja uma inundação de todas as covas; e não ultrapassar as doses estabelecidas para o caso de um “Acidente com Quedas de Varetas Combustíveis Durante o Manuseio”
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 23
+        </span>
+        <div id="vinteetres">
+            <div class="sumir" id="quest23">
+                <h4>
+                    Qual o número máximo de placas combustíveis que poderão ser transportadas ou armazenadas em um único cesto? 
+                </h4>
+                <input id="b23" type="button" value="Ver resposta" onclick="resposta(22)">
+                <div id="res23" class="res">
+                    8 elementos
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 24
+        </span>
+        <div id="vinteequatro">
+            <div class="sumir" id="quest24">
+                <h4>
+                    Qual a frequência que os canais de proteção devem ser verificados?
+                </h4>
+                <input id="b24" type="button" value="Ver resposta" onclick="resposta(23)">
+                <div id="res24" class="res">
+                    Quinzenalmente ou quando forem feitas manutenção em qualquer um dos módulos eletrônicos
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 25
+        </span>
+        <div id="vinteecinco">
+            <div class="sumir" id="quest25">
+                <h4>
+                    O que deve ser verificado todas as vezes que for realizado uma nova configuração do núcleo?
+                </h4>
+                <input id="b25" type="button" value="Ver resposta" onclick="resposta(24)">
+                <div id="res25" class="res">
+                    
+                    <ul>
+                        <li>Excesso de reatividade</li> 
+                        <li>Margem de desligamento</li>
+                        <li>Taxa de inserção de reatividade</li>
+                        <li>Reatividade das barras de controle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 26
+        </span>
+        <div id="vinteeseis">
+            <div class="sumir" id="quest26">
+                <h4>
+                    Qual a frequência que as válvulas de esvaziamento rápido do tanque do moderador devem ser verificadas e o que deve ser observado nesse procedimento?
+                </h4>
+                <input id="b26" type="button" value="Ver resposta" onclick="resposta(25)">
+                <div id="res26" class="res">
+                    Verificação é feita anualmente e o tempo de esvaziamento do tanque não pode ser superior a 7 segundos.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 27
+        </span>
+        <div id="vinteesete">
+            <div class="sumir" id="quest27">
+                <h4>
+                    Qual a frequência e como é feito a inspeção do sistema de isolamento da célula crítica?
+                </h4>
+                <input id="b27" type="button" value="Ver resposta" onclick="resposta(26)">
+                <div id="res27" class="res">
+                    É feito anualmente através da simulação de nível de perigo no monitor da chaminé (RITH-156) além disso, também deve ser feita a manutenção das guarnições de borracha e ajuste do sistema de fechamento das portas de acesso à célula crítica.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 28
+        </span>
+        <div id="vinteeoito">
+            <div class="sumir" id="quest28">
+                <h4>
+                    Qual a frequência que as barras de controle devem ser verificadas e o que deve ser observado nesse procedimento?
+                </h4>
+                <input id="b28" type="button" value="Ver resposta" onclick="resposta(27)">
+                <div id="res28" class="res">
+                    As barras de controle devem ser inspecionadas visualmente no mínimo uma vez por ano <br><br>
+                    Em cada inspeção deve-se certificar a livre movimentação das barras e suas guias, ao
+                    longo de todo percurso da movimentação e o funcionamento adequado do conjunto. <br><br>
+                    Tempo de queda das barras deve ser verificado anualmente ou sempre após uma
+                    montagem do conjunto.
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 29
+        </span>
+        <div id="vinteenove">
+            <div class="sumir" id="quest29">
+                <h4>
+                    Quais inspeções devem acontecer anualmente?
+                </h4>
+                <input id="b29" type="button" value="Ver resposta" onclick="resposta(28)">
+                <div id="res29" class="res">
+                    <li>Barras de controle</li>
+                    inspeção visual e tempo de queda.
+                    <li>Reatividade das barras de controle</li>
+                    Pode acontecer a cada mudança na configuração do nucleo 
+                    <li>Válvula de esvaziamento rápido</li>
+                    Deve ser realizada a medida do tempo de esvaziamento do tanque do moderador a partir do seu nível máximo.
+                    <li>Sistema de isolamento da célula crítica</li>
+                    Teste operacional do sistema de isolamento da célula crítica.
+                    <li>Monitores de área</li>
+                    Os monitores de área devem ser verificados quanto sua operacionalidade e pontos de atuação (alarme e perigo)
+                    <li>Monitores de ar e dutos</li>
+                    Os monitores de ar e de dutos devem ser verificados quanto aos seus pontos de atuação (alarme e perigo)
+                </div>
+            </div>
+        </div>
+        <script src="logica/questoes.js"></script>
+    </section>
+</body>
+</html>
