@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de questões</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Modelo de questões</h1>
+
+    <div id="q1" class="questão">
+        <div id="pergunta1" class="perguntas">
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, repellat ex inventore. Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
+            </h2>
+            <p>
+                <input type="text" name="resp" id="textoResposta1" class="questãoAberta">
+                <p>
+                    <input type="button" value="Responder" onclick="resposta1()">
+                </p>
+                <p><span id="correção1"></span></p>
+            </p>
+        </div>
+        <div id="resp1" class="respota">
+            <p>
+                resposta certa
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="q2" class="questão">
+        <div id="pergunta2" class="perguntas">
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, <input type="text" name="resp" id="textoResposta2" class="complete">. Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
+            </h2>
+            <p>
+                <input type="button" value="Responder" onclick="resposta2()">
+            </p>
+            <p><span id="correção2"></span></p>
+        </div>
+        <div id="resp2" class="respota">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, <strong>resposta correta</strong>, alias sequi qui, officiis ullam omnis voluptatem dolores accusantium tempore! Quasi, doloribus nesciunt.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="q3" class="questão">
+        <div id="pergunta3" class="perguntas">
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
+            </h2>
+            <form id="alternativas1">
+            
+                    <ul>
+                        <li>
+                            <input type="radio" name="opção1" id="opção1"> <label for="opção1"> - huashdua, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="opção1" id="opção2"> <label for="opção2"> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="opção1" id="opção3"> <label for="opção3"> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="opção1" id="opção4"> <label for="opção4"> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                        </li>
+                    </ul>
+            </form>
+            <p>
+                <input type="button" value="Responder" onclick="resposta3()">
+            </p>
+            <p><span id="correção3"></span></p>
+        </div>
+        <div id="resp3" class="respota">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, alias sequi qui, officiis ullam omnis voluptatem dolores accusantium tempore! Quasi, doloribus nesciunt.
+            </p>
+        </div>
+    </div>
+    <script src="logica/modelo.js"></script>
+</body>
+</html>

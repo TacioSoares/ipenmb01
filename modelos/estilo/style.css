@@ -1,0 +1,30 @@
+
+
+h1 {
+    text-align: center;
+
+}
+
+div {
+    padding-bottom: 40px;
+}
+.questãoAberta {
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: left;
+    height: 50px;
+    width: 80%;
+}
+.respota {
+    display: none;
+    color: black;
+    border: 1px solid darkgreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+.complete {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px;
+    text-align: center;
+}
