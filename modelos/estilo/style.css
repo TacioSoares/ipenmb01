@@ -28,3 +28,16 @@ div {
     width: 150px;
     text-align: center;
 }
+li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+.VouF {
+    margin-right: 20px;
+}
+.sublinhado {
+    text-decoration: underline;
+}
+.marqueX {
+    margin-right: 20px;
+}

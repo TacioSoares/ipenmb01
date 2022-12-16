@@ -57,22 +57,19 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
             </h2>
             <form id="alternativas1">
-            
-                    <ul>
                         <li>
-                            <input type="radio" name="opção1" id="opção1"> <label for="opção1"> - huashdua, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            <input type="radio" name="opção1" id="opção1" class="marqueX" value="1"><label for="opção1" class="escolha" id="m01">Huashdua, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga bla! Velit saepe necessitatibus.</label>
                         </li>
 
                         <li>
-                            <input type="radio" name="opção1" id="opção2"> <label for="opção2"> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            <input type="radio" name="opção1" id="opção2" class="marqueX" value="2"><label for="opção2" class="escolha" id="m02">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
                         </li>
                         <li>
-                            <input type="radio" name="opção1" id="opção3"> <label for="opção3"> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            <input type="radio" name="opção1" id="opção3" class="marqueX" value="3"> <label for="opção3" class="escolha" id="m03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
                         </li>
                         <li>
-                            <input type="radio" name="opção1" id="opção4"> <label for="opção4"> - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            <input type="radio" name="opção1" id="opção4" class="marqueX" value="4"> <label for="opção4" class="escolha" id="m04">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
                         </li>
-                    </ul>
             </form>
             <p>
                 <input type="button" value="Responder" onclick="resposta3()">
@@ -81,8 +78,42 @@
         </div>
         <div id="resp3" class="respota">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, alias sequi qui, officiis ullam omnis voluptatem dolores accusantium tempore! Quasi, doloribus nesciunt.
+                
             </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="q4" class="questão">
+        <div id="pergunta3" class="perguntas">
+            <h2>
+                Marque as opções <span class="sublinhado">verdadeiras</span>:
+            </h2>
+
+            <form id="verdadeiroOuFalso">
+                <li>
+                    <input type="checkbox" name="VouF1" id="VouF1" class="VouF" value="1"><label for="VouF1" id="verdOuFals01">Um ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                </li>
+                        
+                <li>
+                    <input type="checkbox" name="VouF1" id="VouF2" class="VouF" value="2" ><label for="VouF2" id="verdOuFals02">Dois ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="VouF1" id="VouF3" class="VouF" value="3" ><label for="VouF3" id="verdOuFals03">TrÊs ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="VouF1" id="VouF4" class="VouF" value="4" ><label for="VouF4" id="verdOuFals04">Quatro ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                </li>
+                    
+            </form>
+            <p>
+                <input type="button" value="Responder" onclick="resposta4()">
+            </p>
+            <p><span id="correção4"></span></p>
+        </div>
+        <div id="resp4" class="respota">
+
         </div>
     </div>
     <script src="logica/modelo.js"></script>
