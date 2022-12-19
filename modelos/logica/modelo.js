@@ -3,11 +3,17 @@
 
 function resposta1() {
     var input = document.querySelector('#textoResposta1').value
-    var resp = /\s*\bresposta certa\b\s*/gi
+   // var resp = new RegExp("ventilador\\s*?\\w{0,3}\\s*?S3",'gi')
+    item1 = "ventilador\\s*?\\w{0,3}\\s*?S3"
+    item2 = "ventilador\\s*?\\w{0,3}\\s*?S4"
+    item3 = "sala\\s*?\\w{0,3}\\s*?eletrotécnica"
+    var ponto = verificarResposta(input, item1, item2, item3)
     mostrarResposta(1)
-    if (resp.test(input)) {
+    if (ponto > 2) {
         respostaCorreta(1)
-    } else {
+    } else if (ponto > 0 < 3) 
+        respostaMeioCerta(1)
+    else {
         respostaIncorreta(1)
     }
 }
@@ -54,6 +60,13 @@ function respostaCorreta(n) {
     feedback.style.color = 'darkgreen'
     feedback.innerHTML = 'Correto!'
 }
+
+function respostaMeioCerta(n) {
+    var feedback = document.querySelector(`#correção${n}`)
+    feedback.style.color = 'lightgreen'
+    feedback.innerHTML = 'Meio certo!'
+}
+
 function respostaIncorreta(n) {
     var feedback = document.querySelector(`#correção${n}`)
     feedback.style.color = 'darkred'
@@ -93,4 +106,19 @@ function validaVouF(ponto, correta, rCerta) {
     rCerta.forEach(certa => {
         certa.style.backgroundColor = 'lightgreen'
     })
+}
+
+function verificarResposta(input, item1, item2, item3) {
+    var resp1 = new RegExp(item1,'gi')
+    var resp2 = new RegExp(item2,'gi')
+    var resp3 = new RegExp(item3,'gi')
+    var ponto = 0
+    if (resp1.test(input)) {
+        ponto += 1
+    } else if (resp2.test(input)) {
+        ponto += 1
+    } else if (resp3.test(input)) {
+        ponto += 1
+    }
+    return ponto
 }
