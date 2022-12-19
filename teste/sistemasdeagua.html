@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/yeahyeah.png" type="image/x-icon">
 </head>
-<body>
+<body onload="embaralhar()">
         
     
     <section>
@@ -80,19 +80,19 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
                         </h4>
                         <form id="alternativas1">
-                                    <li>
-                                        <input type="radio" name="opção1" id="opção1" class="marqueX" value="1"><label for="opção1" class="escolha" id="m01">Huashdua, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga bla! Velit saepe necessitatibus.</label>
-                                    </li>
-            
-                                    <li>
-                                        <input type="radio" name="opção1" id="opção2" class="marqueX" value="2"><label for="opção2" class="escolha" id="m02">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="opção1" id="opção3" class="marqueX" value="3"> <label for="opção3" class="escolha" id="m03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="opção1" id="opção4" class="marqueX" value="4"> <label for="opção4" class="escolha" id="m04">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
-                                    </li>
+                            <li class="multiplaEscolha1">
+                                <input type="radio" name="opção1" id="opção1" class="marqueX" value="1"><label for="opção1" class="escolha" id="m01">Huashdua, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga bla! Velit saepe necessitatibus.</label>
+                            </li>
+    
+                            <li class="multiplaEscolha1">
+                                <input type="radio" name="opção1" id="opção2" class="marqueX" value="2"><label for="opção2" class="escolha" id="m02">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            </li>
+                            <li class="multiplaEscolha1">
+                                <input type="radio" name="opção1" id="opção3" class="marqueX" value="3"> <label for="opção3" class="escolha" id="m03">Certx, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            </li>
+                            <li class="multiplaEscolha1">
+                                <input type="radio" name="opção1" id="opção4" class="marqueX" value="4"> <label for="opção4" class="escolha" id="m04">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                            </li>
                         </form>
                         <p>
                             <input type="button" value="Responder" class="chamaResposta" onclick="resposta3()">
@@ -120,18 +120,18 @@
                 </h4>
     
                 <form id="verdadeiroOuFalso">
-                    <li>
-                        <input type="checkbox" name="VouF1" id="VouF1" class="VouF" value="1"><label for="VouF1" id="verdOuFals01">Um ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    <li class="lista1">
+                        <input type="checkbox" name="VouF1" id="VouF1" class="VouF" value="1"><label class="alternativa1" for="VouF1" id="verdOuFals01">Um ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
                     </li>
                             
-                    <li>
-                        <input type="checkbox" name="VouF1" id="VouF2" class="VouF" value="2" ><label for="VouF2" id="verdOuFals02">Dois ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    <li class="lista1">
+                        <input type="checkbox" name="VouF1" id="VouF2" class="VouF" value="2" ><label class="alternativa1" for="VouF2" id="verdOuFals02">Dois ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="VouF1" id="VouF3" class="VouF" value="3" ><label for="VouF3" id="verdOuFals03">TrÊs ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    <li class="lista1">
+                        <input type="checkbox" name="VouF1" id="VouF3" class="VouF" value="3" ><label class="alternativa1" for="VouF3" id="verdOuFals03">TrÊs ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="VouF1" id="VouF4" class="VouF" value="4" ><label for="VouF4" id="verdOuFals04">Quatro ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    <li class="lista1">
+                        <input type="checkbox" name="VouF1" id="VouF4" class="VouF" value="4" ><label class="alternativa1" for="VouF4" id="verdOuFals04">Quatro ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
                     </li>
                         
                 </form>

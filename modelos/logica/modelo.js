@@ -1,4 +1,11 @@
 
+function embaralhar() {
+    var questão1 = document.querySelectorAll('.lista1')
+    questão1 = embrulha(questão1)
+    multiplaEscolha1 = document.querySelectorAll('.multiplaEscolha1')
+    multiplaEscolha1 = embrulha(multiplaEscolha1)
+}
+
 // Questões abertas
 
 function resposta1() {
@@ -119,4 +126,14 @@ function verificarResposta(input, item1, item2, item3) {
         console.log(ponto)
     }
     return ponto
+}
+
+function embrulha(questão) {
+    var c = questão.length - 1
+    for (c;c>0;c--) {
+        console.log(c)
+        var i = Math.floor(Math.random() * c+1);
+        [questão[c].innerHTML, questão[i-1].innerHTML] = [questão[i-1].innerHTML, questão[c].innerHTML];
+    }
+    return questão
 }
