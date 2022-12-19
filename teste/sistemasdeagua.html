@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeah Yeah Teste</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/yeahyeah.png" type="image/x-icon">
+</head>
+<body>
+        
+    
+    <section>
+        <h1>Yeah Yeah Sistema de Água</h1>
+        <p id="menu"></p>
+        <span>
+            Questão 01
+        </span>
+        <div id="um"></div>
+
+            <div id="q1" class="questão">
+                <div id="pergunta1" class="perguntas">
+                    <h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, repellat ex inventore. Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
+                    </h4>
+                    <p>
+                        <input type="text" name="resp" id="textoResposta1" class="questãoAberta">
+                        <p>
+                            <input type="button" class="chamaResposta" value="Responder" onclick="resposta1()">
+                        </p>
+                        <p><span id="correção1"></span></p>
+                    </p>
+                </div>
+                <div id="resp1" class="respota">
+                    <p>
+                        Ventilador do S3, Ventilador do S4 e Sala de eletrotécnica.
+                    </p>
+                </div>
+            </div>
+        </div>  
+
+        <hr>
+        
+        <span>
+            Questão 02
+        </span>
+        <div id="dois">
+            
+            <div id="q2" class="questão">
+                
+                <div id="pergunta2" class="perguntas">
+                    <h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, <input type="text" name="resp" id="textoResposta2" class="complete">. Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
+                    </h4>
+                    <p>
+                        <input type="button" value="Responder" class="chamaResposta" onclick="resposta2()">
+                    </p>
+                    <p><span id="correção2"></span></p>
+                </div>
+                <div id="resp2" class="respota">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, <strong>resposta correta</strong>, alias sequi qui, officiis ullam omnis voluptatem dolores accusantium tempore! Quasi, doloribus nesciunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 03
+        </span>
+        <div id="tres">
+            
+            <div class="sumir" id="quest03">
+                <div id="q3" class="questão">
+                    <div id="pergunta3" class="perguntas">
+                        <h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est officia labore enim numquam quaerat deserunt aut, cum maiores, Deleniti itaque repellat officia, quo nisi voluptatibus fugit?
+                        </h4>
+                        <form id="alternativas1">
+                                    <li>
+                                        <input type="radio" name="opção1" id="opção1" class="marqueX" value="1"><label for="opção1" class="escolha" id="m01">Huashdua, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga bla! Velit saepe necessitatibus.</label>
+                                    </li>
+            
+                                    <li>
+                                        <input type="radio" name="opção1" id="opção2" class="marqueX" value="2"><label for="opção2" class="escolha" id="m02">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="opção1" id="opção3" class="marqueX" value="3"> <label for="opção3" class="escolha" id="m03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="opção1" id="opção4" class="marqueX" value="4"> <label for="opção4" class="escolha" id="m04">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae fuga praesentium! Velit saepe necessitatibus.</label>
+                                    </li>
+                        </form>
+                        <p>
+                            <input type="button" value="Responder" class="chamaResposta" onclick="resposta3()">
+                        </p>
+                        <p><span id="correção3"></span></p>
+                    </div>
+                    <div id="resp3" class="respota">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <span>
+            Questão 04
+        </span>
+        <div id="quatro">
+            <div class="sumir" id="quest04">
+                <h4>
+                    Marque as opções<span class="sublinhado">verdadeiras:</span>
+                </h4>
+    
+                <form id="verdadeiroOuFalso">
+                    <li>
+                        <input type="checkbox" name="VouF1" id="VouF1" class="VouF" value="1"><label for="VouF1" id="verdOuFals01">Um ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    </li>
+                            
+                    <li>
+                        <input type="checkbox" name="VouF1" id="VouF2" class="VouF" value="2" ><label for="VouF2" id="verdOuFals02">Dois ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="VouF1" id="VouF3" class="VouF" value="3" ><label for="VouF3" id="verdOuFals03">TrÊs ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="VouF1" id="VouF4" class="VouF" value="4" ><label for="VouF4" id="verdOuFals04">Quatro ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium neque recusandae deserunt.</label>
+                    </li>
+                        
+                </form>
+                <p>
+                    <input type="button" value="Responder" class="chamaResposta" onclick="resposta4()">
+                </p>
+                <p><span id="correção4"></span></p>
+            </div>
+            <div id="resp4" class="respota">
+    
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <hr>
+
+        
+        <script src="logica/questoes.js"></script>
+        <script src="logica/respostas"></script>
+    </section>
+</body>
+</html>
