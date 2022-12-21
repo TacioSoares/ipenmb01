@@ -1,6 +1,11 @@
 
 @charset "UTF-8";
 
+@font-face {
+    font-family: desafio;
+    src: url(../font/static/Unbounded-Light.ttf);
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -16,6 +21,13 @@ html {
     margin: 0px;
     padding-bottom: 40px;
     margin-bottom: 20px;
+}
+h2{
+    font-family: desafio;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
+
 }
 #embaralhar {
     display: block;
