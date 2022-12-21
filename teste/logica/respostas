@@ -39,12 +39,18 @@ function resposta2() {
 // Questões de multipla escolha
 
 function resposta3() {
-    var input = document.querySelector('#alternativas1').opção1.value
+    alternativas = document.querySelectorAll('.escolha')
+    var input = document.querySelector('input[name="opção1"]:checked')
+    if (input == null) {
+        return alert('Escolha uma das opções')
+    }
+    limpaTudo(alternativas)
     mostrarAlternativaCerta(3)
-    if (input == 3) {
+    if (input.value == 3) {
         respostaCorreta(3)
     } else {
         respostaIncorreta(3)
+        mostrarErro(input.nextSibling)
     }
 }
 
@@ -54,6 +60,7 @@ function resposta4() {
     var input = document.querySelector('#verdadeiroOuFalso').VouF1
     correta = ['1','3']
     var ponto = contarPonto(input)
+    console.log(ponto)
     var rCerta = [document.querySelector('#verdOuFals01'),document.querySelector('#verdOuFals03')]
     validaVouF(ponto, correta, rCerta)
 }
@@ -89,7 +96,7 @@ function mostrarAlternativaCerta(n) {
 }    
 
 function contarPonto(input) {
-    var ponto = 0
+    ponto = 0
     input.forEach(caixa => {
         if(caixa.checked) {
             if((correta.indexOf(caixa.value)) != -1){
@@ -131,9 +138,18 @@ function verificarResposta(input, item1, item2, item3) {
 function embrulha(questão) {
     var c = questão.length - 1
     for (c;c>0;c--) {
-        console.log(c)
         var i = Math.floor(Math.random() * c+1);
         [questão[c].innerHTML, questão[i-1].innerHTML] = [questão[i-1].innerHTML, questão[c].innerHTML];
     }
     return questão
+}
+
+function mostrarErro(errada) {
+    errada.style.backgroundColor = 'red'
+}
+
+function limpaTudo(todas) {
+    todas.forEach(alternativa => {
+        alternativa.style.backgroundColor = 'white'
+    });
 }
