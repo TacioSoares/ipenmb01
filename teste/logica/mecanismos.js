@@ -104,7 +104,7 @@ function embrulha(questão) {
 }
 
 function mostrarErro(errada) {
-    errada.style.backgroundColor = 'red'
+    errada.style.backgroundColor = 'rgb(252, 52, 52)'
 }
 
 function limpaTudo(todas) {
