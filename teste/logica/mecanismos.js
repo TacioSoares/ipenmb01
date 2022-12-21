@@ -1,3 +1,13 @@
+// embaralhar alternativas
+
+function embaralhar() {
+    var questão1 = document.querySelectorAll('.lista1')
+    questão1 = embrulha(questão1)
+    multiplaEscolha1 = document.querySelectorAll('.multiplaEscolha1')
+    multiplaEscolha1 = embrulha(multiplaEscolha1)
+}
+
+
 // funções chamadas nas questões
 
 function respostaCorreta(n) {
@@ -40,6 +50,22 @@ function contarPonto(input) {
         }
     });
     return (ponto)
+}
+
+function validaçãoDoInput(input) {
+    valor = 0
+    input.forEach(alternativa => {
+        if (alternativa.checked) {
+            valor += 1
+        } else {
+            valor -= 1
+        }
+    });
+    if (valor == -4) {
+        return true
+    } else {
+        return false
+    }
 }
 
 function validaVouF(ponto, correta, rCerta) {

@@ -1,10 +1,3 @@
-function embaralhar() {
-    var questão1 = document.querySelectorAll('.lista1')
-    questão1 = embrulha(questão1)
-    multiplaEscolha1 = document.querySelectorAll('.multiplaEscolha1')
-    multiplaEscolha1 = embrulha(multiplaEscolha1)
-}
-
 
 // Questões abertas
 
@@ -58,7 +51,7 @@ function resposta3() {
 
 function resposta4() {
     var input = document.querySelector('#verdadeiroOuFalso').VouF1
-    if (validaçãoDasVouF(input)) {
+    if (validaçãoDoInput(input)) {
         return window.alert('Escolha pelo menos um das alternativas')
     }
     correta = ['1','3']
@@ -68,18 +61,4 @@ function resposta4() {
 }
 
 
-function validaçãoDasVouF(input) {
-    valor = 0
-    input.forEach(alternativa => {
-        if (alternativa.checked) {
-            valor += 1
-        } else {
-            valor -= 1
-        }
-    });
-    if (valor == -4) {
-        return true
-    } else {
-        return false
-    }
-}
+
