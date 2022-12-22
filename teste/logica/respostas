@@ -20,7 +20,7 @@ function resposta1() {
 
 function resposta2() {
     var input = document.querySelector('#textoResposta2').value
-    var resp = /\s*\bar[\s]*condicionado\b\s*/gi
+    var resp = /\s*\b[aqzs]+[retdf]+[\s]*[c vxf]+[oipljk]+[n mjbgh]+[dsefc]+[iuojk]+[c vxf]+[iuojk]+[oipljk]+[n mjbgh]+[aqzs]+[dsefc]+[oipljk]+\b\s*/gi
     mostrarResposta(2)
     if (resp.test(input)) {
         respostaCorreta(2)
