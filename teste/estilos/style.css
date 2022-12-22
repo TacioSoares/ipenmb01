@@ -16,14 +16,30 @@ html {
     text-indent: 10px;
     box-sizing: border-box;
 }
+section {
+    background-image: url(../imagens/fundoyeahyea03.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+div {
+    background-color: white;
+}
 #menu {
     background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
     margin: 0px;
     padding-bottom: 40px;
-    margin-bottom: 20px;
+}
+.numeroDaQuestão {
+    display: block;
+    padding-top: 10px;
 }
 p {
     border: 0px solid transparent;
+}
+.perguntas {
+    margin: auto;
+    max-width: 900px;
 }
 h2{
     font-family: desafio;
@@ -50,9 +66,6 @@ h4 {
 }
 #icone {
     width: 20px;
-}
-section {
-    background-color: white;
 }
 span {
     display: inline-block;
@@ -146,8 +159,9 @@ li {
     color: black;
 }
 .questão {
-    margin: 0px;
+    margin: auto;
     padding: 0px;
+    max-width: 900px;
 }
 .marqueX {
     margin-right: 20px;
