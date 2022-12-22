@@ -4,9 +4,9 @@
 function resposta1() {
     var input = document.querySelector('#textoResposta1').value
    // var resp = new RegExp("ventilador\\s*?\\w{0,3}\\s*?S3",'gi')
-    item1 = "[v bfcg]+[ewrdsf]+[n mjbgh]+[trfyhg]+[iujok]+[lko]+[aqwsz]+[dsefc]+[oipljk]+[retdf]+\\s*?\\w{0,3}\\s*?S3" // <- Os cochêtes são para caso de erro de digitação
-    item2 = "[v bfcg]+[ewrdsf]+[n mjbgh]+[trfyhg]+[ujoki]+[lko]+[aqwsz]+[dsefc]+[oipljk]+[retdf]+\\s*?\\w{0,3}\\s*?S4"
-    item3 = "[saxdw]+[aqzs]+[lçkom]+[aqzs]+\\s*?\\w{0,3}\\s*?[ewrdsf]+[lkop]+[ewrdsf]+[tyrgf]+[retdf]+[oipljk]+[trfyhg]+[éewrdsf´ ]+[c vxfd]+[n mjbgh]+[iujok]+[c vxfd]+[aqzs]+"
+    item1 = "[v bfcg]+[ewrdsf]*[n mjbgh]+[trfyhg]+[iujok]*[lko]+[aqwsz]*[dsefc]+[oipljk]*[retdf]+\\s*?\\w{0,3}\\s*?S3" // <- Os cochêtes são para caso de erro de digitação
+    item2 = "[v bfcg]+[ewrdsf]*[n mjbgh]+[trfyhg]+[ijoku]*[lko]+[aqwsz]*[dsefc]+[oipljk]*[retdf]+\\s*?\\w{0,3}\\s*?S4"
+    item3 = "[saxdw]+[aqzs]*[lçkom]+[aqzs]*\\s*?\\w{0,3}\\s*?[ewrdsf]*[lkop]+[ewrdsf]*[tyrgf]+[retdf]+[oipljk]*[trfyhg]+[éewrdsf´ ]*[c vxfd]+[n mjbgh]+[iujok]*[c vxfd]+[aqzs]*"
     var ponto = verificarResposta(input, item1, item2, item3)
     mostrarResposta(1)
     if (ponto > 0) {
@@ -20,7 +20,7 @@ function resposta1() {
 
 function resposta2() {
     var input = document.querySelector('#textoResposta2').value
-    var resp = /\s*\b[aqzs]+[retdf]+[\s]*[c vxf]+[oipljk]+[n mjbgh]+[dsefc]+[iuojk]+[c vxf]+[iuojk]+[oipljk]+[n mjbgh]+[aqzs]+[dsefc]+[oipljk]+\b\s*/gi
+    var resp = /\s*\b[aqzs]*[retdf]+[\s]*[c vxf]+[oipljk]*[n mjbgh]+[dsefc]+[iuojk]*[c vxf]+[iuojk]*[oipljk]*[n mjbgh]+[aqzs]*[dsefc]+[oipljk]*\b\s*/gi
     mostrarResposta(2)
     if (resp.test(input)) {
         respostaCorreta(2)
@@ -62,3 +62,11 @@ function resposta4() {
 
 
 
+/* Regras para o RegEx das questões de preencher:
+
+        - É permitido erro de digitação em caso de apertar botões próximos ao botão certo
+
+        - É permitido erro de digitação para caso as vogais da palavras não tenham sido digitadas, exceto para as quais as palavras precisem dessa vogal para ser destinguida.
+
+        - É permitido erro de digitação para caso palavras acentuadas sejam digitadas erradas, como pode exemplo: ´e 
+*/
