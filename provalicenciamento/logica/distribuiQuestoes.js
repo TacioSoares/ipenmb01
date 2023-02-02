@@ -1,34 +1,54 @@
 
 
-function sorteiaQuestao() {
+function sorteiaQuestao(X) {
     numeroDoBanco = []
-    while (numeroDoBanco.length < 5) {
-        var numero = Math.floor(Math.random() * 6)
-        if (numeroDoBanco.indexOf(numero) == -1) {
-            numeroDoBanco.push(numero)
-        } 
+    if(X == 'A') {
+        while (numeroDoBanco.length < 5) {
+            var numero = Math.floor(Math.random() * 6)
+            if (numeroDoBanco.indexOf(numero) == -1) {
+                numeroDoBanco.push(numero)
+            } 
+        }
+        return numeroDoBanco
+    } else if (X == 'B') {
+        while (numeroDoBanco.length < 3) {
+            var numero = Math.floor(Math.random() * 6)
+            if (numeroDoBanco.indexOf(numero) == -1) {
+                numeroDoBanco.push(numero)
+            } 
+        }
     }
-    return numeroDoBanco
 }
 
 
 
-function pegaCampoPergunta() {
-    var pergunta = document.querySelectorAll('.perguntas')
-    //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
-    return pergunta
+function pegaCampoPergunta(X) {
+    if (X == 'A') {
+        var pergunta = document.querySelectorAll('.perguntas')
+        //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
+        return pergunta
+    } else if (X == 'B') {
+        var pergunta = document.querySelectorAll('.perguntasB')
+        return pergunta
+    }
 }
 function pegaCampoResposta() {
-    var resposta = document.querySelectorAll('.resposta')
-    //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
-    return resposta
+    if (X == 'A') {
+        var resposta = document.querySelectorAll('.resposta')
+        //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
+        return resposta
+    } else if (X == 'B') {
+        var resposta = document.querySelectorAll('.respostaB')
+        return resposta
+    }   
 }
 
 
-function distribuiQuestao() {
-    var campoPergunta = pegaCampoPergunta()
-    var campoResposta = pegaCampoResposta()
-    var numeroDoBanco = sorteiaQuestao()
+function distribuiQuestao(X) {
+
+    var campoPergunta = pegaCampoPergunta(X)
+    var campoResposta = pegaCampoResposta(X)
+    var numeroDoBanco = sorteiaQuestao(X)
     i = 0
     while (i < campoResposta.length) {
         // Inserindo perguntas do banco na página
@@ -40,4 +60,5 @@ function distribuiQuestao() {
     }
 }
 
-distribuiQuestao()
+distribuiQuestao('A')
+//distribuiQuestao('B')
