@@ -17,6 +17,7 @@ function sorteiaQuestao(X) {
                 numeroDoBanco.push(numero)
             } 
         }
+        return numeroDoBanco
     }
 }
 
@@ -29,10 +30,11 @@ function pegaCampoPergunta(X) {
         return pergunta
     } else if (X == 'B') {
         var pergunta = document.querySelectorAll('.perguntasB')
+        console.log(pergunta)
         return pergunta
     }
 }
-function pegaCampoResposta() {
+function pegaCampoResposta(X) {
     if (X == 'A') {
         var resposta = document.querySelectorAll('.resposta')
         //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
@@ -50,15 +52,26 @@ function distribuiQuestao(X) {
     var campoResposta = pegaCampoResposta(X)
     var numeroDoBanco = sorteiaQuestao(X)
     i = 0
-    while (i < campoResposta.length) {
-        // Inserindo perguntas do banco na página
-        campoPergunta[i].firstElementChild.innerHTML = secaoA[numeroDoBanco[i]].pergunta
+    if (X == 'A') {
+        while (i < campoPergunta.length) {
+            // Inserindo perguntas do banco na página
+            campoPergunta[i].firstElementChild.innerHTML = secaoA[numeroDoBanco[i]].pergunta
 
-        // Inserindo respostas do banco na página
-        campoResposta[i].firstElementChild.innerHTML = secaoA[numeroDoBanco[i]].resposta
-        i ++
-    }
+            // Inserindo respostas do banco na página
+            campoResposta[i].firstElementChild.innerHTML = secaoA[numeroDoBanco[i]].resposta
+            i ++
+        }
+    } else if (X == 'B') {
+        while (i < campoPergunta.length) {
+            // Inserindo perguntas do banco na página
+            campoPergunta[i].firstElementChild.innerHTML = secaoB[numeroDoBanco[i]].pergunta
+
+            // Inserindo respostas do banco na página
+            campoResposta[i].firstElementChild.innerHTML = secaoB[numeroDoBanco[i]].resposta
+            i ++
+        }
+    }   
 }
 
 distribuiQuestao('A')
-//distribuiQuestao('B')
+distribuiQuestao('B')

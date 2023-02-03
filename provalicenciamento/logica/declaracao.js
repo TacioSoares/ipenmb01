@@ -36,5 +36,9 @@ const secaoB = [
     {
         pergunta: 'Qual a magnitude da fonte de nêutrons usada no Reator IPEN/MB-01?',
         resposta: `A fonte de Amerício-Berílio utilizada no Reator IPEN/MB-01 tem a seguinte magnitude: <br> Atividade = 1 Curie <br> Fluxo neutrônico em 4π = 2,5x106 nêutrons/segundo.`
+    },
+    {
+        pergunta: 'Esboce o gráfico da distribuição de fluxo de nêutrons térmicos em uma vareta combustível do Reator IPEN/MB-01.',
+        resposta: ``
     }
 ]
