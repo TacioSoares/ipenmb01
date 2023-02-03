@@ -1,10 +1,10 @@
-
+console.log(secaoA.length)
 
 function sorteiaQuestao(X) {
     numeroDoBanco = []
     if(X == 'A') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.floor(Math.random() * 6)
+            var numero = Math.floor(Math.random() * 46)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             } 
@@ -26,18 +26,15 @@ function sorteiaQuestao(X) {
 function pegaCampoPergunta(X) {
     if (X == 'A') {
         var pergunta = document.querySelectorAll('.perguntas')
-        //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
         return pergunta
     } else if (X == 'B') {
         var pergunta = document.querySelectorAll('.perguntasB')
-        console.log(pergunta)
         return pergunta
     }
 }
 function pegaCampoResposta(X) {
     if (X == 'A') {
         var resposta = document.querySelectorAll('.resposta')
-        //pergunta[0].firstElementChild.innerHTML = secaoB[1].pergunta
         return resposta
     } else if (X == 'B') {
         var resposta = document.querySelectorAll('.respostaB')

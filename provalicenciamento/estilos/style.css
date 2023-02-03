@@ -24,6 +24,7 @@ section {
     background-attachment: fixed;
 }
 div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
 }
 #menu {
@@ -54,6 +55,11 @@ h2{
 }
 h4 {
     margin-bottom: 8px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+p {
+    font-size: 1em;
 }
 .correção {
     margin: auto;
@@ -115,8 +121,6 @@ input:hover {
 .resposta {
     display: none;
     margin-top: 10px;
-    border: 1px solid darkgreen;
-    border-radius: 8px;
 }
 .chamaResposta {
     display: block;
@@ -186,4 +190,31 @@ li {
 img {
     width: 70vw;
     background-color: rgb(252, 52, 52);
+}
+#imgQuestao {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+}
+.respostaB {
+    display: none;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+thead {
+    background-color: blanchedalmond;
+    font-weight: bolder;
+}
+td {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 8px;
+}
+tr:nth-child(2n) {
+    background-color: rgba(128, 128, 128, 0.233);
+}
+tfoot {
+    font-weight: bolder;
 }
