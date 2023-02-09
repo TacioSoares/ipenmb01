@@ -191,12 +191,26 @@ img {
     width: 70vw;
     background-color: rgb(252, 52, 52);
 }
-#imgQuestao {
+.imgQuestao {
     display: block;
     margin: auto;
     max-width: 600px;
 }
+.imgFormula {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
 .respostaB {
+    display: none;
+}
+.respostaC {
+    display: none;
+}
+.respostaD {
+    display: none;
+}
+.respostaE {
     display: none;
 }
 table {
