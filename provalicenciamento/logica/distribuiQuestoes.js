@@ -3,6 +3,7 @@ console.log(`Seção B tem ${secaoB.length}`)
 console.log(`Seção C tem ${secaoC.length}`)
 console.log(`Seção D tem ${secaoD.length}`)
 console.log(`Seção E tem ${secaoE.length}`)
+console.log(`Seção F tem ${secaoF.length}`)
 function sorteiaQuestao(X) {
     numeroDoBanco = []
     if(X == 'A') {
@@ -45,6 +46,14 @@ function sorteiaQuestao(X) {
             } 
         }
         return numeroDoBanco
+    } else if (X == 'F') {
+        while (numeroDoBanco.length < 3) {
+            var numero = Math.floor(Math.random() * 36)
+            if (numeroDoBanco.indexOf(numero) == -1) {
+                numeroDoBanco.push(numero)
+            } 
+        }
+        return numeroDoBanco
     }
 
 }
@@ -67,25 +76,14 @@ function pegaCampoPergunta(X) {
     } else if (X == 'E') {
         var pergunta = document.querySelectorAll('.perguntasE')
         return pergunta
+    } else if (X == 'F') {
+    var pergunta = document.querySelectorAll(`.perguntas${X}`)
+        return pergunta
     }   
 }
 function pegaCampoResposta(X) {
-    if (X == 'A') {
-        var resposta = document.querySelectorAll('.resposta')
-        return resposta
-    } else if (X == 'B') {
-        var resposta = document.querySelectorAll('.respostaB')
-        return resposta
-    } else if (X == 'C') {
-        var resposta = document.querySelectorAll('.respostaC')
-        return resposta
-    } else if (X == 'D') {
-        var resposta = document.querySelectorAll('.respostaD')
-        return resposta
-    } else if (X == 'E') {
-        var resposta = document.querySelectorAll('.respostaE')
-        return resposta
-    }   
+    var resposta = document.querySelectorAll(`.resposta${X}`)
+    return resposta   
 }
 
 
@@ -140,6 +138,15 @@ function distribuiQuestao(X) {
             campoResposta[i].firstElementChild.innerHTML = secaoE[numeroDoBanco[i]].resposta
             i ++
         }
+    } else if (X == 'F') {
+        while (i < campoPergunta.length) {
+            // Inserindo perguntas do banco na página
+            campoPergunta[i].firstElementChild.innerHTML = secaoF[numeroDoBanco[i]].pergunta
+
+            // Inserindo respostas do banco na página
+            campoResposta[i].firstElementChild.innerHTML = secaoF[numeroDoBanco[i]].resposta
+            i ++
+        }
     }   
 }
 
@@ -148,3 +155,4 @@ distribuiQuestao('B')
 distribuiQuestao('C')
 distribuiQuestao('D')
 distribuiQuestao('E')
+distribuiQuestao('F')
