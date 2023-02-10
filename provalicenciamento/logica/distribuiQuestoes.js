@@ -61,25 +61,9 @@ function sorteiaQuestao(X) {
 
 
 function pegaCampoPergunta(X) {
-    if (X == 'A') {
-        var pergunta = document.querySelectorAll('.perguntas')
-        return pergunta
-    } else if (X == 'B') {
-        var pergunta = document.querySelectorAll('.perguntasB')
-        return pergunta
-    } else if (X == 'C') {
-        var pergunta = document.querySelectorAll('.perguntasC')
-        return pergunta
-    } else if (X == 'D') {
-        var pergunta = document.querySelectorAll('.perguntasD')
-        return pergunta
-    } else if (X == 'E') {
-        var pergunta = document.querySelectorAll('.perguntasE')
-        return pergunta
-    } else if (X == 'F') {
     var pergunta = document.querySelectorAll(`.perguntas${X}`)
-        return pergunta
-    }   
+    return pergunta
+    
 }
 function pegaCampoResposta(X) {
     var resposta = document.querySelectorAll(`.resposta${X}`)

@@ -118,7 +118,7 @@ input:hover {
     height: 50px;
     width: 90%;
 }
-.resposta {
+.respostaA {
     display: none;
     margin-top: 10px;
 }
@@ -211,6 +211,9 @@ img {
     display: none;
 }
 .respostaE {
+    display: none;
+}
+.respostaF {
     display: none;
 }
 table {
