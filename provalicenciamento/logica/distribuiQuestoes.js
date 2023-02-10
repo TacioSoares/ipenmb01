@@ -141,7 +141,6 @@ function distribuiQuestao(X) {
         }
     }   
 }
-
 distribuiQuestao('A')
 distribuiQuestao('B')
 distribuiQuestao('C')
