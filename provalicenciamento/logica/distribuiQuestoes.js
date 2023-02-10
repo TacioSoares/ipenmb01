@@ -4,6 +4,7 @@ console.log(`Seção C tem ${secaoC.length}`)
 console.log(`Seção D tem ${secaoD.length}`)
 console.log(`Seção E tem ${secaoE.length}`)
 console.log(`Seção F tem ${secaoF.length}`)
+console.log(`Seção G tem ${secaoG.length}`)
 function sorteiaQuestao(X) {
     numeroDoBanco = []
     if(X == 'A') {
@@ -54,11 +55,16 @@ function sorteiaQuestao(X) {
             } 
         }
         return numeroDoBanco
+    } else if (X == 'G') {
+        while (numeroDoBanco.length < 7) {
+            var numero = Math.floor(Math.random() * 56)
+            if (numeroDoBanco.indexOf(numero) == -1) {
+                numeroDoBanco.push(numero)
+            } 
+        }
+        return numeroDoBanco
     }
-
 }
-
-
 
 function pegaCampoPergunta(X) {
     var pergunta = document.querySelectorAll(`.perguntas${X}`)
@@ -72,7 +78,6 @@ function pegaCampoResposta(X) {
 
 
 function distribuiQuestao(X) {
-
     var campoPergunta = pegaCampoPergunta(X)
     var campoResposta = pegaCampoResposta(X)
     var numeroDoBanco = sorteiaQuestao(X)
@@ -131,6 +136,15 @@ function distribuiQuestao(X) {
             campoResposta[i].firstElementChild.innerHTML = secaoF[numeroDoBanco[i]].resposta
             i ++
         }
+    } else if (X == 'G') {
+        while (i < campoPergunta.length) {
+            // Inserindo perguntas do banco na página
+            campoPergunta[i].firstElementChild.innerHTML = secaoG[numeroDoBanco[i]].pergunta
+
+            // Inserindo respostas do banco na página
+            campoResposta[i].firstElementChild.innerHTML = secaoG[numeroDoBanco[i]].resposta
+            i ++
+        }
     }   
 }
 
@@ -140,3 +154,4 @@ distribuiQuestao('C')
 distribuiQuestao('D')
 distribuiQuestao('E')
 distribuiQuestao('F')
+distribuiQuestao('G')

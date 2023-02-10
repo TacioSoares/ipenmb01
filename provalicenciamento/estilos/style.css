@@ -16,6 +16,19 @@ html {
     text-indent: 10px;
     box-sizing: border-box;
 }
+#menu {
+    background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
+    margin: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.material-symbols-outlined {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
 section {
     background-image: url(../imagens/fundoyeahyea03.png);
     background-repeat: no-repeat;
@@ -27,11 +40,7 @@ div {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
 }
-#menu {
-    background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
-    margin: 0px;
-    padding-bottom: 40px;
-}
+
 .numeroDaQuestão {
     display: block;
     padding-top: 10px;
@@ -121,6 +130,7 @@ input:hover {
 .respostaA {
     display: none;
     margin-top: 10px;
+    text-indent: 0px;
 }
 .chamaResposta {
     display: block;
@@ -203,18 +213,27 @@ img {
 }
 .respostaB {
     display: none;
+    text-indent: 0px;
 }
 .respostaC {
     display: none;
+    text-indent: 0px;
 }
 .respostaD {
     display: none;
+    text-indent: 0px;
 }
 .respostaE {
     display: none;
+    text-indent: 0px;
 }
 .respostaF {
     display: none;
+    text-indent: 0px;
+}
+.respostaG {
+    display: none;
+    text-indent: 0px;
 }
 table {
     border-collapse: collapse;

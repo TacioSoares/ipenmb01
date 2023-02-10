@@ -348,5 +348,465 @@ const secaoF = [
         3)	Operações fora das especificações técnicas ou que podem comprometer a segurança da Instalação.
         `
     },
-    
+]
+
+const secaoG = [
+    {
+        pergunta: `Quais são os principais objetivos do Sistema de Proteção Radiológica?`,
+        resposta: `Os principais objetivos são os de evitar o aparecimento de efeitos determinísticos e limitar a probabilidade de incidência de efeitos estocásticos.`
+    },
+    {
+        pergunta: `O que tem de ser verificado para que uma atividade que origine exposição humana às radiações ionizantes seja justificada`,
+        resposta: `Que o benefício líquido resultante da atividade seja positivo e suficientemente grande como para compensar as incertezas`
+    },
+    {
+        pergunta: `O que é uma exposição ocupacional?`,
+        resposta: `É aquela que é produzida durante o desenvolvimento do trabalho devido à exposição a fontes de radiação artificiais ou naturais incrementadas por ação humana.`
+    },
+    {
+        pergunta: `Quais são os limites de doses efetivas vigentes e que aparecem no Regulamento de proteção radiológica?`,
+        resposta: `Os limites são 20 mSv/a para trabalhadores e 1 mSv/a para o público (média aritmética em 5 anos definidos)`
+    },
+    {
+        pergunta: `O que serão registradas no histórico dosimétrico correspondente a pessoas expostas ocupacionalmente?`,
+        resposta: `Deve ser classificado como IOE (Indivíduo Operacionalmente Exposto).`
+    },
+    {
+        pergunta: `Quais são os limites de dose estabelecidos pela CNEN?`,
+        resposta: `
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        Dose Efetiva
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DOSE CORPO INTEIRO</td>
+                    <td>100 mSv/ 5 Anos</td>
+                </tr>
+                <tr>
+                    <td>DOSE MÉDIA</td>
+                    <td>20 mSv/ Ano</td>
+                </tr>
+                <tr>
+                    <td>DOSE MÁXIMA</td>
+                    <td>50 mSv/ Ano</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <td colspan="2">DOSE EQUIVALENTE</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DOSE NO CRISTALINO</td>
+                    <td>20 mSv/ Ano</td>
+                </tr>
+                <tr>
+                    <td>DOSE NA PELE</td>
+                    <td>500 mSv/ Ano</td>
+                </tr>
+                <tr>
+                    <td>DOSE NAS MÃOS E PÉS</td>
+                    <td>500 mSv/ Ano</td>
+                </tr>
+            </tbody>
+        </table>
+        `
+    },
+    {
+        pergunta: `Qual a função do sistema de monitoração de radiação no Reator IPEN/MB-01? Como ele é composto?`,
+        resposta: `A função do sistema de monitoração de radiação no Reator IPEN/MB-01 é: <br><br>
+        -Proteção e segurança do Reator IPEN/MB-01 e do pessoal a ele relacionado. <br>
+        Ele é composto por:<br>
+        -Monitoração de Área.<br>
+        -Monitoração de Dutos de Ar.<br>
+        -Monitoração do Ar.
+        `
+    },
+    {
+        pergunta: `Cite ao menos três responsabilidades do IOE (Indivíduos Operacionalmente Exposto) do Reator IPEN/MB-01?`,
+        resposta: `Basta escolher três entre as citadas a seguir: <br>
+        <ul>
+            <li>Manter-se atualizado quanto aos procedimentos da instalação;</li>
+            <li>Executar as tarefas de acordo com os procedimentos da instalação;</li>
+            <li>Utilizar os equipamentos de proteção individual;</li>
+            <li>Evitar exposições desnecessárias;</li>
+            <li>Comparecer aos treinamentos dados pelo Supervisor de Radioproteção;</li>
+            <li>Monitorar-se após realizar tarefas que envolvam materiais radioativos;</li>
+            <li>Em áreas sujeitas a contaminação: não fumar, não consumir alimentos, não guardar utensílios utilizados em alimentação e não aplicar cosméticos;</li>
+            <li>Lavar as mãos após sair de áreas controladas ou supervisionadas;</li>
+            <li>Monitorar a área onde realizou uma tarefa envolvendo material radioativo;</li>
+            <li>Identificar claramente equipamentos contaminados e amostras radioativas;</li>
+            <li>Segregar e identificar os rejeitos e utilizar os recipientes de coleta de rejeitos de forma correta;</li>
+            <li>Informar imediatamente a ERP quando uma contaminação acidental for detectada tendo o cuidado de sinalizar a área para evitar a dispersão da contaminação;</li>
+            <li>Realizar as descontaminações, relativas aos seus procedimentos rotineiros após o término da tarefa;</li>
+            <li>Utilizar dosímetros de maneira correta;</li>
+            <li>Não utilizar roupas de proteção, que foram utilizadas em áreas controladas ou supervisionadas, em áreas livres (principalmente em locais destinados a alimentação);</li>
+            <li>Comparecer às monitorações in-vivo quando convocados;</li>
+            <li>Ceder amostras para análises biológicas quando requisitado;</li>
+            <li>Informar, ao Coordenador Local de Emergência, qualquer evento de seu conhecimento que possa levar a algum tipo de emergência;</li>
+            <li>Cumprir os procedimentos e recomendações de radioproteção.</li>
+        </ul>
+        `
+    },
+    {
+        pergunta: `Cite ao menos duas finalidades dos monitores de área.`,
+        resposta: `Basta escolher duas entre as citadas a seguir: <br>
+        <ul>
+            <li>Fornecer informação contínua dos níveis de radiação das várias áreas da Instalação;</li>
+            <li>Sinalizar de forma audível e visual, quando da ocorrência de níveis de radiação anormais;</li>
+            <li>Determinar o nível de radiação antes do acesso à área;</li>
+            <li>Informar a movimentação inadvertida ou não autorizada de materiais radioativos;</li>
+            <li>Fornecer informação dos níveis de radiação em caso de acidente.</li>
+        </ul> 
+        `
+    },
+    {
+        pergunta: `Cite pelo menos três procedimentos de operação visando à proteção contra a radiação do trabalhador.`,
+        resposta: `Basta escolher três entre os citados a seguir: <br>
+        <ul>
+            <li>-Durante as operações normais, são efetuadas monitorações do nível de radiação nas áreas que compõem a instalação, para verificar a adequação da blindagem e a normalidade da operação;</li>
+            <li>-O planejamento de operações e atividades é efetuado com base nas monitorações;</li>
+            <li>-As áreas cujos níveis de radiação estejam acima dos limites têm acesso controlado;</li>
+            <li>-Todos os materiais radioativos são manuseados á distância, através de equipamentos apropriados;</li>
+            <li>-Equipamentos de proteção individual são usados sempre que necessário;</li>
+            <li>-Nos trabalhos com radiação, a Proteção Radiológica estabelece um programa de rodízio de pessoal, para minimizar as doses nos trabalhadores. </li>
+            <li>-Evita-se a disseminação da contaminação;</li>
+            <li>-A leitura dos dosímetros de corpo inteiro e de extremidades é mensal;</li>
+            <li>-Durante a permanência na Célula Crítica é obrigatório o uso de dosímetro individual de leitura direta.</li>
+            <li>-Após o desligamento do reator, o acesso à Célula Crítica só poderá ser permitido com a autorização da ERP.</li>
+            <li>-A retirada de materiais irradiados só poderá ser realizada com autorização da ERP.</li>
+        </ul>
+        `
+    },
+    {
+        pergunta: `O que deve ser informado a um visitante antes de adentrar as áreas supervisionadas e/ou controladas? Quem é o responsável pelo visitante?`,
+        resposta: `Os visitantes devem receber da ERP ou do IOE acompanhante, uma explicação sobre o significado do símbolo internacional da radiação e das sirenes de emergência e informações sobre as rotas de fuga e ponto de encontro, antes de seu acesso. <br>
+        Visitantes devem ser acompanhados por um IOE qualificado que será responsável pela visita durante toda a permanência dela na instalação.
+        `
+    },
+    {
+        pergunta: `Somente quando pode ocorrer o acesso à Célula Crítica?`,
+        resposta: `
+        <ul>
+            <li>O reator estiver desligado;</li>
+            <li>O Tanque Moderador (TQ-201) estiver vazio;</li>
+            <li>A taxa de dose na Célula Crítica for compatível com a duração da tarefa a ser realizada;</li>
+            <li>For utilizado o equipamento de proteção individual previsto para a área;</li>
+            <li>Quando a atividade requerer o uso de dosímetro de leitura direta, é responsabilidade de o IOE informar à ERP os valores iniciais e finais da leitura do dosímetro, quando o dosímetro não for entregue e recolhido pela ERP.</li>
+        </ul>
+        `
+    },
+    {
+        pergunta: `Quais os procedimentos na saída da área controlada?`,
+        resposta: `Na saída das áreas controladas as pessoas devem ser monitoradas por meio de monitores de pés, mãos e roupas. <br>
+        É responsabilidade de o IOE acompanhante encaminhar o visitante para a monitoração.<br>
+        A leitura dos dosímetros de leitura direta deverá ser registrada no livro de entrada/saída.
+        `
+    },
+    {
+        pergunta: `Como é feita a monitoração de Área? Como é constituído cada canal?`,
+        resposta: `A monitoração de Área é realizada por intermédio de canais independentes destinados a fazer a monitoração em locais fixos e estratégicos do reator.<br>
+        Cada canal é constituído de um detector de radiação, discriminador, indicador, alarmes de nível de radiação (2 níveis) e alarme de falha interna.<br>
+        Alguns destes canais são acoplados a registradores. Os indicadores e registradores destes sensores estão localizados em “racks” na sala de controle e na sala da proteção radiológica.
+        `
+    },
+    {
+        pergunta: `Como é feita a monitoração dutos de Ar e quais são as suas finalidades?`,
+        resposta: `Os monitores de radiação gama estão instalados no sistema de condicionamento de Ar e Ventilação da Célula Crítica.
+        As finalidades são: <br><br>
+        a.	Iniciar algumas ações de controle (acionamento de válvulas).<br>
+        b.	Acionamento de alarmes.<br>
+        Uma chave seletora permite a escolha de uma, entre várias medidas, para ser registrada continuamente.<br>
+        Alguns destes canais são permanentemente acoplados a um registrador.
+        Os sensores deste sistema são representados por detectores do tipo Geiger Muller.
+        `
+    },
+    {
+        pergunta: `Como é feita a monitoração de Ar e quais são as suas finalidades?`,
+        resposta: `Existem dois conjuntos de monitores que acompanham e registram de forma contínua os níveis de radiação no ar ambiente. <br>
+        O ar é aspirado por meio de uma bomba de vácuo, passando através de um filtro, conjugado com um detector de radiação. O sinal é processado por meio de um amplificador analisador monocanal e medidor de taxas de contagem, sendo fornecida a indicação da atividade depositada por meio de um medidor registrador. Um alarme é acionado toda vez que níveis elevados de radiação são detectados.<br>
+        O sistema monitora a presença de diversos tipos de isótopos (I-131, gases nobres, etc.). Para o I-131 é possível, também, fazer uma seleção de acordo com a energia da radiação`
+    },
+    {
+        pergunta: `Uma das grandezas que caracteriza um feixe de radiação ionizante é a Exposição. Qual é a unidade corresponde a esta grandeza?`,
+        resposta: `A unidade que corresponde esta grandeza é:
+        C/kg
+        `
+    },
+    {
+        pergunta: `Qual a grandeza usada para estimar a probabilidade de ocorrência de câncer, efeitos estocásticos, para uma exposição à radiação?`,
+        resposta: `A grandeza usada é:
+        Dose Efetiva.
+        `
+    },
+    {
+        pergunta: `No sistema internacional, quais as unidades correspondentes às grandezas; dose efetiva, dose equivalente, atividade e dose absorvida?`,
+        resposta: `As unidades correspondentes às grandezas são:
+        Sievert, sievert, becquerel e gray.
+        `
+    },
+    {
+        pergunta: `Uma dose aguda de 0,25 Sv no corpo inteiro de um indivíduo irá causar:`,
+        resposta: `Não causará nenhum efeito clinicamente detectável.`
+    },
+    {
+        pergunta: `A radiação pode danificar uma determinada molécula por dois tipos de mecanismos: direto e indireto. Qual é o mecanismo indireto mais importante?`,
+        resposta: `O mecanismo indireto mais importante é a radiólise da água.`
+    },
+    {
+        pergunta: `Por que existe limiar para efeitos determinísticos?`,
+        resposta: `Porque é necessário que muitas células morram para o sintoma aparecer.`
+    },
+    {
+        pergunta: `Qual é a estrutura da célula que quando danificada pela radiação, é responsável pelo aparecimento de um efeito estocástico?`,
+        resposta: `A estrutura responsável é o cromossomo.`
+    },
+    {
+        pergunta: `Com relação ao Plano de Radioproteção do Reator IPEN/MB-01, dizer o que significa as seguintes siglas:<br>
+        CIRS;<br> COLE;<br> CASI;<br> GEL;<br> IOE;<br> ERP.
+        `,
+        resposta: `CIRS: Comitê Interno de Revisão de Segurança.<br>
+        COLE: Coordenador Local de Emergência Radiológica.<br>
+        CASI: Comitê de Avaliação de Segurança Interna.<br>
+        GEL: Grupo de Emergência Local<br>
+        IOE: Indivíduo Ocupacionalmente Exposto
+        `
+    },
+    {
+        pergunta: `Quem representa o COLE do Reator IPEN/MB-01?`,
+        resposta: `Quem representa é o Supervisor da Radioproteção.`
+    },
+    {
+        pergunta: `Quais são os membros do GEL?`,
+        resposta: `Os membros do GEL do Reator IPEN/MB-01 são: <br><br>
+        -COLE (Coordenador Local de Emergência Radiológica)<br>
+        -Responsável da Instalação.<br>
+        -Operadores Licenciados da Instalação.<br>
+        -IOE (prestando serviço na Instalação).<br>
+        -ERP (Equipe de Radioproteção).<br>
+        -Brigada de Incêndio.
+        `
+    },
+    {
+        pergunta: `O que é o CIRS e qual a sua função?`,
+        resposta: `O CIRS é um órgão técnico colegiado que tem o objetivo de assessorar o gerente do Centro de Engenharia Nuclear do IPEN/CNEN/SP.
+        Sua função é proporcionar uma análise das questões relativas à segurança de modo a fornecer subsídios para a adoção e verificação de uma sistemática operacional segura e confiável, sem, no entanto, retirar do chefe da Instalação a responsabilidade pela Operação da Instalação. <br>
+        O CIRS é formado pelo do chefe do Reator IPEN/MB-01, três Operadores Seniores do Reator (OSR) e por um Operador do Reator (OR) escolhido entre funcionários do IPEN e do CTMSP e por um representante da Proteção Radiológica do Reator IPEN/MB-01. Este representante é o Supervisor da Radioproteção do Reator IPEN/MB-01.
+        `
+    },
+    {
+        pergunta: `O que significa Sala de Emergência e onde ela se localiza na Instalação Reator IPEN/MB-01?`,
+        resposta: `É o local de encontro da população do Reator IPEN/MB-01, no evento de uma situação de Emergência Radiológica. Ela é a própria sala de controle do Reator.`
+    },
+    {
+        pergunta: `O que é o COLE numa emergência radiológica e qual sua função?`,
+        resposta: `É o coordenador local de Emergência Radiológica.<br>
+        Ele é responsável por centralizar e controlar a documentação durante a situação de Emergência de maneira a permitir a reconstituição do histórico de emergência, avaliar a situação real ou potencial de emergência, juntamente com o responsável pela Instalação, acionar o GRP e dar suporte e assessoria de radioproteção aos grupos responsáveis pelo atendimento de emergência não radiológica (exemplo a brigada de incêndio etc.).
+        `
+    },
+    {
+        pergunta: `Qual a responsabilidade do chefe do Reator numa emergência radiológica?`,
+        resposta: `Em caso de situação potencial ou real de emergência, solicitar relatórios técnicos aos grupos envolvidos no PER do IPEN e elaborar relatório final para encaminhamento à Superintendência; manter as condições que assegurem a aplicabilidade e o acionamento do PEL; designar um técnico para acompanhamento de manutenção interno ou externo; manter a Superintendência informada sobre a evolução da situação após a avaliação realizada pelos grupos envolvidos e manter o local da Instalação as condições de aplicação dos procedimentos de emergência nuclear.`
+    },
+    {
+        pergunta: `Qual a responsabilidade do ERP numa emergência radiológica?`,
+        resposta: `Triagem do pessoal na Instalação; avaliações preliminares das taxas de dose pessoais e locais; interdição das áreas de emergência; envio de documentos individuais para leitura; procedimentos de descontaminação; encaminhamento de pessoas para medidas de corpo inteiro.`
+    },
+    {
+        pergunta: `O que são áreas controladas? Quais são as áreas controladas do Reator IPEN/MB-01 e quais as características das atividades desenvolvidas nestas áreas?`,
+        resposta: `São áreas onde o nível de radiação externa podem resultar em doses individuais iguais ou superiores a 3,0μSv/h, ou iguais ou superiores a 6 mSv acumuladas em um ano.<br>
+        No Reator IPEN/MB-01, as áreas controladas são:<br>
+        <ul>
+            <li>-Célula Crítica e seus subsolos.</li>
+            <li>-Ala quente dos Laboratórios.</li>
+        </ul>
+        As características de atividade são:<br>
+        <ul>
+            <li>-Ter procedimento escrito no Manual de Operação ou procedimento aprovado por escrito pelo CIRS.</li>
+            <li>-Só podem ser exercidos pelo IOE devidamente treinados.</li>
+            <li>-Atividades próximas ao núcleo só podem ser realizados no mínimo por dois IOE.</li>
+            <li>-Ser planejada (para evitar doses desnecessárias).</li>
+        </ul>
+        `
+    },
+    {
+        pergunta: `O que são áreas supervisionadas? Quais são elas? Qualquer pessoa pode executar atividades nessas áreas?`,
+        resposta: `São áreas onde o nível de radiação externa podem resultar em doses individuais superiores a 0,5μSv/h, ou inferiores a 6 mSv acumuladas em um ano.<br>
+        As áreas supervisionadas do Reator IPEN/MB-01 são:<br><br>
+        -Ala fria do Laboratório de descontaminação.
+        -Laboratório de espectrometria.<br><br>
+        Não, nessas áreas as atividades só poderão ser executadas por um IOE devidamente treinado.
+        `
+    },
+    {
+        pergunta: `O que são áreas livres?`,
+        resposta: `São áreas onde a taxa de dose e o risco de contaminação por material radioativo é baixo o suficiente para assegurar que em condições normais, o nível de proteção para aqueles que trabalham no local seja comparável com o nível de proteção exigido para exposição ao público. Nestas áreas as doses individuais são inferiores a 0,5μSv/h.`
+    },
+    {
+        pergunta: `Quais são as classes de emergência do Reator IPEN/MB-01?`,
+        resposta: `a)	Evento não usual <br>
+        b)	Alerta<br>
+        c)	Emergência ou classe I<br>
+        `
+    },
+    {
+        pergunta: `O que é um evento não usual?`,
+        resposta: `É uma classe de acidente onde não há possibilidade de liberação de material radioativo para o meio ambiente.`
+    },
+    {
+        pergunta: `O que é um evento de alerta?`,
+        resposta: `É uma classe de acidente onde houve liberação significativa de material radioativo no interior da célula crítica, podendo haver liberação para o meio ambiente.`
+    },
+    {
+        pergunta: `O que é um evento classe I?`,
+        resposta: `É uma classe de acidente quando há liberação de material radioativo para o meio ambiente.`
+    },
+    {
+        pergunta: `Cite exemplos de eventos não usuais.`,
+        resposta: `Queda de objetos ou ferramentas no Tanque do Reator, porém fora do núcleo. <br><br>
+        Queda moderada de uma vareta combustível sem rompimento do encamisamento.<br><br>
+        Fenômenos naturais intensos (chuva, ventos etc.).
+        `
+    },
+    {
+        pergunta: `Cite exemplos de condições de alerta`,
+        resposta: `Queda de ferramentas ou de objetos sobre o núcleo.<br><br>
+        Queda grave de vareta combustível com rompimento do encamisamento.<br><br>
+        Incêndios em áreas que contém material radioativo.
+        `
+    },
+    {
+        pergunta: `Cite exemplos de condições de emergência.`,
+        resposta: `Qualquer um dos eventos de alerta com ocorrência de níveis de radiação indicados nos detectores fixos de área que ultrapasse 1000μGy/h.<br><br>
+        Impacto de míssil ou aeronave.<br><br>
+        Sabotagem completada com sucesso.<br><br>
+        Explosões na área do prédio afetando a integridade física.
+        `
+    },
+    {
+        pergunta: `Quais os objetivos do PER?`,
+        resposta: `a)	Atendimento a um acidente radioativo<br>
+        b)	Retorno às condições de normalidade.
+        `
+    },
+    {
+        pergunta: `Cite os principais locais do Reator IPEN/MB-01, onde há perigos de radiação.`,
+        resposta: `a)	Ao redor do Tanque do Moderador.<br><br>
+        b)	Na sala de fontes da ala quente do edifício de Apoio.<br><br>
+        c)	Na sala de fonte de partida do Reator IPEN/MB-01.<br><br>
+        d)	Na “glove box” de manuseio de montagens e desmontagens de varetas combustíveis e varetas especiais.
+        `
+    },
+    {
+        pergunta: `Qual é taxa de dose ao redor do Tanque do Reator quando este operou durante uma hora a 100 W, no instante zero após seu desligamento? Nesta condição é possível que um operador receba esta taxa de dose?`,
+        resposta: `A taxa de dose neste instante é de 18 R/h ou 180 mSv/h.<br>
+        Não, pois ele só poderá emergencialmente entrar na Célula Crítica uma hora após o desligamento quando a taxa de dose já caiu para 1,4 R/h e mesmo assim monitorado pela radioproteção obedecendo todos os critérios de dose mínima.
+        `
+    },
+    {
+        pergunta: `Qual é a taxa de dose de radiação na Célula Crítica durante uma operação a 100 W de potência durante uma hora? Ela é maior que a taxa de dose logo após o desligamento do Reator no instante zero? Por quê?`,
+        resposta: `A taxa de dose durante a operação a 100 W após uma hora de operação é de 9,3 R/h ou 93 mSv/h. <br>
+        Não, ela é menor em virtude da blindagem que o moderador exerce durante a operação. Segundo medidas experimentais realizadas, a taxa de dose no instante zero após a queda das barras e esvaziamento do tanque do moderador, a taxa de dose é de 18,0 R/h ou 180 mSv/h.
+        `
+    },
+    {
+        pergunta: `Qual é a taxa de dose de radiação na sala de controle em condições normais de operação, isto é com o reator operando a 100 W de potência?`,
+        resposta: `A taxa de dose é aproximadamente 7,5μSv/h.`
+    },
+    {
+        pergunta: `Qual é a taxa de dose a um metro da fonte de partida?`,
+        resposta: `25μSv/h.`
+    },
+    {
+        pergunta: `Qual a dose aguda teórica devido aos nêutrons e gama na sala de controle após um acidente básico de projeto (retirada incontrolada da barra de controle)?`,
+        resposta: `Devido a nêutrons é de 0,0005 Sv e devido a gama é de 0,021 Sv.`
+    },
+    {
+        pergunta: `Qual a dose teórica nos limites da área de exclusão (cerca da Instalação) devido à retirada incontrolada da barra de controle?`,
+        resposta: `Inferior a 5 mSv/h`
+    },
+    {
+        pergunta: `O que significa termo fonte?`,
+        resposta: `São tipos, quantidades e formas químicas de radionuclídios que compreendem a fonte de potencial de exposição à radioatividade.`
+    },
+    {
+        pergunta: `Quais são os termos fontes na célula crítica em operação normal e em acidentes?`,
+        resposta: `a)	Em operação normal: <br><br>
+        -Produtos de ativação da água e dos materiais ativados que ficam retidos nas resinas do STAM.<br>
+        -Radionuclídeos gerados pela ativação do ar da célula crítica.<br>
+        -Radionuclídeos gerados nos experimentos.<br><br>
+        b)	Em condição de acidente:<br><br>
+        A análise efetuada para o termo fonte em acidentes postula um acidente que poderá ocorrer durante a operação de troca e estocagem de varetas combustíveis. Este acidente é analisado no capítulo XV do RAS. Na ocorrência deste evento, o sistema de ventilação S1 opera em regime de exaustão e recirculação havendo liberação de material radioativo para a atmosfera até o momento em que os dampers são fechados. O fechamento dos dampers ocorre quando a concentração de I-131 atinge o valor de perigo 10⁴ CPM detectável pelo RITH-156 Detector de Dutos da Chaminé.
+        `
+    },
+    {
+        pergunta: `Quais são os termos fonte referente aos experimentos nos laboratórios?`,
+        resposta: `Os termos fontes ligados à preparação de experimentos e as atividades de laboratórios são identificados, avaliados e tratados conforme exigências específicas de cada experimento, devido ser atendidos os requisitos estabelecidos nos procedimentos de proteção radiológica da Instalação.`
+    },
+    {
+        pergunta: `Como são feitos os tratamentos de rejeitos líquidos gerados no Reator IPEN/MB-01?`,
+        resposta: `
+        a)	Gerados na célula crítica.<br>
+        Os rejeitos gerados na célula crítica são oriundos do sistema de drenagem do tanque do moderador e tanque de estocagem. Estes materiais juntamente com os produtos oriundos do Subsistema de Drenagem da Célula Crítica (SDCC), provenientes dos drenos das covas dos elementos combustíveis, ralos do piso do segundo subsolo da célula crítica são encaminhados para o tanque de decaimento. A liberação de efluentes do tanque de decaimento pode ser feita na rede de esgotos do IPEN, ou acondicionado em bombonas, isso tudo em função de uma análise prévia de amostra e da autorização do Departamento de Monitoração Ambiental(NA) do IPEN de acordo com a norma (CNEN-NE 3.01).<br><br>
+        b)	Gerados nos laboratórios do edifício de apoio.<br>
+        Os rejeitos gerados nos laboratórios, sala de descontaminação, lavanderia são encaminhados ao Sistema de Drenagem do Edifício de Apoio (SDEA), para o tanque de retenção e mistura. Neste sistema os rejeitos poderão ser diluídos apropriadamente no tanque de mistura e de acordo com as Diretrizes Básicas da Radioproteção, pode seguir os seguintes rumos:<br><br>
+        1)	Liberação direta na rede a partir do tanque de retenção.<br>
+        2)	Liberação na rede após diluição no tanque de mistura.<br>
+        3)	Coleta em bombonas para envio à Gerência de Rejeitos Radioativos do IPEN.
+
+        `
+    },
+    {
+        pergunta: `Como são feitos os tratamentos de rejeitos gasosos gerados no Reator IPEN/MB-01?`,
+        resposta: `a)	Gerados na célula crítica. <br>
+        Os gases oriundos de possíveis escapes das varetas combustíveis ou de varetas especiais ou de algum experimento que possam gerar gases radioativos são retidos no sistema de filtros dos sistemas de Recirculação e Exaustão. Cada um destes sistemas é composto por 2 trens redundantes de filtros absolutos e de carvão. Os filtros de carvão retêm os produtos gasosos radioativos e os filtros absolutos (HEPA) retém os particulados.
+        O controle de nível de radioatividade e de contaminantes radioativos é feito por monitores de dutos instalados na exaustão e recirculação e chaminé.<br><br>
+        
+        b)	Gerados na Capela de Manuseio de materiais radioativos.<br>
+        São gerados exclusivamente na capela de manuseio de materiais radioativos que possui um mecanismo de exaustão independente com pressão negativa em relação ao ambiente do laboratório e um conjunto próprio de pré-filtros, filtros absolutos e de carvão ativado. Após a filtragem, o controle dos contaminantes radioativos é feito por monitor com detector cintilador de iodeto de sódio com módulo de leitura local.
+        O controle da eliminação na chaminé é efetuado por um monitor de Iodo, tal que não ultrapasse o valor limite estabelecido nas Diretrizes Básicas da Radioproteção (CNEN-NE3.01).
+        No histórico de funcionamento do Reator IPEN/MB-01, os rejeitos liberados sempre estiveram abaixo dos limites estabelecidos pela Radioproteção.
+        `
+    },
+    {
+        pergunta: `Como são feitos os tratamentos de rejeitos sólidos gerados no Reator IPEN/MB-01?`,
+        resposta: `•	Principais rejeitos sólidos gerados: <br><br>
+        -papéis<br>
+        -toalhas<br>
+        -vidrarias<br>
+        -materiais de limpeza<br>
+        -materiais de proteção individual contaminados.<br>
+        -resinas de troca iônica<br>
+        -filtros<br><br>
+        •	Acondicionamento<br>
+        Os materiais são compactáveis quando for o caso, e encaminhados à Gerência de Rejeitos Radioativos do IPEN onde são acondicionados em recipientes metálicos de 200 l revestidos internamente com tinta epóxi, para posterior armazenamento.
+        As resinas do Sistema de Água de Moderação (STAM), são previamente analisadas e em função da atividade medida, podem ser armazenadas ou devolvidas aos fornecedores, onde são tomadas as decisões apropriadas.<br><br>
+        •	Histórico
+        Dentro do histórico de funcionamento do reator, pode-se desconsiderar a geração de rejeitos sólidos.
+        `
+    },
+    {
+        pergunta: `Como é feita a amostragem de resíduos líquidos e gasosos?`,
+        resposta: `a)	Rejeitos Líquidos <br>
+        Os rejeitos líquidos gerados na célula crítica são coletados adequadamente e enviados à Divisão Ambiental do IPEN onde é realizada uma análise por espectrometria gama. Essa análise quantifica e qualifica os radionuclídios presentes na amostra e especifica a forma de eliminação dos rejeitos de acordo com as Diretrizes Básicas da Radioproteção.<br>
+        Os rejeitos gerados nos laboratórios são direcionados ao Sistema de Drenagem do Edifício de Apoio (SDEA).<br>
+        Uma amostra é retirada adequadamente do tanque de retenção e encaminhada à Divisão Ambiental do IPEN para análise.<br><br>
+        b)	Rejeitos gasosos
+        Os monitores de radiação relativos aos circuitos de condicionamento de ar e ventilação estão instalados nos dutos de ar, fixados “on line”.
+        `
+    },
+    {
+        pergunta: `Relacione as etapas básicas para remoção dos rejeitos líquidos gerados na Célula Crítica.`,
+        resposta: `1.	Após coletada no tanque de decaimento (TQ-203) a água é recirculada para homogeneização  <br><br>
+        2.	Uma amostra da água é enviada para o Departamento de Monitoração Ambiental da proteção radiológica do IPEN para análises radio químicas e outra para o laboratório químico da instalação.<br><br>
+        3.	Se necessário a água do tanque de decaimento poderá ser “acondicionada” em recipientes apropriados para futuro destino a ser definido pelo serviço de proteção radiológica (ambiental).<br><br>
+        4.	Se os resultados das análises químicas e radio químicas estiverem dentro dos limites permissíveis, a drenagem do tanque de decaimento será realizada por recalque para a rede de águas pluviais.
+        `
+    }
 ]
