@@ -1,15 +1,9 @@
-console.log(`Seção A tem ${secaoA.length}`)
-console.log(`Seção B tem ${secaoB.length}`)
-console.log(`Seção C tem ${secaoC.length}`)
-console.log(`Seção D tem ${secaoD.length}`)
-console.log(`Seção E tem ${secaoE.length}`)
-console.log(`Seção F tem ${secaoF.length}`)
-console.log(`Seção G tem ${secaoG.length}`)
+
 function sorteiaQuestao(X) {
     numeroDoBanco = []
     if(X == 'A') {
         while (numeroDoBanco.length < 6) {
-            var numero = Math.floor(Math.random() * 84)
+            var numero = Math.floor(Math.random() * 93)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -17,7 +11,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'B') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.floor(Math.random() * 88)
+            var numero = Math.floor(Math.random() * 79)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             } 

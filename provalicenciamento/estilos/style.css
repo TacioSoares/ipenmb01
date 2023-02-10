@@ -29,6 +29,37 @@ html {
     color: white;
     cursor: pointer;
 }
+#janelaMenu {
+    display: none;
+    flex-direction: column;
+    text-indent: 0px;
+}
+#janelaMenu > p {
+    text-align: center;
+    font-weight: bold;
+}
+.opcaoMenu {
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    cursor: pointer;
+    padding: 3px;
+    color: black;
+    margin-top: 2px;
+}
+label {
+    cursor: pointer;
+}
+.destaque {
+    font-weight: bold;
+}
+.opcaoMenu:hover {
+    padding: 2px;
+    transition: 0.5s;
+    border: 1.2px solid rgba(0, 0, 0, 0.589);
+    border-radius: 3px;
+}
 section {
     background-image: url(../imagens/fundoyeahyea03.png);
     background-repeat: no-repeat;
@@ -174,7 +205,7 @@ li {
     text-decoration: underline;
     color: black;
 }
-.questão {
+.questãoSecaoA, .questãoSecaoB, .questãoSecaoC, .questãoSecaoD, .questãoSecaoE, .questãoSecaoF, .questãoSecaoG  {
     margin: auto;
     padding: 0px;
     max-width: 900px;

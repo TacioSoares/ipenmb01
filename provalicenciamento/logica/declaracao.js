@@ -617,9 +617,7 @@ T = Período do reator. <br>
         Cádmio e Índio componentes da liga das barras de controle
         Xe-135 e Sm-149 como produtos originados no núcleo devido a fissões e decaimentos dos produtos de fissão.
         `
-    }
-]
-const secaoB = [
+    },
     {
         pergunta: `O que significa calibração de uma barra de controle?`,
         resposta: `Para um dado reator e para um dado núcleo é importante saber a magnitude da reatividade dos elementos absorvedores de controle. Por isso a calibração de uma barra deve sempre ser refeita quando se altera as características do núcleo incluindo combustível, moderador e estruturas.
@@ -690,6 +688,8 @@ const secaoB = [
         5)	Os engradados seguintes seguiram o mesmo rumo e cuidados até completar o carregamento do completo do núcleo
         `
     },
+]
+const secaoB = [
     {
         pergunta: 'Qual a fonte de nêutrons utilizada no Reator IPEN/MB-01?',
         resposta: 'A fonte utilizada no Reator IPEN/MB-01 é a fonte de Amerício-Berílio'
