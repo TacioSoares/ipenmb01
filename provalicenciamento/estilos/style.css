@@ -43,12 +43,14 @@ html {
     justify-content: space-between;
     font-weight: lighter;
     border: 1px solid rgba(0, 0, 0, 0.589);
-    cursor: pointer;
     padding: 3px;
     color: black;
     margin-top: 2px;
 }
 label {
+    cursor: pointer;
+}
+.filtro {
     cursor: pointer;
 }
 .destaque {
