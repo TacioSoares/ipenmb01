@@ -166,6 +166,7 @@ input:hover {
     display: none;
     margin-top: 10px;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 .chamaResposta {
     display: block;
@@ -249,26 +250,32 @@ img {
 .respostaB {
     display: none;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 .respostaC {
     display: none;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 .respostaD {
     display: none;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 .respostaE {
     display: none;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 .respostaF {
     display: none;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 .respostaG {
     display: none;
     text-indent: 0px;
+    color: rgb(109, 107, 107);
 }
 table {
     border-collapse: collapse;
