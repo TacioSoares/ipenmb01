@@ -45,6 +45,7 @@ html {
     text-indent: 0px;
     animation: mostrar 1s ease-in-out forwards;
     background-color: transparent;
+    
 }
 @keyframes mostrar {
     from {
@@ -66,6 +67,9 @@ html {
     color: black;
     margin-top: 2px;
     min-height: 40px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
 }
 
 label {
@@ -247,6 +251,8 @@ li {
     margin: auto;
     padding: 0px;
     max-width: 900px;
+    transition-duration: 2s;
+    transition-property: opacity;
 }
 .marqueX {
     margin-right: 20px;
