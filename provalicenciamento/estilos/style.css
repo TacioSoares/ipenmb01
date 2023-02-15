@@ -29,10 +29,27 @@ html {
     color: white;
     cursor: pointer;
 }
+.material-symbols-outlined:hover {
+    scale: 1.2;
+    transition: scale 2s;
+    animation: piscar 0.5s ease-in-out infinite alternate;
+}
+@keyframes piscar {
+    to {
+        opacity: 40%;
+    }
+}
 #janelaMenu {
     display: none;
     flex-direction: column;
     text-indent: 0px;
+    animation: mostrar 1s ease-in-out forwards;
+    background-color: transparent;
+}
+@keyframes mostrar {
+    from {
+        transform: translate(0px, -25px);
+    }
 }
 #janelaMenu > p {
     text-align: center;
@@ -40,14 +57,17 @@ html {
 }
 .opcaoMenu {
     display: flex;
+    background-color: white;
     justify-content: space-between;
     font-weight: lighter;
     border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 5px;
     padding: 3px;
     color: black;
     margin-top: 2px;
-    min-height: 38px;
+    min-height: 40px;
 }
+
 label {
     cursor: pointer;
 }
@@ -87,13 +107,20 @@ p {
     margin: auto;
     max-width: 900px;
 }
-h2{
+#título{
     font-family: desafio;
     text-align: center;
-    color: white;
+    color: transparent;
     background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
-
+    animation: preencheLetra 2s ease-in-out forwards 1s;
 }
+@keyframes preencheLetra {
+    to {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+}
+
 .posição {
     padding: 0px;
 }
@@ -139,7 +166,7 @@ span {
     border: 1px solid black;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
 }
-section > h1 {
+section > header > h1 {
     text-align: center;
     padding: 30px;
     color: white;
@@ -167,13 +194,19 @@ input:hover {
     margin-top: 10px;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
+}
+@keyframes mostrar2 {
+    from {
+        transform: translate(0px, -10px);
+    }
 }
 .chamaResposta {
     display: block;
     margin-bottom: 5px;
     cursor: pointer;
-    margin-top: 12px;
     margin: auto;
+    margin-bottom: 12px;
     padding: 3px;
     border: 1px solid gray;
     border-radius: 5px;
@@ -251,31 +284,37 @@ img {
     display: none;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
 }
 .respostaC {
     display: none;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
 }
 .respostaD {
     display: none;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
 }
 .respostaE {
     display: none;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
 }
 .respostaF {
     display: none;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
 }
 .respostaG {
     display: none;
     text-indent: 0px;
     color: rgb(109, 107, 107);
+    animation: mostrar2 1s ease-in-out forwards;
 }
 table {
     border-collapse: collapse;
