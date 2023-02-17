@@ -2,21 +2,21 @@ var botaoMenu = document.querySelector('#botaoMenu')
 var checkBox = document.querySelectorAll('.filtro')
 
 botaoMenu.addEventListener("click", function() {
-    var opcaoMenu = document.querySelector('#janelaMenu')
-    var listaMenu = document.querySelectorAll('.opcaoMenu')
-    if (opcaoMenu.style.display == 'flex') {
-        listaMenu.forEach(opcao => {
-            opcao.style.opacity = '0'
+    var janelaMenu = document.querySelector('#janelaMenu')
+    var opcaoMenu = document.querySelectorAll('.opcaoMenu')
+    if (janelaMenu.style.display == 'flex') {
+        opcaoMenu.forEach(opcao => {
             opcao.style.animationName = 'sair'
+            opcao.style.opacity = '0'
         })
         setTimeout(() => {
-            opcaoMenu.style.display = 'none'
+            janelaMenu.style.display = 'none'
         },1200)
     } else {
-        opcaoMenu.style.display = 'flex'
+        janelaMenu.style.display = 'flex'
         setTimeout(() => {
-            listaMenu.forEach(opcao => {
-                //opcao.style.animationName = 'deslocar'
+            opcaoMenu.forEach(opcao => {
+                opcao.style.animationName = 'deslocar'
                 opcao.style.opacity = '100'
             })
         },300)

@@ -56,39 +56,60 @@ html {
 #filtroA {
     /*animation-name: deslocar;*/
     animation-duration: 0.6s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #filtroB {
     /*animation-name: deslocar;*/
     animation-duration: 0.8s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #filtroC {
     /*animation-name: deslocar;*/
     animation-duration: 1s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #filtroD {
     /*animation-name: deslocar;*/
     animation-duration: 1.2s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #filtroE {
     /*animation-name: deslocar;*/
     animation-duration: 1.4s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #filtroF {
     /*animation-name: deslocar;*/
     animation-duration: 1.6s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 #filtroG {
     /*animation-name: deslocar;*/
     animation-duration: 1.8s;
+    transition-property: opacity;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
 }
 @keyframes deslocar {
     from {
-        transform: translate(60px);
+        transform: translate(1000px);
     }
 }
 @keyframes sair {
     to {
-        transform: translate(500px);
+        transform: translate(1000px);
     }
 }
 #janelaMenu > p {
@@ -106,9 +127,6 @@ html {
     color: black;
     margin-top: 2px;
     min-height: 40px;
-    /*opacity: 0;
-    transition-property: opacity;*/
-    transition-duration: 2s;
 }
 
 label {
