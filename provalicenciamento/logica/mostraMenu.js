@@ -7,6 +7,7 @@ botaoMenu.addEventListener("click", function() {
     if (opcaoMenu.style.display == 'flex') {
         listaMenu.forEach(opcao => {
             opcao.style.opacity = '0'
+            opcao.style.animationName = 'sair'
         })
         setTimeout(() => {
             opcaoMenu.style.display = 'none'
@@ -15,6 +16,7 @@ botaoMenu.addEventListener("click", function() {
         opcaoMenu.style.display = 'flex'
         setTimeout(() => {
             listaMenu.forEach(opcao => {
+                //opcao.style.animationName = 'deslocar'
                 opcao.style.opacity = '100'
             })
         },300)

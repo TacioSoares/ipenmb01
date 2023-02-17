@@ -42,14 +42,53 @@ html {
 #janelaMenu {
     display: none;
     flex-direction: column;
-    text-indent: 0px;
-    animation: mostrar 1s ease-in-out forwards;
+    text-indent: 0px;/*
+    animation: mostrar 1s ease-in-out forwards;*/
     background-color: transparent;
     
 }
+
 @keyframes mostrar {
     from {
-        transform: translate(0px, -25px);
+        transform: translate(1000px, -25px);
+    }
+}
+#filtroA {
+    /*animation-name: deslocar;*/
+    animation-duration: 0.6s;
+}
+#filtroB {
+    /*animation-name: deslocar;*/
+    animation-duration: 0.8s;
+}
+#filtroC {
+    /*animation-name: deslocar;*/
+    animation-duration: 1s;
+}
+#filtroD {
+    /*animation-name: deslocar;*/
+    animation-duration: 1.2s;
+}
+#filtroE {
+    /*animation-name: deslocar;*/
+    animation-duration: 1.4s;
+}
+#filtroF {
+    /*animation-name: deslocar;*/
+    animation-duration: 1.6s;
+}
+#filtroG {
+    /*animation-name: deslocar;*/
+    animation-duration: 1.8s;
+}
+@keyframes deslocar {
+    from {
+        transform: translate(60px);
+    }
+}
+@keyframes sair {
+    to {
+        transform: translate(500px);
     }
 }
 #janelaMenu > p {
@@ -67,8 +106,8 @@ html {
     color: black;
     margin-top: 2px;
     min-height: 40px;
-    opacity: 0;
-    transition-property: opacity;
+    /*opacity: 0;
+    transition-property: opacity;*/
     transition-duration: 2s;
 }
 
