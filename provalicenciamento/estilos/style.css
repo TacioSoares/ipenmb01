@@ -399,3 +399,8 @@ tr:nth-child(2n) {
 tfoot {
     font-weight: bolder;
 }
+
+.formula, .desenho-questao {
+    display: block;
+    margin: auto;
+}
