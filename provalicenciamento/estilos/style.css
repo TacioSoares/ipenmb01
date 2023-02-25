@@ -16,6 +16,33 @@ html {
     text-indent: 10px;
     box-sizing: border-box;
 }
+.cls-44 {
+    animation: show 1.5s ease-in-out infinite alternate 3s;
+}
+.cls-48 {
+    animation: balao 1.5s ease-in-out infinite alternate 3s;
+}
+@keyframes show {
+    to {
+        fill: white;
+    }
+} 
+@keyframes balao {
+    to {
+        stroke: white;
+    }
+}
+@keyframes Sergio {
+    to {
+        display: block;
+    }
+}
+#malandro {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    max-height: 120px;
+}
 #menu {
     background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
     margin: 0px;
@@ -172,15 +199,9 @@ p {
 #título{
     font-family: desafio;
     text-align: center;
-    color: transparent;
+    color: white;
+    text-shadow: 2px 2px 2px black;
     background-image: linear-gradient(to right, rgb(72, 101, 134), rgb(19, 41, 54));
-    animation: preencheLetra 2s ease-in-out forwards 1s;
-}
-@keyframes preencheLetra {
-    to {
-        color: white;
-        text-shadow: 2px 2px 2px black;
-    }
 }
 
 .posição {

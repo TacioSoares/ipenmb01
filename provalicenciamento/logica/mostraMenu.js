@@ -1,6 +1,11 @@
 var botaoMenu = document.querySelector('#botaoMenu')
 var checkBox = document.querySelectorAll('.filtro')
 
+setTimeout(function(){
+    var sergio = document.querySelector('#Sergio')
+    sergio.style.display = 'block'
+},1500)
+
 botaoMenu.addEventListener("click", function() {
     var janelaMenu = document.querySelector('#janelaMenu')
     var opcaoMenu = document.querySelectorAll('.opcaoMenu')
