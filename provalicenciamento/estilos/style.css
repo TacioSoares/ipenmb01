@@ -17,10 +17,10 @@ html {
     box-sizing: border-box;
 }
 .cls-44 {
-    animation: show 1.5s ease-in-out infinite alternate 3s;
+    animation: show 1.5s ease-in-out infinite alternate 3.5s;
 }
 .cls-48 {
-    animation: balao 1.5s ease-in-out infinite alternate 3s;
+    animation: balao 1.5s ease-in-out infinite alternate 3.5s;
 }
 @keyframes show {
     to {
