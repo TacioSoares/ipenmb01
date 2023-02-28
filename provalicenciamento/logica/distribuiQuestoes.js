@@ -151,7 +151,7 @@ distribuiQuestao('F')
 distribuiQuestao('G')
 
 refresh.addEventListener('click', () => {
-    var perguntas = [document.querySelectorAll('.perguntasA'), document.querySelectorAll('.perguntasB'), document.querySelectorAll('.perguntasC'), document.querySelectorAll('.perguntasD'), document.querySelectorAll('.perguntasE'), document.querySelectorAll('.perguntasF'), document.querySelectorAll('.perguntasG')]
+    var perguntas = pegaTodasAsQuestoes()
     perguntas.forEach(secao => {
         secao.forEach(pergunta => {
             pergunta.style.opacity = '0'
@@ -173,3 +173,8 @@ refresh.addEventListener('click', () => {
     }, 1100);
     
 })
+
+function pegaTodasAsQuestoes() {
+    var questoes = [document.querySelectorAll('.perguntasA'), document.querySelectorAll('.perguntasB'), document.querySelectorAll('.perguntasC'), document.querySelectorAll('.perguntasD'), document.querySelectorAll('.perguntasE'), document.querySelectorAll('.perguntasF'), document.querySelectorAll('.perguntasG')]
+    return questoes
+}
