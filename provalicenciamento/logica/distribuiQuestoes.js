@@ -1,7 +1,8 @@
+const refresh = document.querySelector('#refresh')
 
 function sorteiaQuestao(X) {
     numeroDoBanco = []
-    if(X == 'A') {
+    if (X == 'A') {
         while (numeroDoBanco.length < 6) {
             var numero = Math.floor(Math.random() * 93)
             if (numeroDoBanco.indexOf(numero) == -1) {
@@ -14,7 +15,7 @@ function sorteiaQuestao(X) {
             var numero = Math.floor(Math.random() * 79)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
-            } 
+            }
         }
         return numeroDoBanco
     } else if (X == 'C') {
@@ -22,7 +23,7 @@ function sorteiaQuestao(X) {
             var numero = Math.floor(Math.random() * 54)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
-            } 
+            }
         }
         return numeroDoBanco
     } else if (X == 'D') {
@@ -30,7 +31,7 @@ function sorteiaQuestao(X) {
             var numero = Math.floor(Math.random() * 11)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
-            } 
+            }
         }
         return numeroDoBanco
     } else if (X == 'E') {
@@ -38,7 +39,7 @@ function sorteiaQuestao(X) {
             var numero = Math.floor(Math.random() * 41)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
-            } 
+            }
         }
         return numeroDoBanco
     } else if (X == 'F') {
@@ -46,7 +47,7 @@ function sorteiaQuestao(X) {
             var numero = Math.floor(Math.random() * 36)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
-            } 
+            }
         }
         return numeroDoBanco
     } else if (X == 'G') {
@@ -54,7 +55,7 @@ function sorteiaQuestao(X) {
             var numero = Math.floor(Math.random() * 56)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
-            } 
+            }
         }
         return numeroDoBanco
     }
@@ -63,11 +64,11 @@ function sorteiaQuestao(X) {
 function pegaCampoPergunta(X) {
     var pergunta = document.querySelectorAll(`.perguntas${X}`)
     return pergunta
-    
+
 }
 function pegaCampoResposta(X) {
     var resposta = document.querySelectorAll(`.resposta${X}`)
-    return resposta   
+    return resposta
 }
 
 
@@ -83,7 +84,7 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoA[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
     } else if (X == 'B') {
         while (i < campoPergunta.length) {
@@ -92,7 +93,7 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoB[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
     } else if (X == 'C') {
         while (i < campoPergunta.length) {
@@ -101,7 +102,7 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoC[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
     } else if (X == 'D') {
         while (i < campoPergunta.length) {
@@ -110,7 +111,7 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoD[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
     } else if (X == 'E') {
         while (i < campoPergunta.length) {
@@ -119,7 +120,7 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoE[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
     } else if (X == 'F') {
         while (i < campoPergunta.length) {
@@ -128,7 +129,7 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoF[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
     } else if (X == 'G') {
         while (i < campoPergunta.length) {
@@ -137,9 +138,9 @@ function distribuiQuestao(X) {
 
             // Inserindo respostas do banco na página
             campoResposta[i].firstElementChild.innerHTML = secaoG[numeroDoBanco[i]].resposta
-            i ++
+            i++
         }
-    }   
+    }
 }
 distribuiQuestao('A')
 distribuiQuestao('B')
@@ -148,3 +149,27 @@ distribuiQuestao('D')
 distribuiQuestao('E')
 distribuiQuestao('F')
 distribuiQuestao('G')
+
+refresh.addEventListener('click', () => {
+    var perguntas = [document.querySelectorAll('.perguntasA'), document.querySelectorAll('.perguntasB'), document.querySelectorAll('.perguntasC'), document.querySelectorAll('.perguntasD'), document.querySelectorAll('.perguntasE'), document.querySelectorAll('.perguntasF'), document.querySelectorAll('.perguntasG')]
+    perguntas.forEach(secao => {
+        secao.forEach(pergunta => {
+            pergunta.style.opacity = '0'
+        })
+    });
+    setTimeout(() => {
+        perguntas.forEach(secao => {
+            secao.forEach(pergunta => {
+                pergunta.style.opacity = '100'
+            })
+        });
+        distribuiQuestao('A')
+        distribuiQuestao('B')
+        distribuiQuestao('C')
+        distribuiQuestao('D')
+        distribuiQuestao('E')
+        distribuiQuestao('F')
+        distribuiQuestao('G')
+    }, 1100);
+    
+})
