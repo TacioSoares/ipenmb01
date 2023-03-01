@@ -437,6 +437,7 @@ tfoot {
 }
 
 .formula, .desenho-questao {
+    
     display: block;
     margin: auto;
 }
