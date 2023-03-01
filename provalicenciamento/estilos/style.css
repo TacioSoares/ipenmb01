@@ -378,7 +378,8 @@ img {
 .imgFormula {
     display: block;
     margin: auto;
-    max-width: 150px;
+    width: 50%;
+    background-color: transparent;
 }
 .respostaB {
     display: none;
@@ -437,7 +438,7 @@ tfoot {
 }
 
 .formula, .desenho-questao {
-    background-color: white;
+    background-color: transparent;
     width: 90%;
     display: block;
     margin: auto;
