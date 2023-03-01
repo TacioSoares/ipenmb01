@@ -1074,7 +1074,7 @@ const secaoB = [
     },
     {
         pergunta: `Faça um diagrama unifilar simplificado geral do Sistema Elétrico do Prédio do Reator IPEN/MB-01 (somente as cargas e a iluminação via CCM#2)`,
-        resposta: `<img src="/provalicenciamento/imagens/questoes/diag-unifilar.jpg" class="imgQuestao" alt="diagrama unifilar">`
+        resposta: `<img src="./provalicenciamento/imagens/questoes/diag-unifilar.jpg" class="imgQuestao" alt="diagrama unifilar">`
     },
     {
         pergunta: `Cite pelo menos três cargas alimentadas pelo CCM#4`,
