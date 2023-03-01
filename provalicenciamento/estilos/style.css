@@ -437,7 +437,8 @@ tfoot {
 }
 
 .formula, .desenho-questao {
-    
+    background-color: white;
+    width: 90%;
     display: block;
     margin: auto;
 }
