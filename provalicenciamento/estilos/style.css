@@ -162,6 +162,14 @@ header {
     opacity: 0;
 }
 
+.opcaoMenu:hover{
+    background-image: linear-gradient(to left, gray, lightblue);
+    
+}
+.opcaoMenu:active {
+    background-color: transparent;
+    background-image: none;
+}
 label {
     cursor: pointer;
 }
@@ -298,11 +306,15 @@ input:hover {
     margin-top: 10px;
     text-indent: 0px;
     color: rgb(109, 107, 107);
-    animation: mostrar2 1s ease-in-out forwards;
 }
 @keyframes mostrar2 {
     from {
         transform: translate(0px, -10px);
+    }
+}
+@keyframes ocultar {
+    to {
+        transform: translate(0px, -12px);
     }
 }
 .chamaResposta {
