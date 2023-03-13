@@ -224,7 +224,7 @@ const secaoA = [
     },
     {
         pergunta: `O que são nêutrons térmicos?`,
-        resposta: `São nêutrons que estão em equilíbrio térmico com o meio.`
+        resposta: `São nêutrons que estão em equilíbrio térmico com o meio, na mesma faixa de energia.`
     },
     {
         pergunta: `Defina fluxo de nêutrons. `,
@@ -346,7 +346,7 @@ const secaoA = [
         pergunta: `Retirando-se um absorvedor de cádmio do núcleo, a taxa de contagem em um detector dobra. Sabendo que o K<sub>ef</sub> é de 0,99 qual seria o valor de K<sub>ef</sub> inicial?`,
         resposta: `C<sub>2</sub>/C<sub>1</sub> = 1-K<sub>1</sub>/1-K<sub>2</sub> <br>
         Para C<sub>2</sub> = 2C<sub>1</sub> e K<sub>2</sub> = 0,99 tem-se <br>
-        K<sub>1</sub> = 1- C<sub>2</sub>/C<sub>1</sub>(1-K<sub>2</sub>) = 1-2(1-0,99) = 0,98
+        K<sub>1</sub> = 1- (C<sub>2</sub>/C<sub>1</sub>(1-K<sub>2</sub>)) = 1-(2(1-0,99)) = 0,98
         `
     },
     {
@@ -450,10 +450,10 @@ const secaoA = [
     {
         pergunta: `O que é um reator pronto crítico? Qual a condição de pronto criticalidade em pcm do Reator IPEN/MB-01? <br>
         Dados:
-        β<sub>IPEN/MB-01</sub> = 0,0078
+        β<sub>IPEN/MB-01</sub> = 0,00733
         `,
         resposta: `É o reator que se torna crítico apenas com a contribuição dos nêutrons prontos. <br>
-        IPEN/MB-01:Condição de pronto crítico é &rho; = 780 pcm.
+        IPEN/MB-01:Condição de pronto crítico é &rho; = 733 pcm.
         `
     },
     {
@@ -532,7 +532,7 @@ const secaoA = [
         1 fissão = 200 Mev
         `,
         resposta: `1 fissão = 200 MeV = 200x1,6x10<sup>-13</sup> J = 3,2x10<sup>-11</sup> J <br>
-        Portanto 1 fissão/s = 3,2x10<sup>-11</sup> J/s ⟶1 W = 3,12x10<sup>12</sup> fissões/s.
+        Portanto 1 fissão/s = 3,2x10<sup>-11</sup> J/s ⟶1 W = 3,12x10<sup>10</sup> fissões/s.
         `
     },
     {
@@ -577,7 +577,7 @@ const secaoA = [
     },
     {
         pergunta: `Quando um reator se tornará pronto crítico`,
-        resposta: `Quando o reator estiver crítico e, por alguma razão, for inserida uma reatividade igual, em magnitude, à fração efetiva média de nêutrons atrasados.`
+        resposta: `Quando o reator estiver crítico e, por alguma razão, for inserida uma reatividade igual, ou maior, em magnitude, à fração efetiva média de nêutrons atrasados.`
     },
     {
         pergunta: `Durante o “start-up” do Reator, a potência subiu de 10<sup>-8</sup> % a 2x10<sup>-8</sup> % em 2 minutos. Qual foi o período do Reator?`,
@@ -625,8 +625,11 @@ const secaoA = [
         `
     },
     {
-        pergunta: `Nas ações de carregamento e descarregamento do núcleo ou qualquer outro tipo de manuseio de uma vareta combustível são utilizadas ferramentas especiais pelos operadores. Descreva o funcionamento de tais ferramentas.`,
-        resposta: `Estas ferramentas se acoplam no tampão superior da vareta, que possui um perfil reentrante próprio para fixação, ou no próprio tubo de revestimento da vareta, ao longo de seu comprimento. As ferramentas de manuseio de varetas combustíveis dispõem de detalhes construtivos adequados de forma a não arranhar nem causar tensões acentuadas no revestimento da vareta.`
+        pergunta: `Nas ações de carregamento e descarregamento do núcleo ou qualquer outro tipo de manuseio de combustível são utilizadas ferramentas especiais pelos operadores. Descreva o funcionamento de tais ferramentas.`,
+        resposta: `No caso de elementos combustíveis do tipo placa, a movimentação para inserção ou retirada do núcleo acontece via um dispositivo mecânico denominado braço articulado.
+        Para operações de manuseio dos ECs durante o carregamento ou descarregamento nas covas de armazenamento e no núcleo do Conjunto é usada uma ferramenta especial. A ferramenta de manuseio se acopla no eixo de içamento do EC.
+        Qualquer movimentação de EC no Conjunto Crítico é individual, não sendo manuseado mais que um elemento por vez. O armazenamento de ECs em uma das covas de armazenamento existentes no piso do hall do reator é feito numa estrutura metálica composta por placas perfuradas, na forma de um engradado. Este engradado, carregado com os ECs pode ser movimentado até um suporte localizado próximo ao tanque do moderador, fixado à plataforma metálica da Célula Crítica. O número máximo de ECs que podem ser transportados no engradado é de 8 ECs.
+        `
     },
     {
         pergunta: `Como é feito o manuseio de uma vareta combustível?`,
@@ -655,16 +658,16 @@ const secaoA = [
     },
     {
         pergunta: `Como é obedecido o critério relativo à prevenção de criticalidade indesejada durante o manuseio de combustível nas covas?`,
-        resposta: `21 covas existentes no interior da célula crítica podem ser utilizadas para armazenamento de combustível. Estas covas medem 40x40cm e estão separadas entre si de 100 cm. Cada cova suportará no máximo 170 varetas constituídas por um arranjo de 15x15 furos. <br>
+        resposta: `14 covas existentes no interior da célula crítica podem ser utilizadas para armazenamento de combustível. Estas covas medem 40x40x230cm e estão separadas entre si de 100 cm. Cada cova suportará no máximo 170 varetas constituídas por um arranjo de 15x15 furos ou 8 elementos combustíveis do tipo placa. <br>
         Esta configuração é subcrítica mesmo se as covas forem acidentalmente inundadas.
         `
     },
     {
         pergunta: `Descreva brevemente a Área de Estocagem de combustíveis.`,
-        resposta: `•	É composta por 21 covas de dimensões (40x40x230cm) separadas centro a centro por 1 metro. <br>
-        •	Somente 5 das 21 covas contém engradados metálico para conter as varetas. <br>
-        •	Cada cova estocará “a seco” no máximo 170 varetas combustíveis. <br>
-        •	Cada engradado é removível das covas e formado por uma estrutura de aço inox, contendo placas espaçadoras formando um arranjo 15x15 de furos de diâmetro 11 mm e espaçamento centro a centro de 12,9mm. Embora a capacidade seja de 225 varetas a quantidade máxima para transporte é de 170 varetas. <br>
+        resposta: `•	É composta por 14 covas de dimensões (40x40x230cm) separadas centro a centro por 1 metro. <br>
+        •	Somente 5 das 14 covas contém engradados metálico para conter as varetas sendo uma das cinco reservada para varetas danificadas. <br>
+        •	Cada cova estocará “a seco” no máximo 170 varetas combustíveis ou 8 conjunto de placas. Possuem dreno para evitar alagamento em caso de acidentes. <br>
+        •	Cada engradado é removível das covas e formado por uma estrutura de aço inox, contendo placas espaçadoras formando um arranjo 15x15 de furos de diâmetro 11 mm e espaçamento centro a centro de 12,9mm. Embora a capacidade seja de 225 varetas a quantidade máxima para transporte é de 170 varetas ou 8 placas de elemento combustível. <br>
         •	O engradado só pode permanecer: <br>
         -Dentro da cova.
         -Dentro da caixa de blindagem construída em chumbo e revestida de aço inox localizada ao lado do tanque do moderador.
@@ -681,11 +684,12 @@ const secaoA = [
     },
     {
         pergunta: `Descreva o processo de carregamento inicial do núcleo do Reator IPEN/MB-01, somente sob o ponto de vista do transporte e manuseio das varetas combustíveis.`,
-        resposta: `1)	O carregamento foi feito em dez etapas. <br>
-        2)	Todas as varetas combustíveis recebidas na Instalação, vieram alojadas em estojos de Alumínio apropriados e colocadas nas covas existentes na célula crítica em arranjos apropriados de engradados contendo 225 furos identificados de “1” a “15” na vertical e de “A” a “O”, na horizontal. Apesar de haver 225 furos, por critérios de projeto somente 170 no máximo varetas foram colocadas em cada engradado de cada cova. <br>
-        3)	O transporte destes engradados contendo, portanto no máximo 170 varetas foram içadas das covas um a um e transportados das covas até uma blindagem em aço inox localizada ao lado do Tanque do Reator. <br>
-        4)	As varetas foram então transportadas da blindagem para o núcleo uma a uma até o completo esvaziamento da blindagem e em seguida, esta retornou vazia para a cova original. <br>
-        5)	Os engradados seguintes seguiram o mesmo rumo e cuidados até completar o carregamento do completo do núcleo
+        resposta: `O primeiro carregamento de uma configuração do núcleo de um reator é sempre uma operação cercada de rígidos critérios de segurança, principalmente devido a algumas incertezas quanto ao arranjo de elementos combustíveis, moderador e posição das barras de controle que resulta em um reator crítico. Os cálculos do fator de multiplicação efetivo (k-efetivo), são realizados com precisão de ±0,5% em Δk/k.
+        O carregamento do núcleo do reator IPEN/MB-01 foi realizado com a introdução de elementos combustíveis. Os resultados apresentados são os resultados previstos da quantidade de combustível necessária para se atingir a criticalidade. A estratégia de carregamento do núcleo do reator IPEN/MB-01 foi dividida em 14 etapas.
+        A etapa inicial começou com dois elementos combustíveis, nas etapas seguintes foram acrescentados dois ECs por etapa até a etapa 7 e na etapa 8 foi acrescentado mais um EC. Para as etapas posteriores foram acrescentados os elementos combustíveis desmontáveis nos cantos da configuração, elementos A-1, A-5, D-1 e D-5.
+        Nesta fase do carregamento, os EC-Ds permitem a inserção de placas combustíveis individuais. Esta estratégia de carregamento visa inserir uma menor quantidade de reatividade para se determinar com precisão a massa crítica.
+        A segunda fase do carregamento começou na etapa 9, onde os quatro EC-Ds foram modelados com apenas uma placa combustível de forma simétrica e nas etapas posteriores foram acrescentadas uma placa por EC-D até a etapa 14. O sentido de inserção das placas nos EC-Ds. Na última etapa o reator ainda está subcrítico, mas muito próximo da criticalidade.
+    
         `
     },
 ]
@@ -699,13 +703,9 @@ const secaoB = [
         resposta: `A fonte de Amerício-Berílio utilizada no Reator IPEN/MB-01 tem a seguinte magnitude: <br> Atividade = 1 Curie <br> Fluxo neutrônico em 4π = 2,5x106 nêutrons/segundo.`
     },
     {
-        pergunta: 'Esboce o gráfico da distribuição de fluxo de nêutrons térmicos em uma vareta combustível do Reator IPEN/MB-01.',
-        resposta: `<img src="./imagens/questoes/fluxo-neutrônico.svg" class="desenho-questao" alt="distribuição do fluxo neutronico no combustivel">`
-    },
-    {
         pergunta: 'Relacione os principais absorvedores de nêutrons (alguns deles denominados venenos) existentes em reatores nucleares, descrevendo a atuação deles no Reator IPEN/MB-01.',
         resposta: `-Boro: O Reator IPEN/MB-01, não utiliza boro ou composto de boro diluído no moderador para controle da reatividade do núcleo. Ele foi usado na forma de solução de ácido bórico em experimentos apenas.<br><br>
-        A barra de segurança possui em sua liga de B<sub>4</sub>C o boro que é usado como absorvedor na barra de se segurança.<br>
+        O controle de reatividade do núcleo é feito por meio da inserção de quatro elementos absorvedores de nêutrons, de Háfnio. Cada elemento absorvedor de nêutrons, também denominado de Barra de Controle (BC), é constituído basicamente por uma placa de háfnio e uma haste de aço inoxidável, a qual servirá de ligação da mesma com o Mecanismo de Acionamento de Barras (MAB).<br>
         Cádmio e Índio: Constituintes de uma liga de Ag, Cd e In para a barra absorvedora de controle. Eventualmente é utilizado como em experimentos de determinação de fluxo de nêutrons térmicos e epitérmicos.<br><br>
         Xe<sub>135</sub> É produzido direto das fissões bem como pelo decaimento beta do I<sub>135</sub>, que por sua vez é produzido direto das fissões ou por decaimento beta do Te<sub>135</sub>. Sua geração é desprezível no Reator IPEN/MB-01 devido ao baixo fluxo de nêutrons da Instalação.<br><br>
         Sm<sub>149</sub> não é produzido diretamente da fissão mas sim aparece como decaimento do Neodímio-149 que decai para Promécio-149 que por sua vez decai para o samário-149 que é estável. O Promécio-149 também é oriundo direto da fissão.
@@ -713,28 +713,25 @@ const secaoB = [
         `
     },
     {
-        pergunta: 'Descreva o primeiro núcleo do Reator IPEN/MB-01 também chamado de núcleo de referência',
-        resposta: `-Forma paralelepipedal 39x42x54,6 cm.<br><br>
-        -4 quadrantes.<br><br>
-        -680 varetas combustíveis independentes.<br><br>
-        -48 posições contendo tubos guias para receber 2 barras de controle (24 posições) e 2 barras de segurança (24 posições).<br><br>
-        -A placa matriz é constituída de 900 furos (30x30) sendo que 680 deles são ocupadas pelos combustíveis e 48 por varetas absorvedoras (24 para as 2 barras de controle e 24 para as barras de segurança). Cada uma destas barras está disposta diagonalmente nos quatro quadrantes deste núcleo.
+        pergunta: 'Descreva o núcleo atual do Reator IPEN/MB-01.',
+        resposta: `- é do tipo tanque aberto <br><br>
+        - Possui arranjo de 4 x 5 composto por 19 elementos combustíveis tipo placa de Siliceto de Urânio (U3Si2) enriquecido a 19,75 % e um bloco de alumínio central <br><br>
+        -  4 caixas refletoras de água pesada (D2O).  <br><br>
+        - Todo o conjunto crítico está inserido num tanque moderador de água leve, sendo previsto operar a potência nominal máxima de 100 watts. <br><br>
+        - 21 placas de combustíveis por elemento (19 móveis e 2 fixas nas extremidades)
+        .
         `
     },
     {
-        pergunta: 'Descreva a constituição de uma vareta combustível do Reator IPEN/MB-01.',
-        resposta: `-Conjunto de pastilhas (em média 52 pastilhas) de UO<sub>2</sub> 4,3% enriquecidos em U<sub>235</sub>.<br><br>
-        -Encamisamento de aço inox Austenístico.<br><br>
-        -Fechada nas extremidades por tampões soldados.<br><br>
-        -Pastilhas de Al<sub>2</sub>O<sub>3</sub> para posicionar a coluna de UO<sub>2</sub>.<br><br>
-        -Tubo espaçador.<br><br>
-        -Mola de fixação.
-        Varetas preenchida com Hélio com pressão de 1 bar.
+        pergunta: 'Descreva a constituição de uma placa combustível do Reator IPEN/MB-01.',
+        resposta: `-O cerne de cada placa combustível é constituído por uma dispersão de siliceto de urânio numa matriz de alumínio (U3Si2-Al), enriquecido a 19,75% em peso de U235 e encamisado por um revestimento de alumínio (Al 6061). <br><br>
+        -Contaminação superficial da placa combustível: não deve exceder a 10 µg U/placa
+        .
         `
     },
     {
         pergunta: `Como é constituída cada barra de controle do Reator?`,
-        resposta: `-12 varetas com aproximadamente 1 metro de material absorvedor constituído de uma liga de Ag-In-Cd. São suportadas por uma aranha que, por sua vez, está ligada a uma haste de acionamento que por sua vez está conectada ao mecanismo de acionamento (MAB) por um dispositivo eletromagnético denominado MAGNETO.`
+        resposta: `Cada barra de controle é constituída basicamente de uma placa de Háfnio e uma haste de aço inoxidável, a qual servirá de ligação da mesma com o mecanismo de acionamento de barras. `
     },
     {
         pergunta: `Como é constituído o sistema de fixação das varetas combustíveis no núcleo?`,
@@ -754,10 +751,10 @@ const secaoB = [
     },
     {
         pergunta: `Descreva a fonte de nêutrons de partida usada no Reator IPEN/MB-01.`,
-        resposta: `A fonte utilizada é amerício berílio. Antes da partida do reator ela fica alojada numa blindagem localizada no pavimento inferior, abaixo do tanque do reator. Esta fonte está fixada num carrinho que pode ser movimentado verticalmente desde sua blindagem até um local bem próximo ao núcleo do reator. Este acionamento é feito remotamente da sala de controle.`
+        resposta: `A fonte utilizada é do tipo Amerício-Berílio (241Am-Be) de 1 Ci (3,7x10<sup>10</sup> Bq), que emite nêutrons a uma taxa de aproximadamente 2,2x10<sup>6</sup> nêutrons/s. A fonte utilizada é amerício berílio. Antes da partida do reator ela fica alojada numa blindagem localizada no pavimento inferior, abaixo do tanque do reator. Esta fonte está fixada num carrinho que pode ser movimentado verticalmente desde sua blindagem até um local bem próximo ao núcleo do reator. Este acionamento é feito remotamente da sala de controle.`
     },
     {
-        pergunta: `Preencha a Tabela a seguir sobre as principais características do núcleo (de referência) do Reator IPEN/MB-01.`,
+        pergunta: `Preencha uma tabela contendo as principais características do núcleo (de referência) do Reator IPEN/MB-01.`,
         resposta: `<table>
         <thead>
             <tr>
@@ -784,18 +781,27 @@ const secaoB = [
             </tr>
             <tr>
                 <td>
-                    Combustível (material e enriquecimento em U235)
+                    Refletor
                 </td>
                 <td>
-                    UO<sub>2</sub> e 4,3%
+                    Água pesada/Água leve
                 </td>
             </tr>
             <tr>
                 <td>
-                    Forma do combustível (revestido em aço inóx) 
+                    Combustível (material e enriquecimento em U<sub>235</sub>)
                 </td>
                 <td>
-                    Coluna 52 past. Cilind.
+                    U<sub>3</sub>Si<sub>2</sub> 19,75%
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Forma do combustível tipo placa (revestido em alumínio) 
+                </td>
+                <td>
+                    Dispersão de siliceto de urânio em matriz de alumínio (U<sub>3</sub>Si<sub>2</sub>-Al)
+
                 </td>
             </tr>
             <tr>
@@ -803,7 +809,7 @@ const secaoB = [
                     transversal do núcleo em mm
                 </td>
                 <td>
-                    420x390
+                    325x452,5
                 </td>
             </tr>
             <tr>
@@ -811,47 +817,38 @@ const secaoB = [
                     Altura ativa do núcleo em mm
                 </td>
                 <td>
-                    546
+                    615
                 </td>
             </tr>
             <tr>
                 <td>
-                    Nº total de varetas combustíveis
+                    Nº total de elementos combustíveis
                 </td>
                 <td>
-                    680
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Nº total de varetas absorvedoras
-                </td>
-                <td>
-                    48
+                    19
                 </td>
             </tr>
             <tr>
                 <td>
-                    Arranjo padrão de varetas no núcleo
+                    Nº total barras de controle de neutrôns
                 </td>
                 <td>
-                    26x28
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Espaço entre varetas “pitch” em mm
-                </td>
-                <td>
-                    15
+                    4
                 </td>
             </tr>
             <tr>
                 <td>
-                    Reatividade disponível no núcleo pcm (26x28 limpo a 21°C)
+                    Arranjo do núcleo
                 </td>
                 <td>
-                    Aprox. 2600
+                    4x5
+                </td>
+            </tr>
+                <td>
+                    Reatividade disponível no núcleo pcm
+                </td>
+                <td>
+                    Aprox. 3511
                 </td>
             </tr>
         </tbody>
@@ -862,26 +859,17 @@ const secaoB = [
         resposta: `Não, devido à baixa potência de operação.`
     },
     {
-        pergunta: `Dê as principais características de uma vareta combustível tais como: <br>
+        pergunta: `Dê as principais características de uma placa combustível tais como: <br>
         a)	Comprimento Total.<br>
         b)	Comprimento Ativo.<br>
-        c)	Diâmetro externo do encamisamento em mm.<br>
-        d)	Altura e diâmetro da pastilha combustível em mm.<br>
-        e)	Número de Pastilhas.<br>
-        f)	Enriquecimento em U<sub>235</sub>.
+        c)	Número de placas.<br>
+        d)	Enriquecimento em U<sub>235</sub>.
         `,
-        resposta: `a)	Comprimento Total em mm = 1194,0.<br>
-        b)	Comprimento Ativo em mm = 546,0.<br>
-        c)	Diâmetro externo do encamisamento em mm = 9,8.<br>
-        d)	Altura e diâmetro da pastilha combustível em mm = 10,5.<br>
-        e)	Número de pastilhas por vareta combustível = 52 (em média).<br>
-        f)	Enriquecimento em U235 = 4,3% em peso
+        resposta: `a)	Comprimento Total em mm = 1045,0.<br>
+        b)	Comprimento Ativo em mm = 615,0.<br>
+        c)	Número de placas combustível = 21 placas por elemento.<br>
+        d)	Enriquecimento em U235 = 19,75% em peso
         `
-    },
-    {
-        pergunta: `Quais as velocidades normal e reduzida das barras de controle?`,
-        resposta: `vN = 1mm/s <br>
-        vR = ¼ vN `
     },
     {
         pergunta: `Quais as velocidades normal e reduzida das barras de segurança?`,
@@ -890,7 +878,7 @@ const secaoB = [
     },
     {
         pergunta: `Quanto se ganha em reatividade quando se transforma o núcleo de referência retangular 26x28 contendo 680 varetas combustíveis para o núcleo cilindrizado com as mesmas varetas combustíveis, inclusive mesmo número de vareta?`,
-        resposta: `Se ganha 710 pcm`
+        resposta: `Não é mais possível mudar a configuração do núcleo em termos de posicionamento de elementos combustíveis.`
     },
     {
         pergunta: `Foram estipulados ou considerados os limites termo-hidráulicos ao núcleo do Reator IPEN/MB-01 nos critérios de projeto?`,
@@ -898,16 +886,13 @@ const secaoB = [
     },
     {
         pergunta: `Qual a composição em porcentagem dos materiais constituintes das barras de controle? Qual o material do encamisamento destas varetas absorvedoras?`,
-        resposta: `Ag⟶80% <br>
-        In⟶15% <br>
-        Cd⟶5% <br>
-        O revestimento é em aço inox AISI 304L idêntico aos da vareta combustível.
+        resposta: `Barra de controle com material absorvedor Hf com especificação de teor de Zr < 2% e revestimento de Al (6061). 
         `
     },
     {
         pergunta: `O que significa “MAB” e qual a sua função?`,
         resposta: `MAB = Mecanismo de Acionamento das Barras
-        É um sistema que propicia a movimentação das barras de controle e das barras de segurança do reator.
+        É um sistema que propicia a movimentação das barras de controle em relação ao comprimento ativo do núcleo..
         `
     },
     {
@@ -1018,7 +1003,7 @@ const secaoB = [
     {
         pergunta: `Qual a finalidade do Sistema de Proteção Contra Descargas Atmosféricas e quais suas características?`,
         resposta: `O sistema de Descargas Atmosféricas tem a finalidade de garantir a segurança operacional da Instalação e possibilitar proteção do pessoal contra potenciais de descargas atmosféricas. <br>
-        O sistema é constituído por 4 captores, cabos de cobre de 16mm² e 35mm2 nas descidas às malhas de aterramento, caixas suspensas para a medição da resistência terra e malha de aterramento constituída de cabos de cobre nu.
+        O sistema é constituído por 3 captores, cabos de aço e 35mm<sup>2</sup>  nas descidas às malhas de aterramento, caixas suspensas para a medição da resistência terra e malha de aterramento constituída de cabos de cobre nu.
         `
     },
     {
@@ -1147,10 +1132,9 @@ const secaoB = [
     },
     {
         pergunta: `Qual a velocidade do enchimento rápido e lento do Tanque do Moderador? Como estes enchimentos são feitos?`,
-        resposta: `V = rápida =9,5cm/min. <br>
-        O enchimento é feito com uma das bombas de enchimento rápido (B-202A ou B-202B).<br>
-        V = lenta 2,6cm/min. <br>
-        O enchimento é feito com uma das bombas de enchimento lento (B-201A ou B-201B).
+        resposta: `Enchimento rápido - 15m³/min, pelas bombas de enchimento rápido B202A/B <br><br>
+        Enchimento lento - 4,5 m³/min, pelas bombas do sistema de recirculação de água B201A/B
+        
         `
     },
     {
@@ -1326,18 +1310,17 @@ const secaoB = [
     },
     {
         pergunta: `Qual a finalidade do Reator IPEN/MB-01, também conhecido como Unidade Crítica?`,
-        resposta: `Sua finalidade é realizar experimentos para validação de metodologias de cálculos e de treinamento. Ele é destinado a realizar experimentalmente a validação de metodologias de cálculos neutrônicos, estudos das características de um reator moderado a água leve, testar configurações diferentes de núcleos e treinamento e retreinamento de operadores de reator.`
+        resposta: `O conjunto crítico instalado se destina à elaboração de um protótipo neutrônico do núcleo do Reator Multipropósito Brasileiro (RMB). Este conjunto é moderado a água leve, e possibilitará a verificação experimental de métodos de cálculo, estruturas de células e de malhas do reator, da efetividade das barras de controle e segurança além da resposta do núcleo a inserções de reatividade.`
     },
     {
         pergunta: `Qual o moderador e o combustível utilizado no Reator IPEN/MB-01? Qual o enriquecimento do combustível?`,
         resposta: `O moderador utilizado é a água leve.
-        O Combustível utilizado é o UO2 enriquecido a 4,3% em U-235.
+        O Combustível utilizado é o U<sub>3</sub>Si<sub>2</sub> enriquecido a 19,5%.
         `
     },
     {
-        pergunta: `Quais são os materiais absorvedores utilizados nas barras de controle e de segurança do Reator IPEN/MB-01?`,
-        resposta: `Barra de Controle: Prata; Cádmio e Índio.
-        Barra de Segurança: Carbeto de Boro.
+        pergunta: `Qual o material absorvedor utilizado nas barras de controle do Reator IPEN/MB-01?`,
+        resposta: `Háfnio.
         `
     },
     {
@@ -1359,7 +1342,7 @@ const secaoB = [
     },
     {
         pergunta: `Por que o Sistema de Exaustão A e o Sistema de Exaustão B do sistema de ventilação S1 são alimentados pelo CCM#3 e CCM#4 respectivamente, e não por apenas um deles?`,
-        resposta: `Para que na falha de um deles a função de segurança (no caso a exaustão e a recirculação) possam manter a suas funções.`
+        resposta: `“Criterio de falha única”. Esta exaustão garante que, na eventualidade de um vazamento da Célula Crítica para a área de laboratório e salas provocadas por uma elevação brusca de pressão, este seja removido pela chaminé sem incorrer no risco de alcançar a Sala de Controle.`
     },
     {
         pergunta: `Por que as Bombas de Enchimento Lento B-201 e Enchimento Rápido B-202 possuem redundâncias (A e B)?`,
@@ -1383,7 +1366,7 @@ const secaoB = [
     },
     {
         pergunta: `Descreva o Confinamento do Reator IPEN/MB-01.`,
-        resposta: `É uma estrutura de concreto protendido na forma quadrada com dimensões 14 m por 14 m com três pavimentos, 21 metros de altura, paredes de 1,5 m de espessura, até a altura de 6 m acima do nível térreo passando para 0,75 m até a laje de cobertura cuja espessura é de 0,5m.`
+        resposta: `É uma estrutura de concreto protendido na forma quadrada com dimensões 14 m por 14 m com três pavimentos, 21 metros de altura, paredes de 1,5 m de espessura, até a altura de 6 m acima do nível térreo passando para 0,75 m até a laje de cobertura cuja espessura é de 0,5m. Essas paredes têm como funções principais a blindagem biológica e o confinamento do ambiente interno para impedir a liberação não controlada de gases radioativos.`
     },
 ]
 const secaoC = [
@@ -1394,7 +1377,7 @@ const secaoC = [
         `
     },
     {
-        pergunta: `Na configuração normal do núcleo (26x28) do Reator IPEN/MB-01, o reator fica crítico a 21°C com as Barras de Controle 1 e 2 igualmente retiradas em 58,7%. Por que não se configura o núcleo com menor número de varetas de tal forma que elas ficassem em 100% retiradas?`,
+        pergunta: `Na configuração normal do núcleo  do Reator IPEN/MB-01, o reator fica crítico a 21°C com todas as Barras de Controle igualmente retiradas em 64,23%. Por que não se configura o núcleo com menor número de placas de tal forma que elas ficassem em 100% retiradas?`,
         resposta: `Porque sempre deve existir excesso de reatividade suficiente para manobra do K<sub>ef</sub> e, portanto da potência.`
     },
     {
@@ -1404,7 +1387,7 @@ const secaoC = [
     {
         pergunta: `Quais os principais métodos de calibração de uma barra de controle?`,
         resposta: `Existem vários métodos sendo os mais utilizados os seguintes: <br><br>
-        Método do Período Estável.<br>
+        Método do Período Assintótico.<br>
         Método da Cinética Inversa.<br>
         Método do “Rod Drop”.
         `
@@ -1533,8 +1516,8 @@ const secaoC = [
         `
     },
     {
-        pergunta: `Descreva o funcionamento do SDB?`,
-        resposta: `A preparação da solução é manual. A água utilizada vem de uma das derivações da linha do STAA. A quantidade de ácido bórico é diluída no tanque TQ-204 mantendo a solução aquecida através do aquecedor AQ-201 e utilizando o agitador AG-201. Até que a solução esteja bem homogênea. Esta solução é desviada ao TQ-202, podendo ser eventualmente enviada para o tanque de decaimento TQ-203.`
+        pergunta: `Descreva o funcionamento do Sistema de Dosagem de Boro.`,
+        resposta: `Este sistema tem a função de preparar solução de boro para experimentos que necessitem a presença de boro dissolvido na água de moderação. A solução é obtida a partir da água proveniente do Tanque de Estocagem e de ácido bórico adicionado manualmente, até se obter a concentração desejada. Para solubilizar o ácido é usado um tanque de mistura provido de agitador e de resistência elétrica para aquecimento da água. A solução obtida neste tanque de mistura escoa por gravidade para o Tanque de Estocagem, de onde pode ser bombeada para o Tanque do Moderador`
     },
     {
         pergunta: `Com relação à utilização de ácido bórico em reatores: <br><br>
@@ -1564,7 +1547,7 @@ const secaoC = [
     {
         pergunta: `Cite alguns dos possíveis modos de operação do SDEA?`,
         resposta: `1.	Recirculação do TQ de Retenção. <br><br>
-        2.	Envio do tanque de retenção para rede <br><br>
+        2.	Envio do tanque de retenção para rede de esgotos (águas pluviais).<br><br>
         3.	Envio do tanque de retenção para o tanque de mistura.<br><br>
         4.	Diluição do tanque de mistura com água proveniente da caixa d'água.
         `
@@ -1619,8 +1602,8 @@ const secaoC = [
     },
     {
         pergunta: `Qual a temperatura máxima e mínima permitida para o moderador?`,
-        resposta: `Máxima 80°C <br>
-        Mínima 14°C
+        resposta: `Máxima 95°C <br>
+        Mínima 18°C
         `
     },
     {
@@ -1628,7 +1611,7 @@ const secaoC = [
         resposta: `Não, pois o calor liberado decorrente de uma operação à potência de 100 W é desprezível.`
     },
     {
-        pergunta: `O controle de reatividade no Reator IPEN/MB-01, além ser feito pelas barras de controle e segurança é feito também por adição ou remoção de solução de ácido bórico no moderador? Justifique.`,
+        pergunta: `O controle de reatividade no Reator IPEN/MB-01, além ser feito pelas barras de controle é feito também por adição ou remoção de solução de ácido bórico no moderador? Justifique.`,
         resposta: `Não, o controle da reatividade é apenas feito pelas barras de controle e pelo nível do moderador no tanque TQ-201.<br>
         A utilização de ácido bórico é feita somente em experimentos. A utilização de ácido bórico não foi considerada como um critério de projeto na Instalação.
         `
@@ -1647,12 +1630,12 @@ const secaoC = [
         `
     },
     {
-        pergunta:`Existe queima no combustível do Reator IPEN/MB-01? Qual a importância desta queima no que se refere à troca de elementos combustíveis (varetas combustíveis)?`,
-        resposta: `Sim, se há fluxo neutrônico, há queima, porém esta é desprezível para efeito prático. Mesmo que o Reator operasse continuamente em sua potência nominal levaria décadas para se evidenciar algum efeito de queima de combustível, portanto, não há necessidade de “troca” de elementos combustíveis.`
+        pergunta:`Existe queima no combustível do Reator IPEN/MB-01? Qual a importância desta queima no que se refere à troca de elementos combustíveis?`,
+        resposta: `Sim, se há fluxo neutrônico, há queima, porém esta é desprezível para efeito prático,pelo fato da potência de operação ser bastante pequena. Mesmo que o Reator operasse continuamente em sua potência nominal levaria décadas para se evidenciar algum efeito de queima de combustível, portanto, não há necessidade de “troca” de elementos combustíveis.`
     },
     {
-        pergunta:`4No Sistema de Tratamento da Água de Alimentação (STAA) os valores limites impostos à condutividade, pH e concentração de cloretos são respectivamente <br><br>
-        •	pH = 5,5 a 6,5<br>
+        pergunta:`No Sistema de Tratamento da Água de Alimentação (STAA) os valores limites impostos à condutividade, pH e concentração de cloretos são respectivamente <br><br>
+        •	pH = 6,5 a 7,0<br>
         •	Condutividade ≤ 5 μS/cm<br>
         •	Concentração de cloretos ≤ 0,2 ppm<br>
         Esses valores limites são os mesmos para o moderador, ou melhor, dizendo do SCTAER?
@@ -1670,18 +1653,17 @@ const secaoC = [
         3)	Anotam-se em folhas apropriadas todos os passos para iniciar o ligamento do reator (“start-up”).<br><br>
         4)	Acertam-se as posições relativas de todas as barras (“Zerar” as barras). <br><br>
         5)	Fecham-se as válvulas de abertura rápida.<br><br>
-        6)	Retira-se a primeira barra de segurança (BS#1) até seu limite máximo de retirada.<br><br>
-        7)	Retira-se a segunda barra de segurança (BS#2) até seu limite máximo de retirada.<br><br>
-        8)	Inicia-se o enchimento do TQ-201 usando as bombas de enchimento rápido até 75% da parte ativa do núcleo.<br><br>
-        9)	Completa o enchimento do tanque utilizando-se as bombas de enchimento lento.<br><br>
-        10)	Retira-se a primeira barra de controle (BC#1) até seu limite pré-determinado (normalmente em torno de 57% de retirada).<br><br>
-        11)	Retira-se a segunda barra de controle (BC#2) com bastante atenção observando-se os canais de período (normalmente não devem encurtar além de 50 segundos).<br><br>
-        12)	Quando o reator se torna supercrítico o aumento de potência deve ser acompanhado cuidadosamente observando os canais de período e potência com boa tolerância (tolerância esta aceita pelo operador sênior de plantão).<br><br>
-        13)	Efetua-se a mudança da faixa de partida para potência quando soar o alarme para tal.<br><br>
-        14)	Ao chegar próximo da potência de 100 W o período de ser alongado para poder se atingir a potência de 100 W de forma suave.<br><br>
-        15)	Ao atingir a potência de 100 W a barra de controle deve ser levemente inserida até que os períodos nos canais se tornem infinito e a potência estável.<br><br>
-        16)	Em seguida passa-se o controle manual para o automático mediante botoeira apropriada.<br><br>
-        17)	Dá-se o aviso de criticalidade através do alto falante, informando o horário e a potência
+        6)	Retira-se a primeira barra de controle até 64,23%.<br><br>
+        7)	Retira-se a segunda barra de controle até 64,23%.<br><br>
+        8)	Inicia-se o enchimento do TQ-201 usando as bombas de enchimento rápido até 70% do nível do tanque.<br><br>
+        9)	Retira-se a terceira barra de controle até 64,23%.<br><br>
+        10)	Retira-se a quarta barra de controle com bastante atenção observando-se os canais de período (normalmente não devem encurtar além de 50 segundos).<br><br>
+        11)	Quando o reator se torna supercrítico o aumento de potência deve ser acompanhado cuidadosamente observando os canais de período e potência com boa tolerância (tolerância esta aceita pelo operador sênior de plantão).<br><br>
+        12)	Efetua-se a mudança da faixa de partida para potência quando soar o alarme para tal.<br><br>
+        13)	Ao chegar próximo da potência de 100 W o período de ser alongado para poder se atingir a potência de 100 W de forma suave.<br><br>
+        14)	Ao atingir a potência de 100 W a barra de controle deve ser levemente inserida até que os períodos nos canais se tornem infinito e a potência estável.<br><br>
+        15)	Em seguida passa-se o controle manual para o automático mediante botoeira apropriada.<br><br>
+        16)	Dá-se o aviso de criticalidade através do alto falante, informando o horário e a potência
         `
     },
     {
@@ -1694,16 +1676,18 @@ const secaoC = [
     },
     {
         pergunta:`Quais as condições que habilita a passagem da “função de segurança” do reator, dos canais de partida para os canais de potência?`,
-        resposta: `a.	Primeira condição: Que os canais #3 e #4 tenham atingido os níveis de potência 30, 40 e 50 miliwatts.<br><br>
-        b.	Segunda condição: Que a transferência esteja habilitada, o que deverá ocorrer 20 segundos após os canais #3 e #4 terem atingido 50 mW.
+        resposta: `Primeira condição: O nível de potência alcance o valor de 0,1mW (denominado nível W).
+        Segunda condição: Aguardar a potência alcançar 1mW (nível Y) e permanecer entre as potências de 1 - 2,2 mW durante 20 segundos até que a mudança de canal seja habilitada.
         Obs: Uma vez habilitada, a transferência da função de segurança deve ser realizada pelo operador para permitir a elevação da potência. O operador deve também desligar a alta tensão dos canais de partida para que eles não sejam danificados quando submetidos a um maior fluxo de nêutrons, devido ao aumento da potência.
         `
     },
     {
         pergunta:`Durante a redução de potência do reator, descreva como é efetuada a transferência da “função de segurança” dos canais de potência para os canais de partida.`,
-        resposta: `Na redução de potência a transferência da função de segurança é feita automaticamente da seguinte forma: <br><br>
-        a.	Quando a potência do reator atinge 40 mW, a alta tensão é religada nos detectores dos canais de partida, iniciando-se a transferência da função de segurança para os canais de partida.<br><br>
-        b.	Se a potência do reator atingir 30 mW e a função de segurança não for transferida para os canais de partida, ocorrerá desligamento automático do reator.
+        resposta: `a) Potencia <  Y (1 mW) apaga a tecla (POT > Y FAIXA POT). <br><br>
+        b) Quando a potência do reator atinge o nível Z (1 mW > Z > 0,1 mW ), a alta tensão é religada nos detectores dos canais de partida, iniciando-se a contagem de 30 segundos do temporizador para calibração dos canais de partida. <br><br>
+        c) Após os 30 segundos transferência automática para os canais de partida.<br><br>
+        d) Se a potência do reator atingir o nível W antes de completar os 30 segundos, ocorrerá desligamento automático do reator por potência mínima nos canais de potência.
+        
         `
     },
     {
@@ -1723,22 +1707,12 @@ const secaoC = [
         resposta: `Não, pois todos os itens da malha de partida, por questão de segurança devem estar satisfeitos.`
     },
     {
-        pergunta: `Explique por que é necessário subir totalmente as duas barras de segurança antes de iniciar o enchimento do tanque do moderador.`,
-        resposta: `Para que haja um sistema de desligamento ativado e com resposta rápida antes de iniciar o processo de enchimento do tanque do moderador. A taxa de inserção de reatividade por nível de água com bomba rápida é equivalente à subida simultânea de 4 barras, (50 pcm/s). As barras de segurança ficam, portanto prontas para um desligamento rápido (tempo de queda da barra: t<1s), em caso de uma excursão de potência ou outra emergência qualquer`
+        pergunta: `Explique por que é necessário subir totalmente as duas barras de controle antes de iniciar o enchimento do tanque do moderador.`,
+        resposta: `Após inserir a fonte de nêutrons, o passo seguinte é erguer duas barras de controle quaisquer, uma por vez, acima de uma posição de referência P1, de modo a assegurar certa margem de desligamento do reator por queda de barras, durante o processo de enchimento do tanque do moderador. Nessa condição, duas barras não inseridas bloqueiam a movimentação das demais barras que permanecem inseridas`
     },
     {
         pergunta: `Estando a partida do Reator “habilitada”, porém com a fonte de nêutrons inserida na blindagem, é possível energizar os magnetos das barras absorvedoras?`,
         resposta: `Não, é uma condição necessária (partida habilitada), porém não suficiente. Estando a fonte na blindagem, NÃO é possível energizar os magnetos, mesmo que outras condições estejam satisfeitas`
-    },
-    {
-        pergunta: `Quais as condições que devem ser satisfeitas para que os elementos de segurança (BS#1 e BS#2) sejam movimentados?`,
-        resposta: `a)	Todos os itens do check list efetuados <br>
-        b)	Partida habilitada<br>
-        c)	BC inseridas<br>
-        d)	Todas as variáveis do intertravamento de magnetos satisfeitas.<br>
-        e)	Todas as variáveis do intertravamento de VVRA satisfeitas.<br>
-        f)	Tanque do moderador vazio.
-        `
     },
     {
         pergunta: `Quais as condições que devem ser satisfeitas para que a malha de intertravamentos dos magnetos ou em outras palavras quais as condições que devem ser satisfeitas para energizar ou manter energizados os magnetos?`,
@@ -1879,17 +1853,17 @@ const secaoD = [
             <tbody>
                 <tr>
                     <td>Partida #1, #2 e 9</td>
-                    <td>BF<sub>3</sub></td>
+                    <td>B<sub>10</sub></td>
                     <td>Pulso (cps)</td>
                 </tr>
                 <tr>
                     <td>Potência # 3 e #4</td>
-                    <td>CIC</td>
+                    <td>CIC Boro</td>
                     <td>Corrente (Ampères)</td>
                 </tr>
                 <tr>
                     <td>Potência # 7 e #8</td>
-                    <td>CINC</td>
+                    <td>CINC Boro</td>
                     <td>Corrente (Ampères</td>
                 </tr>
                 <tr>
@@ -1899,7 +1873,7 @@ const secaoD = [
                 </tr>
                 <tr>
                     <td>Lineares #5 e #6</td>
-                    <td>CINC</td>
+                    <td>CINC Boro</td>
                     <td>Corrente (Ampères)</td>
                 </tr>
             </tbody>
@@ -2002,12 +1976,12 @@ const secaoE = [
                 </tr>
                 <tr>
                     <td>Desligamento por sobrepotência</td>
-                    <td>P &ge; 110 mW</td>
+                    <td>P &ge; 110 mW / P &ge; 2,2 mW</td>
                     <td>Scram de magnetos</td>
                 </tr>
                 <tr>
                     <td>Desligamento por sobrepotência</td>
-                    <td>P &ge; 120 mW</td>
+                    <td>P &ge; 120 mW / P &ge; 2,4 mW</td>
                     <td>Scram de válvulas</td>
                 </tr>
                 <tr>
@@ -2036,7 +2010,7 @@ const secaoE = [
             <tbody>
                 <tr>
                     <td>Intertravamento para habilitar passagem da função de segurança do reator dos canais de partida para os canais de potência</td>
-                    <td>30 mW, 40 mW, 50 mW nos canais #3 e #4</td>
+                    <td>0,1 mW (mudança de canais, início da faixa de potência), 1 mW (mudança da faixa de partida para potência), 2,2 mW (SCRAM de magnetos) e 2,4 mW (SCRAM de válvulas</td>
                     <td>Inicia Habilitação para a transferência</td>
                 </tr>
                 <tr>
@@ -2135,16 +2109,18 @@ const secaoE = [
     },
     {
         pergunta: `Relacione pelo menos três variáveis (ou condições) monitoradas pela malha de intertravamento de partida, indicando sua condição para que a partida seja “desabilitada”, causando “SCRAM” de partida.`,
-        resposta: `1.	Primeira porta de acesso à célula crítica (aberta). <br><br>
-        2.	Segunda porta de acesso à célula crítica (aberta).<br><br>
-        3.	Porta deslizante (concreto) aberta.<br><br>
-        4.	Alta tensão nos canais de partida (falha) desvio na faixa de potência.<br><br>
-        5.	Alta tensão nos canais de potência (falha).<br><br>
-        6.	Pressão na célula Crítica (alta ≥-50pascal).<br><br>
-        7.	Pressão no sistema pneumático (baixa < 4kgf/cm2).<br><br>
-        8.	Tensão nos bastidores de partida (falha).<br><br>
-        9.	Tensão bastidores de potência (falha).<br><br>
-        10.	Tensão bastidores comparadores (falha).
+        resposta: `Alta tensão nos detectores dos canais 1,2 e 9 insatisfatória.  <br><br>
+        Canais de potência não ativados.<br><br>
+        Primeira e segunda porta de acesso à célula crítica (aberta).<br><br>
+        Porta deslizante (concreto) aberta.<br><br>
+        Temperatura do tanque moderador abaixo de 18°C.<br><br>
+        Tensão de alimentação dos bastidores 1, 2, 3, 4, 7, 8, 9 e 10 insatisfatória.<br><br>
+        Tensão de alimentação do bastidor dos comparadores insatisfatória.  <br><br>
+        Alta tensão nos canais de potência 3, 4, 7, 8 e 10 insatisfatória.<br><br>
+        Pressão na célula Crítica (alta ≥-50pascal).<br><br>
+        Pressão no sistema pneumático (baixa < 4kgf/cm2).<br><br>
+        Todas as barras inseridas não satisfeita.
+        
         `
     },
     {
@@ -2207,10 +2183,7 @@ const secaoE = [
     },
     {
         pergunta: `Cite medidas adicionais que foram incorporadas ao projeto do Reator IPEN/MB-01, visando a Segurança da Instalação.`,
-        resposta: `a)	Separação física de componentes que exercem mesmas funções. <br>
-        b)	Separação física de componentes com funções distintas, mas visando atender ao mesmo objetivo de segurança.<br>
-        c)	Testes pré-operacionais.<br>
-        d)	Rotinas de Manutenção.
+        resposta: `O sistema de isolamento da célula crítica, os sistemas de condicionamento de ar e ventilação (S1 e S3) e o sistema de esvaziamento rápido do tanque do moderador são dispositivos técnicos incorporados ao projeto de forma a permitir uma segurança adicional.
         `
     },
     {

@@ -12,7 +12,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'B') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.floor(Math.random() * 79)
+            var numero = Math.floor(Math.random() * 77)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -20,7 +20,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'C') {
         while (numeroDoBanco.length < 4) {
-            var numero = Math.floor(Math.random() * 54)
+            var numero = Math.floor(Math.random() * 53)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
