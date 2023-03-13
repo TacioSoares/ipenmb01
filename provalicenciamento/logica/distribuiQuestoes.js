@@ -36,7 +36,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'E') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.floor(Math.random() * 41)
+            var numero = Math.floor(Math.random() * 40)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }

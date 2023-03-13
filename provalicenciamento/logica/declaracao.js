@@ -2223,7 +2223,7 @@ const secaoE = [
                     <li>- Falha no Sistema de Controle de Reatividade.</li>
                     <li>- Injeção de Água Fria no Núcleo.</li>
                     <li>- Aumento de Moderação por Falha Estrutural.</li>
-                    <li>- Carregamento e Operação com Varetas Combustíveis em Posições Incorretas.</li>
+                    <li>- Carregamento e Operação com elementos Combustíveis em Posições Incorretas.</li>
                     <li>- Retirada Incontrolada do Elemento de Controle.</li>
 
                 </td>
@@ -2235,8 +2235,8 @@ const secaoE = [
                 <td>
                     <li>- Falha ou Vazamento no Sistema de Esgoto Quente.</li>
                     <li>- Falha em Tanques de Armazenamento de Líquidos.</li>
-                    <li>- Falha no Revestimento da Vareta Combustível.</li>
-                    <li>- Manuseio de Varetas Combustíveis.</li>
+                    <li>- Falha no Revestimento do Elemento Combustível.</li>
+                    <li>- Manuseio de Elementos Combustíveis.</li>
                 </td>
             </tr>
             <tr>
@@ -2271,7 +2271,8 @@ const secaoE = [
                         Distribuição Anormal de Potência
                     </td>
                     <td>
-                        Retirada Incontrolada do Elemento de Controle
+                        Retirada Incontrolada do Elemento de Controle <br>
+                        Retirada Incontrolada de Barras de Controle
                     </td>
                 </tr>
                 <tr>
@@ -2279,14 +2280,18 @@ const secaoE = [
                         II - Liberação de Radiação de Sistemas ou Componentes
                     </td>
                     <td>
-                        Manuseio do Engradado de Varetas Combustíveis
+                        Manuseio do Engradado de Varetas Combustíveis<br>
+                        Manuseio de Varetas Combustível
                     </td>
                 </tr>
                 <tr>
                     <td>
                         III - Eventos Induzidos por Falha Humana
                     </td>
-                    <td>Falha ou Operação Incorreta com Aparato Experimental</td>
+                    <td>
+                        Falha ou Operação Incorreta com Aparato Experimental<br>
+                        Falha ou Operação Incorreta com Dispositivo Experimental
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -2302,19 +2307,22 @@ const secaoE = [
         `,
         resposta: `1)	Retirada Incontrolada do Elemento de Controle <br><br>
         2)	Este evento pode ocorrer tanto na partida (1,0x10-<sup>3</sup>W) como em operação (100W). Este acidente tem origem numa falha do mecanismo de acionamento dos elementos de controle, resultando num movimento incessante de retirada de uma delas. A consequência desta falha é a rápida inserção de reatividade positiva, podendo levar a uma excursão de potência.<br><br>
-        3)	Os sistemas de proteção que atuam nesse acidente são a queda de elementos de controle e de segurança e o esvaziamento do tanque do moderador. Os sistemas de desligamento do Reator IPEN/MB-01 estão calibrados de forma a impedir a evolução da excursão de potência. Os níveis das variáveis que acionam o sistema de desligamentos são:<br>
-        a)	Nível de potência na faixa de operação de partida para queda dos elementos de controle de segurança: 110 mW;<br>
-        b)	Nível de potência na faixa de operação de partida para esvaziamento do tanque do moderador: 120 mW;<br>
-        c)	Nível de potência na faixa de operação em potência para queda dos elementos de controle e segurança: 110 W (110% da potência nominal); e 120 W para a abertura das válvulas.<br>
-        d)	Nível de período para a queda dos elementos de controle e segurança: 17 s<br>
-        e)	Nível de período para esvaziamento do tanque do moderador: 14s<br><br>
+        3)	Para interromper a excursão de potência o sistema de proteção do reator inibe a sustentação das barras de controle, que então são inseridas na região ativa do núcleo, por ação da gravidade. Subsequentemente, o sistema de proteção pode ainda provocar a drenagem da água leve contida no tanque principal do reator.
+        Os limiares para atuação do sistema de proteção do reator são:
+        <br>
+        a)	Com o reator na faixa de partida, o sinal para desligamento dos magnetos das barras de controle é ativado quando a potência nuclear atinge o limiar de 2,2mW;;<br>
+        b)	Com o reator na faixa de partida, o sinal para abertura das válvulas de drenagem do tanque de água leve é ativado quando a potência nuclear atinge o limiar de 2,4mW<br>
+        c)	Com o reator na faixa de potência, o sinal para desligamento dos magnetos das barras de controle é ativado quando a potência nuclear atinge o limiar de 110W;<br>
+        d)	Com o reator na faixa de potência, o sinal para drenagem do tanque de água leve é ativado quando a potência nuclear atinge o limiar de 120W;<br>
+        e)	O sinal para desligamento dos magnetos das barras de controle é ativado também quando potência do reator cresce com período menor o igual a 17s;<br>
+        f)	O sinal para drenagem do tanque de água leve é ativado também quando a potência do reator cresce com período menor ou igual a 14s. <br><br>
         
-        Dessa forma assim que um desses níveis é ultrapassado, a queda dos elementos de controle e de segurança ou o esvaziamento do tanque do moderador terminam a excursão de potência desligando o Reator. O operador pode também acionar o desligamento do reator em qualquer instante do acidente.<br><br>
+        O operador também pode acionar o desligamento do Reator IPEN/MB-01 em qualquer instante do acidente <br><br>
         
-        4)	Uma das barras dos elementos absorvedores de controle, devido a uma falha técnica ou do operador, é retirada incessantemente do núcleo com uma velocidade de 1 mm/s. Há um início de excursão de potência. O sinal de desligamento pode ser causado por período curto ou nível de fluxo, dependendo das condições iniciais do acidente. O acidente terminará com o desligamento seguro do reator IPEN/MB-01.<br><br>
+        4)	Uma falha de equipamento e/ou de operação provoca a retirada das barras de controle e a inserção de reatividade na taxa inicial de 32 pcm/s. A potência nuclear cresce até atingir o limiar de desligamento por sobrepotência e/ou por período curto. A atuação do sistema de proteção provoca o desligamento do reator e deixa a instalação em condição segura.<br><br>
         
-        5)	Conclusão da análise do acidente
-        Resultados demonstram que este tipo de acidente é plenamente controlado pelo mecanismo de proteção do reator. A máxima sobre potência é menor que 30% não acarretando elevação de temperatura no núcleo. Os elementos de controle desligarão de forma segura o reator mesmo com um dos elementos de segurança emperrado.
+        5)	Conclusão da análise do acidente<br>
+        A atuação do sistema de proteção do reator é suficiente para interromper a excursão de potência provocada pela retirada não controlada das barras de controle, mantendo a integridade dos elementos combustíveis e deixando a instalação em condição segura, mesmo na ocorrência falha que impeça a queda da barra de controle mais reativa
         `
     },
     {
@@ -2324,13 +2332,14 @@ const secaoE = [
         3)	Identificação das Causas e Descrição do Acidente<br>
         4)	Consequências Radiológicas
         `,
-        resposta: `1)	Manuseio do Engradado de Varetas Combustíveis <br><br>
+        resposta: `1) Falha no Revestimento do Elemento Combustível Tipo Placa devido ao Manuseio do Engradado de Elementos Combustíveis. <br><br>
 
-        2)	Durante um carregamento ou um descarregamento do núcleo ou uma mudança de configuração que necessite remoção ou inserção de uma quantidade considerável de varetas, estas deverão ser transportadas do núcleo para as covas e vice versa em quantidades não superiores a 170 varetas por vez, por critérios de projeto, com possibilidade embora remota, de queda deste cesto contendo tais varetas.<br><br>
+        2) No processo de carga e descarga do núcleo tipo placa do Reator IPEN/MB-01, será feita a movimentação dos elementos combustíveis via engradados construídos especificamente para esse procedimento. Um acidente durante a operação de troca e estocagem dos elementos combustíveis foi postulado e analisado. Segundo a Instrução de Trabalho “Manuseio de Elementos Combustíveis Tipo Placa” (IT-CEN-CENFU.61-00) /6/, os elementos combustíveis serão acondicionados em engradados com capacidade total para 8 elementos.<br><br>
         
-        3)	A queda deste cesto contendo estas varetas, digamos 170 varetas, causam numa situação extrema, porém não impossível, o rompimento de todas as varetas, gerando liberação considerável de produtos de fissão, indo parar inicialmente nos filtros e possivelmente na atmosfera através do sistema de Ventilação da Célula Crítica.<br><br>
+        3) Este acidente com manuseio do combustível no Edifício do Reator IPEN/MB-01 é postulado como sendo decorrente da queda de um engradado com 8 elementos combustíveis, durante o seu transporte para as covas de estocagem de combustível irradiado, resultando na avaria do revestimento das placas combustíveis e a liberação dos produtos de fissão para a Célula Crítica e, posteriormente, através do Sistema de Condicionamento de Ar e Ventilação da Célula Crítica, para a atmosfera.<br><br>
         
-        4)	As doses estimadas para este acidente são muito inferiores aos limites máximos permissíveis pela norma CNEN-NE 3.01 para exposição interna na tireoide (500 mSv para trabalhador e 50 mSv para indivíduo do público), e para dose equivalente efetiva (50mSv para trabalhador e 1mSv para indivíduo do público).
+        4) As doses estimadas para este acidente são muito inferiores aos limites máximos permissíveis pela norma CNEN-NE 3.01 para exposição interna na tireoide (500 mSv para trabalhador e 50 mSv para indivíduo do público), e para dose equivalente efetiva (50mSv para trabalhador e 1mSv para indivíduo do público. As doses radiológicas a 50 m do Reator IPEN/MB-01 (aproximadamente a distância da cerca de proteção física da planta) são de aproximadamente 6,22x10-3 mSv para doses na tireoide devido a inalação, valores inferiores a 10-3 mSv para a dose equivalente de corpo inteiro devido a inalação, e inferiores a 10-3 mSv para dose por exposição direta devida a imersão na pluma.
+        
         `
     },
     {
@@ -2352,26 +2361,38 @@ const secaoE = [
     },
     {
         pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
-        Um operador que estava dando a partida no reator para realizar um experimento com o moderador contendo solução de ácido bórico a 100 ppm, conversava com um colega sobre o resultado do jogo de futebol entre o São Paulo e o Corinthians. Distraído com o assunto alinhou incorretamente para o enchimento do Tanque do Moderador TQ-201, ao invés de recircular a água do Tanque de estocagem TQ-202 passando pelo resfriador TC-201. No momento a temperatura do Tanque TQ-201 era de 80°C e a do Tanque de estocagem 20°C. Pergunta-se:<br><br>
+        Cerca de 20 barras do arranjo retangular padrão do núcleo (4x5) foram removidas para montagem de um experimento. Ao concluir esta operação, o operador retornou estas barras para o núcleo. No entanto, ele confundiu a sequência de retorno e as 20 varetas foram colocadas em posições diferentes das originais. Pergunta-se:<br><br>
         a)	Qual a classe de acidente que esta desatenção poderia levar?<br>
-        b)	Sabendo que nestas condições (vazão 15m3/h com capacidade de resfriamento 3°C/min a inserção de reatividade é de 1pcm/s), haveria alguma violação da especificação técnica? Por quê?<br>
-        c)	O que aconteceria se o operador levasse um tempo considerável (digamos 2 minutos) para perceber seu erro?
+        b)	Haveria algum risco severo em razão deste equívoco? Justifique.<br>
+        c)	Qual seria o evento iniciador limitante desta classe?<br>
+        d)	Qual seria a ações que poderia evitar esta situação?<br>
+
         `,
-        resposta: `a)	Classe I (Injeção de água fria no núcleo) <br>
-        b)	Não, pois o limite de inserção de reatividade por especificação técnica é de 20 pcm/s, bem acima, portanto do valor de 1 pcm/s.<br>
-        c)	Com inserção de 1 pcm/s em 2 minutos haveria inserção de 120 pcm bem próximo do valor que levaria ao período a 17 s e portanto com a consequente atuação do período nos canais de período.
+        resposta: `a)	Ca)	Classe I (Carregamento e Operação com varetas combustíveis em posição incorreta) <br><br>
+        b)	Como os EC são idênticos em composição e enriquecimento, eles podem ser colocados em qualquer posição da placa matriz do núcleo. A simples observação visual do núcleo pode indicar uma posição errônea de um elemento combustível durante o carregamento. Qualquer anomalia de reatividade do núcleo é detectada e corrigida via obediência rígida dos procedimentos de carregamento. Não existe possibilidade de se ter anomalias de reatividade ou distribuição de fluxos de nêutrons durante a operação do reator devido a esse acidente.<br><br>
+
+        c)	Retirada incontrolada de elemento de controle.<br><br>
+
+        d)  As ações de proteção contra esse acidente são as vistorias durante o carregamento e os procedimentos de carregamento que monitoram a reatividade do núcleo. Qualquer condição anômala de reatividade do núcleo é detectada durante essas etapas antes da operação do reator.
         `
     },
     {
         pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
-        Um operador montou para um experimentador uma caixa de Alumínio ao lado do núcleo (face oeste) do reator para estudo de reflexão de nêutrons. Esta caixa possuía um volume interno de 60 litros. A caixa inicialmente estava vazia, isto é, sem o moderador durante a operação do reator à potência de 100W no intervalo de 1 hora. A variação de reatividade do núcleo com a caixa vazia e com ela cheia era menor que 500 pcm. Na pressa o operador deixou de fixar a caixa adequadamente Em razão disso a caixa se afastou repentinamente do núcleo, do reator, porém, permanecendo próximo a este devido a estrutura da treliça, que impede o afastamento completo da caixa do núcleo do reator quando este estava crítico. Pergunta-se:<br><br>
-        a)	Qual a classe de acidente que tal fato causaria?<br>
-        b)	Haveria uma variação instantânea de reatividade de 500 pcm? Por quê?<br>
-        c)	Esse seria um evento iniciador limitante para esta classe de evento?<br>
+        Durante o processo para alcançar a criticalidade do reator, a última barra de controle por alguma razão técnica no MAB (mecanismo de acionamento das barras) disparou e o operador não conseguiu detê-la. Pergunta-se:<br><br>
+        a)	O que aconteceria com a reatividade do reator?<br>
+        b)	Qual a sua classe de evento?<br>
+        c)	Quais as proteções existentes que impediriam que esta ação ocorresse?<br>
+        d)	Este é um evento limitante?<br>
+
         `,
-        resposta: `a)	Classe III (Falha ou operação incorreta com dispositivos experimentais) <br>
-        b)	Não, pois mesmo se caixa tivesse afastado muito do núcleo haveria inserção de reatividade positiva menor que 500 pcm. Levando em conta que a caixa apenas afastou-se um pouco do núcleo esta inserção de reatividade com certeza seria ainda menor que os 500 pcm, não representando assim risco para o reator.<br>
-        c)	Sim
+        resposta: `a)   Aumentaria constantemente a uma taxa de 8,6 pcm/s e, portanto, abaixo dos 20 pcm/s da especificação técnica de projeto. <br><br>
+        b)	Classe I <br><br>
+        c)	Este evento pode ocorrer tanto na partida como em potência do reator. 
+        As ações de proteção atuam da seguinte forma: <br>
+        Na faixa de partida os sistemas de desligamento são potência de primeiro nível ou 2,2 mW ou período de primeiro nível (17s) que provoca a queda das barras absorvedoras e potência de segundo nível 2,4 mW (dreno do TQ201) ou período de segundo nível (14s) que esvazia o TQ-201.<br>
+        Na faixa de potência os sistemas de desligamento são potência de primeiro nível ou 110 W ou período de primeiro nível (17s)que provoca a queda das barras absorvedoras e potência de segundo nível 120 W (dreno do TQ201) ou período de segundo nível (14s)que esvazia o TQ-201.<br><br>
+        d)	Sim
+        
         `
     },
     {
@@ -2415,37 +2436,29 @@ const secaoE = [
     },
     {
         pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
-        Suponha que no manuseio de uma vareta combustível a cordinha da ferramenta arrebente deixando a vareta combustível escapar para o fundo do tanque ou nos arredores deste tanque. Pergunta-se:<br>
+        Suponha que no manuseio de um elemento combustível a cordinha da ferramenta arrebente deixando o elemento combustível escapar para o fundo do tanque ou nos arredores deste tanque. Pergunta-se:<br>
         a)	Qual a classe deste evento iniciador.<br>
         b)	Quais a consequências radiológicas deste evento?<br>
         c)	Ele é um evento limitante?<br>
         `,
-        resposta: `a)	Classe II (falha no revestimento do elemento combustível) <br>
+        resposta: `a)	Classe II (Manuseio do elemento combustível) <br>
         b)	As doses equivalentes estimadas são muito menores aos limites máximos permissíveis pela norma CNEN-NE 3.01 para a dose equivalente efetiva.<br>
         c)	Não.
         `
     },
     {
-        pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
-        Durante o transporte do cesto de varetas combustíveis contendo 170 varetas o engradado despenca de uma altura de 3 metros e todos os encamisamentos das 170 varetas se rompem causando liberação de produtos de fissão na Célula Crítica. Pergunta-se:<br>
-        a)	Qual a classe deste evento?<br>
-        b)	É um evento limitante?<br>
-        c)	Quais as consequências radiológicas deste evento?
-        `,
-        resposta: `a)	Classe II (falha no revestimento da vareta combustível devido o manuseio do engradado de varetas). <br>
-        b)	Sim<br>
-        c)	As doses equivalentes estimadas são muito menores aos limites máximos permissíveis pela norma CNEN-NE 3.01 para a dose equivalente efetiva
-        `
-    },
-    {
-        pergunta: `O que é um acidente básico de projeto? Qual é o acidente básico de projeto do Reator IPEN/MB-01?`,
+        pergunta: `O que é um acidente básico de projeto? Cite 3 um acidente básico de projeto no reator IPEN/MB-01.`,
         resposta: `Em inglês Design Basic Accident (acidente básico de projeto) ou Maximum Credible Accident (máximo acidente crível) É um acidente postulado (teórico) para o qual uma Instalação Nuclear deve ser projetada e construída para resistir sem perdas dos sistemas, estruturas e componentes necessários para assegurar o bem estar e segurança do público.
-        O acidente básico de projeto do Reator IPEN/MB-01 é a retirada incontrolada da barra de controle.
+        Acidentes do reator IPEN/MB-01:
+        Classe 1: falha no subsistema de controle de reatividade; injeção de água fria no núcleo; aumento de moderação por falha estrutural; carregamento e operação com elementos combustíveis em posição incorreta; e retirada incontrolada da barra de controle.
+        Classe 2: falha ou vazamento no sistema de esgoto quente; falha em tanques de armazenamento de líquidos; falha no revestimento da vareta combustível; manuseio de varetas combustíveis; falha no revestimento das placas combustíveis; e manuseio do elemento combustível.
+        Classe 3: movimento incorreto da fonte de nêutrons; presença indevida de pessoas na célula crítica; perda de potência elétrica; e falha ou operação incorreta com aparato experimental.
+
         `
     },
     {
         pergunta: `Qual o acidente mais provável de ocorrer no Reator IPEN/MB-01?`,
-        resposta: `Queda de uma vareta combustível durante manuseio no núcleo.`
+        resposta: `Queda de uma placa durante manuseio no núcleo.`
     },
     {
         pergunta: `O que são limites de segurança?`,

@@ -25,11 +25,11 @@ const secaoF = [
     {
         pergunta: `Quais os procedimentos para se criticalizar o Reator em condições normais de operação?`,
         resposta: `a)	Uma vez concluído a lista de verificação inicial, efetuar os itens a seguir. <br><br>
-        b)	Subir totalmente a barra de segurança 1<br><br>
-        c)	Subir totalmente a barra de segurança 2<br><br>
-        d)	Encher o tanque do moderador TQ-201 até o nível operacional usando a bomba de enchimento rápido até ¾ da parte ativa do núcleo e o restante com enchimento lento através da bomba de enchimento lento.<br><br>
-        e)	Subir a barra de controle 1 (BC#1) até uma determinada posição, especificada pelo, OSR em função das características da configuração considerada e dos arranjos experimentais existentes.<br><br>
-        f)	Subir a barra de controle 2 (BC#2) até uma determinada posição, especificada pelo, OSR em função das características da configuração considerada e dos arranjos experimentais existentes de forma cautelosa orientando se pelos níveis de contagens, níveis de correntes, valores de períodos do canais nucleares apropriados até o reator ficar levemente supercrítico.<br><br>
+        b)	Subir uma barra de controle até 64,23%, de acordo com o roteiro experimental previamente definido<br><br>
+        c)	Subir uma segunda barra de controle até 64,23%, de acordo com o roteiro experimental previamente definido<br><br>
+        d)	Encher o tanque do moderador TQ-201 até o nível operacional.<br><br>
+        e)	Subir uma terceira barra de controle até 64,23%, de acordo com o roteiro experimental previamente definido<br><br>
+        f)	Subir a última barra de controle até a posição de critacildiade, de acordo com o roteiro experimental previamente definido.<br><br>
         g)	Efetuar a passagem da faixa de partida para potência mediante aos procedimentos específicos.<br><br>
         h)	Ao atingir a potência desejada criticalizar o reator deixando o crítico nesta potência por intermédio da movimentação “fina” da BC#2.<br><br>
         i)	Colocar o Reator em controle automático se necessário.<br><br>
@@ -91,10 +91,13 @@ const secaoF = [
     },
     {
         pergunta: `Dê a aplicabilidade, o objetivo, especificação e a base dos valores de atuação dos canais de potência.`,
-        resposta: `•	Aplicabilidade: Se aplica aos Limites de potência para os canais nucleares. <br><br>
+        resposta: `•	Aplicabilidade: Aplica-se aos Limites de potência para os canais nucleares. <br><br>
         •	Objetivo: Desligar o reator por sobrepotência.<br><br>
-        •	Especificação: Canais 1,2 e 9 desligam o reator na faixa de partida em 110 mW por SCRAM dos Magnetos e em 120 mW por SCRAM de Válvulas. Os canais nucleares 3,4,7,8 e 10, que operam na faixa de potência, desligam o reator por sobrepotência em 110 W, por SCRAM de MAGNETOS e em 120 W por SCRAM de MAGNETOS e SCRAM de VÁLVULAS.<br><br>
-        •	Base: Assegurar o desligamento do reator por sobrepotência
+        •	Especificação: <br>
+            a) Os canais nucleares 1, 2 e 9, que operam na Faixa de Partida, desligam o reator por sobrepotência em 2,2 miliwatts, por “SCRAM de Magnetos” e em 2,4 miliwatts, por “SCRAM de Magnetos e SCRAM de Válvulas”.
+            b) Os canais nucleares 3, 4, 7, 8 e 10, que operam na Faixa de Potência, desligam o reator por sobrepotência em 110 watts, por “SCRAM de Magnetos” e em 120 watts, por “SCRAM de Magnetos e SCRAM de Válvulas”.
+            <br><br>
+        •	Base: Assegurar o desligamento do reator por sobrepotência, minimizando a energia total liberada durante acidentes de excursão de potência
         `
     },
     {
@@ -126,8 +129,8 @@ const secaoF = [
         pergunta: `Dê a aplicabilidade, o objetivo, especificação e a base do valor limite para o excesso de reatividade.`,
         resposta: `•	Aplicabilidade: Se aplica ao excesso de reatividade do núcleo do reator.<br><br>
         •	Objetivo: Assegurar o controle da operação do reator assim como o seu desligamento seguro, sempre que necessário.<br><br>
-        •	Especificação: O excesso de reatividade total do núcleo sem experimentos e na temperatura de 20°C não deverá exceder a 2500 pcm para a configuração retangular básica de projeto de 28x26 (680) varetas combustíveis, e 3160 pcm para a configuração cilindrizada, mantendo o mesmo número de varetas combustíveis.<br><br>
-        •	Base: Manter o excesso de reatividade do núcleo dentro de limites que atenda os seguintes critérios de segurança: “margem de desligamento”, que estabelece que a soma das reatividades das barras de controle e segurança sejam no mínimo, 125% superior ao máximo excesso de reatividade do núcleo e, o “critério da barra presa” seja atendido. Este critério estabelece que o reator esteja na condição de “reator desligado” (keff<0,98) ainda que a barra mais reativa fique presa em posição totalmente retirada do núcleo.
+        •	Especificação: O excesso de reatividade total do núcleo sem experimentos e na temperatura de 20°C não deverá exceder 4000 pcm para a configuração padrão com 19 elementos combustíveis, e 6500 pcm para a configuração com 20 elementos combustíveis<br><br>
+        •	Base: Manter o excesso de reatividade do núcleo dentro de limites que atenda os seguintes critérios de segurança: “margem de desligamento”, que estabelece que a soma das reatividades das barras de controle e segurança sejam no mínimo, 100% superior ao máximo excesso de reatividade do núcleo e, o “critério da barra presa” seja atendido. Este critério estabelece que o reator esteja na condição de “reator desligado” (keff<0,98) ainda que a barra mais reativa fique presa em posição totalmente retirada do núcleo.
         `
     },
     {
@@ -147,7 +150,7 @@ const secaoF = [
         b)	O projeto do dispositivo experimental deve garantir sua fixação e sua resistência mecânica para suportar forças hidráulicas, pneumáticas ou outras forças a que o experimento fique submetido.<br>
         c)	O projeto do dispositivo experimental deve garantir que não haja falhas na sua estrutura, principalmente para evitar inundação de possíveis vazios em seu interior.<br><br>
         
-        •	Base: Assegurar que o valor da reatividade inserido pelos experimentos e a taxa de mudança de reatividade estejam de acordo com os valores considerados no Capítulo XV do RAS (Análise de segurança).
+        •	Base: Assegurar que o valor de reatividade inserido pelos experimentos e a 			taxa de mudança de reatividade não possa provocar um transiente de potência indesejado..
         `
     },
     {
@@ -262,7 +265,7 @@ const secaoF = [
     },
     {
         pergunta: `O que é o REDO?`,
-        resposta: `O REDO (Relatório de Eventos de Operação) é um relatório especial que reporta uma ocorrência não usual na instalação que, embora aparentemente sem grandes consequências, poderiam afetar a segurança desta instalação. `
+        resposta: `O REDO (Relatório de Eventos de Operação) é um relatório especial que reporta uma ocorrência não usual na instalação que, embora aparentemente sem grandes consequências, poderiam afetar a segurança desta instalação `
     },
     {
         pergunta: `O “Manual de Operação, Manutenção, Inspeção e Testes do Reator IPEN/MB-01”, contêm os principais procedimentos e instruções de trabalho e procedimentos operacionais do Reator IPEN/MB-01. Cite estes procedimentos.`,
@@ -518,12 +521,12 @@ const secaoG = [
     },
     {
         pergunta: `Como é feita a monitoração dutos de Ar e quais são as suas finalidades?`,
-        resposta: `Os monitores de radiação gama estão instalados no sistema de condicionamento de Ar e Ventilação da Célula Crítica.
+        resposta: `A Monitoração de Dutos de Ar é feita em pontos importantes dos circuitos de Recirculação, Condicionamento e Exaustão de ar, através de monitores de radiação gama.<br><br>
         As finalidades são: <br><br>
-        a.	Iniciar algumas ações de controle (acionamento de válvulas).<br>
-        b.	Acionamento de alarmes.<br>
+        a.	Iniciar algumas ações de controle (acionamento de válvulas).<br><br>
+        b.	Acionamento de alarmes.<br><br>
         Uma chave seletora permite a escolha de uma, entre várias medidas, para ser registrada continuamente.<br>
-        Alguns destes canais são permanentemente acoplados a um registrador.
+        Alguns destes canais são permanentemente acoplados a um registrador.<br>
         Os sensores deste sistema são representados por detectores do tipo Geiger Muller.
         `
     },
@@ -590,7 +593,10 @@ const secaoG = [
         -Operadores Licenciados da Instalação.<br>
         -IOE (prestando serviço na Instalação).<br>
         -ERP (Equipe de Radioproteção).<br>
-        -Brigada de Incêndio.
+        -Brigada de Incêndio.<br><br>
+        GEL: Grupo de Emergência Local, composto pelo COLE, pelo Responsável pela
+        Instalação, Operadores do Reator e IOEs qualificados
+
         `
     },
     {
@@ -637,11 +643,9 @@ const secaoG = [
     },
     {
         pergunta: `O que são áreas supervisionadas? Quais são elas? Qualquer pessoa pode executar atividades nessas áreas?`,
-        resposta: `São áreas onde o nível de radiação externa podem resultar em doses individuais superiores a 0,5μSv/h, ou inferiores a 6 mSv acumuladas em um ano.<br>
-        As áreas supervisionadas do Reator IPEN/MB-01 são:<br><br>
-        -Ala fria do Laboratório de descontaminação.
-        -Laboratório de espectrometria.<br><br>
-        Não, nessas áreas as atividades só poderão ser executadas por um IOE devidamente treinado.
+        resposta: `A área supervisionada é qualquer área sob vigilância não classificada como controlada, mas onde as condições de exposição necessitam ser mantidas sob supervisão. Esta área é caracterizada pelo laboratório de Medida de Material Irradiado.
+        A máxima taxa de dose nesta área é inferior a 1,0 Sv/h. O pessoal envolvido na operação e pesquisadores do Reator IPEN/MB-01 pode ocupar a área supervisionada, contanto que não excedam os limites de dose para corpo inteiro segundo as Diretrizes Básicas de Proteção Radiológica.
+        
         `
     },
     {
@@ -665,7 +669,7 @@ const secaoG = [
     },
     {
         pergunta: `O que é um evento classe I?`,
-        resposta: `É uma classe de acidente quando há liberação de material radioativo para o meio ambiente.`
+        resposta: `Eventos que causam inserção positiva de reatividade no núcleo do Reator IPEN/MB-01.`
     },
     {
         pergunta: `Cite exemplos de eventos não usuais.`,
@@ -676,9 +680,11 @@ const secaoG = [
     },
     {
         pergunta: `Cite exemplos de condições de alerta`,
-        resposta: `Queda de ferramentas ou de objetos sobre o núcleo.<br><br>
-        Queda grave de vareta combustível com rompimento do encamisamento.<br><br>
-        Incêndios em áreas que contém material radioativo.
+        resposta: `Linha de Alimentação do Tanque do Moderador - 2,5 10-1 mGy/h <br><br>
+        Tanque de Decaimento - 2,5 10-2 mGy/h <br><br>
+        Tanque do Moderador - (Plataforma) - 2,5 101 mGy/h <br><br>
+        Linha de Exaustão (Chaminé) - 103 cpm
+        .
         `
     },
     {
@@ -711,8 +717,8 @@ const secaoG = [
     },
     {
         pergunta: `Qual é a taxa de dose de radiação na Célula Crítica durante uma operação a 100 W de potência durante uma hora? Ela é maior que a taxa de dose logo após o desligamento do Reator no instante zero? Por quê?`,
-        resposta: `A taxa de dose durante a operação a 100 W após uma hora de operação é de 9,3 R/h ou 93 mSv/h. <br>
-        Não, ela é menor em virtude da blindagem que o moderador exerce durante a operação. Segundo medidas experimentais realizadas, a taxa de dose no instante zero após a queda das barras e esvaziamento do tanque do moderador, a taxa de dose é de 18,0 R/h ou 180 mSv/h.
+        resposta: `A taxa de dose durante a operação a 100 W após uma hora de operação é de 0,6 µSv/h. <br>
+        Não, ela é menor em virtude da blindagem que o moderador exerce durante a operação. Segundo medidas experimentais realizadas, a taxa de dose no instante zero após a queda das barras e esvaziamento do tanque do moderador, a taxa de dose é de 50 µSv/h.
         `
     },
     {
@@ -720,12 +726,12 @@ const secaoG = [
         resposta: `A taxa de dose é aproximadamente 7,5μSv/h.`
     },
     {
-        pergunta: `Qual é a taxa de dose a um metro da fonte de partida?`,
-        resposta: `25μSv/h.`
+        pergunta: `Qual é a taxa de dose da fonte de partida medida na entrada do compartimento que a abriga (Sala da Fonte de Partida)?`,
+        resposta: `10,0 μSv/h para nêutrons e 1,0 μSv/h para gama.`
     },
     {
         pergunta: `Qual a dose aguda teórica devido aos nêutrons e gama na sala de controle após um acidente básico de projeto (retirada incontrolada da barra de controle)?`,
-        resposta: `Devido a nêutrons é de 0,0005 Sv e devido a gama é de 0,021 Sv.`
+        resposta: `Devido a nêutrons é de 0,0005 Sv (5 mSv)  e devido a gama é de 0,021 Sv(21 mSv)..`
     },
     {
         pergunta: `Qual a dose teórica nos limites da área de exclusão (cerca da Instalação) devido à retirada incontrolada da barra de controle?`,
@@ -765,7 +771,7 @@ const secaoG = [
     {
         pergunta: `Como são feitos os tratamentos de rejeitos gasosos gerados no Reator IPEN/MB-01?`,
         resposta: `a)	Gerados na célula crítica. <br>
-        Os gases oriundos de possíveis escapes das varetas combustíveis ou de varetas especiais ou de algum experimento que possam gerar gases radioativos são retidos no sistema de filtros dos sistemas de Recirculação e Exaustão. Cada um destes sistemas é composto por 2 trens redundantes de filtros absolutos e de carvão. Os filtros de carvão retêm os produtos gasosos radioativos e os filtros absolutos (HEPA) retém os particulados.
+        Os gases oriundos de possíveis escapes dos elementos combustíveis ou de algum experimento que possam gerar gases radioativos são retidos no sistema de filtros dos sistemas de Recirculação e Exaustão. Cada um destes sistemas é composto por 2 trens redundantes de filtros absolutos e de carvão. Os filtros de carvão retêm os produtos gasosos radioativos e os filtros absolutos (HEPA) retém os particulados.
         O controle de nível de radioatividade e de contaminantes radioativos é feito por monitores de dutos instalados na exaustão e recirculação e chaminé.<br><br>
         
         b)	Gerados na Capela de Manuseio de materiais radioativos.<br>
@@ -786,7 +792,8 @@ const secaoG = [
         -filtros<br><br>
         •	Acondicionamento<br>
         Os materiais são compactáveis quando for o caso, e encaminhados à Gerência de Rejeitos Radioativos do IPEN onde são acondicionados em recipientes metálicos de 200 l revestidos internamente com tinta epóxi, para posterior armazenamento.
-        As resinas do Sistema de Água de Moderação (STAM), são previamente analisadas e em função da atividade medida, podem ser armazenadas ou devolvidas aos fornecedores, onde são tomadas as decisões apropriadas.<br><br>
+        As resinas do Sistema de Água de Moderação (STAM), são previamente analisadas e em função da atividade medida, podem ser armazenadas ou devolvidas aos fornecedores, onde são tomadas as decisões apropriadas.<br>
+        Da mesma forma as resinas de troca iônica são acondicionadas em recipientes e encaminhadas ao GRR para estocagem.<br><br>
         •	Histórico
         Dentro do histórico de funcionamento do reator, pode-se desconsiderar a geração de rejeitos sólidos.
         `
