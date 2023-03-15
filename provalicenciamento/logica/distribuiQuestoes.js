@@ -157,8 +157,8 @@ refresh.addEventListener('click', () => {
             pergunta.style.opacity = '0'
         })
     });
-    var resp = [pegaCampoResposta('A'),pegaCampoResposta('B'),pegaCampoResposta('C'),pegaCampoResposta('D'),pegaCampoResposta('E'),pegaCampoResposta('F'),pegaCampoResposta('G')]
-    var respostas = [...resp[0],...resp[1],...resp[2],...resp[3],...resp[4],...resp[5],...resp[6]]
+    
+    var respostas = [...pegaCampoResposta('A'),...pegaCampoResposta('B'),...pegaCampoResposta('C'),...pegaCampoResposta('D'),...pegaCampoResposta('E'),...pegaCampoResposta('F'),...pegaCampoResposta('G')]
     var botoes = document.querySelectorAll('.chamaResposta')
     
     setTimeout(() => {
