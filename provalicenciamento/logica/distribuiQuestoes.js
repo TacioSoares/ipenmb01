@@ -159,6 +159,7 @@ refresh.addEventListener('click', () => {
     });
     var resp = [pegaCampoResposta('A'),pegaCampoResposta('B'),pegaCampoResposta('C'),pegaCampoResposta('D'),pegaCampoResposta('E'),pegaCampoResposta('F'),pegaCampoResposta('G')]
     var respostas = [...resp[0],...resp[1],...resp[2],...resp[3],...resp[4],...resp[5],...resp[6]]
+    var botoes = document.querySelectorAll('.chamaResposta')
     
     setTimeout(() => {
         perguntas.forEach(secao => {
@@ -168,6 +169,9 @@ refresh.addEventListener('click', () => {
         });
         respostas.forEach(resposta => {
             resposta.style.display = 'none'
+        });
+        botoes.forEach(botao => {
+            botao.value = 'Resposta'
         });
         distribuiQuestao('A')
         distribuiQuestao('B')
