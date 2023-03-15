@@ -1933,7 +1933,7 @@ const secaoE = [
     },
     {
         pergunta: `O que são sistemas de segurança do Reator? Como eles são constituídos?`,
-        resposta: `São sistemas que não permitem que haja uma liberação descontrolada de produtos radioativos para o meio ambiente externo, mesmo havendo perda de integridade das varetas combustíveis. No Reator IPEN/MB-01, os sistemas de segurança para controle de liberação de materiais radioativos são: <br><br>
+        resposta: `São sistemas que não permitem que haja uma liberação descontrolada de produtos radioativos para o meio ambiente externo, mesmo havendo perda de integridade do combustível. No Reator IPEN/MB-01, os sistemas de segurança para controle de liberação de materiais radioativos são: <br><br>
         - Estrutura da Célula Crítica (paredes e Lajes)<br>
         - Vedação das portas de Acesso à Célula Crítica<br>
         - Penetração de cabos para a Célula Crítica<br>
