@@ -716,7 +716,7 @@ const secaoB = [
         pergunta: 'Descreva o núcleo atual do Reator IPEN/MB-01.',
         resposta: `- é do tipo tanque aberto <br><br>
         - Possui arranjo de 4 x 5 composto por 19 elementos combustíveis tipo placa de Siliceto de Urânio (U3Si2) enriquecido a 19,75 % e um bloco de alumínio central <br><br>
-        -  4 caixas refletoras de água pesada (D2O).  <br><br>
+        -  4 caixas refletoras de água pesada (D<sub>2</sub>O).  <br><br>
         - Todo o conjunto crítico está inserido num tanque moderador de água leve, sendo previsto operar a potência nominal máxima de 100 watts. <br><br>
         - 21 placas de combustíveis por elemento (19 móveis e 2 fixas nas extremidades)
         .
@@ -1699,7 +1699,7 @@ const secaoC = [
         resposta: `Não, pois para movimentar as barras, os magnetos têm de estar energizados e para ter essa condição todos os itens do SCRAM de magnetos nisto incluindo o item partidas habilitadas devem estar satisfeitas.`
     },
     {
-        pergunta:`Com a malha de partida “desabilitada” é possível se movimentar a fonte de nêutrons do Reator IPEN/MB-01?`,
+        pergunta:`Com a malha de partida “desabilitada” é possível movimentar a fonte de nêutrons do Reator IPEN/MB-01?`,
         resposta: `Não, por razões de segurança todos os itens da malha de partida devem estar satisfeitos`
     },
     {
