@@ -1324,7 +1324,7 @@ const secaoB = [
         `
     },
     {
-        pergunta: `74)	Com relação à fonte de nêutrons usada para a partida do Reator IPEN/MB-01, pergunta-se: <br><br>
+        pergunta: `Com relação à fonte de nêutrons usada para a partida do Reator IPEN/MB-01, pergunta-se: <br><br>
         a)	Qual é o tipo desta fonte?<br>
         b)	Qual a sua atividade em Curie?<br>
         c)	Qual é a sua meia vida?<br>
@@ -1333,7 +1333,7 @@ const secaoB = [
         resposta: `a.	Amerício Berílio <br><br>
         b.	A = 1 Curie ou 3,7x1010 Bequerel. <br><br>
         c.	T<sub>1/2</sub> = 432,6 anos <br><br>
-        d.	2,6x106 n/s
+        d.	2,6x10<sup>6</sup> n/s
         `
     },
     {
