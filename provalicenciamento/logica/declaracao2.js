@@ -644,7 +644,7 @@ const secaoG = [
     {
         pergunta: `O que são áreas supervisionadas? Quais são elas? Qualquer pessoa pode executar atividades nessas áreas?`,
         resposta: `A área supervisionada é qualquer área sob vigilância não classificada como controlada, mas onde as condições de exposição necessitam ser mantidas sob supervisão. Esta área é caracterizada pelo laboratório de Medida de Material Irradiado.
-        A máxima taxa de dose nesta área é inferior a 1,0 Sv/h. O pessoal envolvido na operação e pesquisadores do Reator IPEN/MB-01 pode ocupar a área supervisionada, contanto que não excedam os limites de dose para corpo inteiro segundo as Diretrizes Básicas de Proteção Radiológica.
+        A máxima taxa de dose nesta área é inferior a 1,0 µSv/h. O pessoal envolvido na operação e pesquisadores do Reator IPEN/MB-01 pode ocupar a área supervisionada, contanto que não excedam os limites de dose para corpo inteiro segundo as Diretrizes Básicas de Proteção Radiológica.
         
         `
     },
