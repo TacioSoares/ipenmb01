@@ -669,7 +669,7 @@ const secaoA = [
         •	Cada cova estocará “a seco” no máximo 170 varetas combustíveis ou 8 conjunto de placas. Possuem dreno para evitar alagamento em caso de acidentes. <br>
         •	Cada engradado é removível das covas e formado por uma estrutura de aço inox, contendo placas espaçadoras formando um arranjo 15x15 de furos de diâmetro 11 mm e espaçamento centro a centro de 12,9mm. Embora a capacidade seja de 225 varetas a quantidade máxima para transporte é de 170 varetas ou 8 placas de elemento combustível. <br>
         •	O engradado só pode permanecer: <br>
-        -Dentro da cova.
+        -Dentro da cova. <br>
         -Dentro da caixa de blindagem construída em chumbo e revestida de aço inox localizada ao lado do tanque do moderador.
         `
     },
