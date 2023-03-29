@@ -29,7 +29,7 @@ const secaoF = [
         c)	Subir uma segunda barra de controle até 64,23%, de acordo com o roteiro experimental previamente definido<br><br>
         d)	Encher o tanque do moderador TQ-201 até o nível operacional.<br><br>
         e)	Subir uma terceira barra de controle até 64,23%, de acordo com o roteiro experimental previamente definido<br><br>
-        f)	Subir a última barra de controle até a posição de critacildiade, de acordo com o roteiro experimental previamente definido.<br><br>
+        f)	Subir a última barra de controle até a posição de criticalidade, de acordo com o roteiro experimental previamente definido.<br><br>
         g)	Efetuar a passagem da faixa de partida para potência mediante aos procedimentos específicos.<br><br>
         h)	Ao atingir a potência desejada criticalizar o reator deixando o crítico nesta potência por intermédio da movimentação “fina” da BC#2.<br><br>
         i)	Colocar o Reator em controle automático se necessário.<br><br>
