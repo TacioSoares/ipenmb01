@@ -2151,7 +2151,7 @@ const secaoE = [
         resposta: `É de 20 pcm/s, limite este definido nas Especificações Técnicas de Projeto.`
     },
     {
-        pergunta: `19)	Qual é a ordem de grandeza da taxa de reatividade durante o processo de enchimento do tanque do moderador (região 75% da parte ativa do núcleo), nos seguintes modos de operação: <br>
+        pergunta: `Qual é a ordem de grandeza da taxa de reatividade durante o processo de enchimento do tanque do moderador (região 75% da parte ativa do núcleo), nos seguintes modos de operação: <br>
         a)	Enchimento rápido?<br>
         b)	Enchimento lento?<br>
         Sabendo que taxa de inserção de reatividade positiva devido ao moderador no trecho final da parte ativa é de aproximadamente 30 pcm/s.<br>
