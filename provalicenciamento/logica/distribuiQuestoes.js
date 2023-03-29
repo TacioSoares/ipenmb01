@@ -52,7 +52,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'G') {
         while (numeroDoBanco.length < 7) {
-            var numero = Math.floor(Math.random() * 56)
+            var numero = Math.floor(Math.random() * 57)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }

@@ -372,6 +372,10 @@ const secaoG = [
     },
     {
         pergunta: `O que serão registradas no histórico dosimétrico correspondente a pessoas expostas ocupacionalmente?`,
+        resposta: `No mínimo as doses mensais e as doses acumuladas anuais e durante cada período de cinco anos.`
+    },
+    {
+        pergunta: `Como deve ser classificado um trabalhador exposto que recebe anualmente doses equivalentes iguais ou menores de 10 mSv em todo o corpo?`,
         resposta: `Deve ser classificado como IOE (Indivíduo Operacionalmente Exposto).`
     },
     {
