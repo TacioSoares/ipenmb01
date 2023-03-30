@@ -2361,7 +2361,7 @@ const secaoE = [
     },
     {
         pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
-        Cerca de 20 barras do arranjo retangular padrão do núcleo (4x5) foram removidas para montagem de um experimento. Ao concluir esta operação, o operador retornou estas barras para o núcleo. No entanto, ele confundiu a sequência de retorno e as 20 varetas foram colocadas em posições diferentes das originais. Pergunta-se:<br><br>
+        Cerca de 20 barras do arranjo retangular padrão do núcleo (4x5) foram removidas para montagem de um experimento. Ao concluir esta operação, o operador retornou estas barras para o núcleo. No entanto, ele confundiu a sequência de retorno e as 20 barras foram colocadas em posições diferentes das originais. Pergunta-se:<br><br>
         a)	Qual a classe de acidente que esta desatenção poderia levar?<br>
         b)	Haveria algum risco severo em razão deste equívoco? Justifique.<br>
         c)	Qual seria o evento iniciador limitante desta classe?<br>
