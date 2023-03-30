@@ -536,7 +536,7 @@ const secaoA = [
         `
     },
     {
-        pergunta: `77)	Quantas colisões um nêutron nascido com 2 MeV de energia precisa para atingir seu equilíbrio a 20,4°C e a 300°C? <br>
+        pergunta: `Quantas colisões um nêutron nascido com 2 MeV de energia precisa para atingir seu equilíbrio a 20,4°C e a 300°C? <br>
         Dados: <br>
         Constante de Boltzmann = K = 8,6x10<sup>-5</sup> eV/K <br>
         T(K) = t(°C) + 273 <br>
@@ -544,7 +544,7 @@ const secaoA = [
         `,
         resposta: `N = ln(E<sub>0</sub>/E<sub>1</sub>)/ξ <br>
         N<sub>1</sub> = ln(2x10<sup>6</sup>/0,025)/0,92 = 20 colisões. <br>
-        N<sub>2</sub> = ln(2x10<sup>6</sup>/0,049)/0,92 = 10 colisões
+        N<sub>2</sub> = ln(2x10<sup>6</sup>/0,049)/0,92 = 19 colisões
         `
     },
     {
