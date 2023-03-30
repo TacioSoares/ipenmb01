@@ -94,7 +94,7 @@ const secaoF = [
         resposta: `•	Aplicabilidade: Aplica-se aos Limites de potência para os canais nucleares. <br><br>
         •	Objetivo: Desligar o reator por sobrepotência.<br><br>
         •	Especificação: <br>
-            a) Os canais nucleares 1, 2 e 9, que operam na Faixa de Partida, desligam o reator por sobrepotência em 2,2 miliwatts, por “SCRAM de Magnetos” e em 2,4 miliwatts, por “SCRAM de Magnetos e SCRAM de Válvulas”.
+            a) Os canais nucleares 1, 2 e 9, que operam na Faixa de Partida, desligam o reator por sobrepotência em 2,2 miliwatts, por “SCRAM de Magnetos” e em 2,4 miliwatts, por “SCRAM de Magnetos e SCRAM de Válvulas”. <br><br>
             b) Os canais nucleares 3, 4, 7, 8 e 10, que operam na Faixa de Potência, desligam o reator por sobrepotência em 110 watts, por “SCRAM de Magnetos” e em 120 watts, por “SCRAM de Magnetos e SCRAM de Válvulas”.
             <br><br>
         •	Base: Assegurar o desligamento do reator por sobrepotência, minimizando a energia total liberada durante acidentes de excursão de potência
