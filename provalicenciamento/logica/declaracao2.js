@@ -119,7 +119,7 @@ const secaoF = [
         pergunta: `Dê a aplicabilidade, o objetivo, especificação e a base dos valores de atuação do Monitor de Dutos da Chaminé - RITH-156.`,
         resposta: `•	Aplicabilidade: Se aplica ao Valor Limite de atuação do Monitor de Dutos RITH-156, localizado na linha de exaustão da Célula Crítica (chaminé).<br><br>
         •	Objetivo: Assegurar o desligamento dos ventiladores dos subsistemas de exaustão e de insuflamento e o fechamento dos “dampers” de isolamento da Célula Crítica. <br><br>
-        •	Especificação: O monitor de duto RITH-156 ao atingir o ponto de ajuste de “perigo” (104 cpm), deve enviar sinal para desligamento automático dos ventiladores do subsistema de exaustão da Célula Crítica, e para fechamento dos “damper's de isolamento da Célula Crítica, provocando por intertravamento, as seguintes ações subsequentes:<br><br>
+        •	Especificação: O monitor de duto RITH-156 ao atingir o ponto de ajuste de “perigo” (10<sup>4</sup> cpm), deve enviar sinal para desligamento automático dos ventiladores do subsistema de exaustão da Célula Crítica, e para fechamento dos “damper's de isolamento da Célula Crítica, provocando por intertravamento, as seguintes ações subsequentes:<br><br>
         a)	Desligamento dos ventiladores do subsistema de insuflamento para a Célula Crítica<br>
         b)	Desligamento do reator por “alta pressão” no interior da Célula Crítica.<br><br>
         •	Base: Evitar liberação não controlada de material radioativo para o meio externo.
