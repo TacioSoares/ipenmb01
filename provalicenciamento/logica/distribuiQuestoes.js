@@ -28,7 +28,7 @@ function sorteiaQuestao(X) {
         }
         return numeroDoBanco
     } else if (X == 'D') {
-        while (numeroDoBanco.length < 1) {
+        while (numeroDoBanco.length < 4) {
             var numero = Math.round(Math.random() * 11)
             console.log(`Seção D = ${numero}`)
             if (numeroDoBanco.indexOf(numero) == -1) {
