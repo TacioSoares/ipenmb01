@@ -33,25 +33,29 @@ checkBox.forEach(check => {
     // adiciona evento ouvidor em cada input checkbox
     check.addEventListener("click", function(){
         // verifica se cada checkbox está marcada
-        checkBox.forEach(elemento => {
-            if(elemento.checked == false){
-                var questoes = document.querySelectorAll(`.questãoSecao${elemento.name}`)
-                questoes.forEach(questao => {
-                    questao.style.opacity = '0'
-                    setTimeout(() => {
-                        questao.style.display = 'none'
-                    }, 1500);
-                })
-            } else {
-                var questoes = document.querySelectorAll(`.questãoSecao${elemento.name}`)
-                questoes.forEach(questao => {
-                    questao.style.display = 'block'
-                    setTimeout(() => {
-                        questao.style.opacity = '100'
-                    }, 300);
-                })
-            }
-        })
+        setTimeout(() => {
+            checkBox.forEach(elemento => {
+                if(elemento.checked == false){
+                    var questoes = document.querySelectorAll(`.questãoSecao${elemento.name}`)
+                    questoes.forEach(questao => {
+                        if (questao.style.display = 'block') {
+                            questao.style.opacity = '0'
+                            setTimeout(() => {
+                                questao.style.display = 'none'
+                            }, 1000);
+                        }    
+                    })
+                } else {
+                    var questoes = document.querySelectorAll(`.questãoSecao${elemento.name}`)
+                    questoes.forEach(questao => {
+                        questao.style.display = 'block'
+                        setTimeout(() => {
+                            questao.style.opacity = '100'
+                        }, 300);
+                    })
+                }
+            })
+        }, 1000)
     })
 });
 
