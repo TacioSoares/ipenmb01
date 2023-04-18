@@ -1331,7 +1331,7 @@ const secaoB = [
         d)	Qual é o fluxo de nêutrons emitido em 4π?<br>
         `,
         resposta: `a.	Amerício Berílio <br><br>
-        b.	A = 1 Curie ou 3,7x1010 Bequerel. <br><br>
+        b.	A = 1 Curie ou 3,7x10<sup>10</sup> Bequerel. <br><br>
         c.	T<sub>1/2</sub> = 432,6 anos <br><br>
         d.	2,6x10<sup>6</sup> n/s
         `
