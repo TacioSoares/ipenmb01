@@ -156,7 +156,7 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.589);
     border-radius: 5px;
     padding: 3px;
-    color: black;
+    color: gray;
     margin-top: 2px;
     min-height: 40px;
     opacity: 0;
@@ -175,6 +175,10 @@ label {
 }
 .filtro {
     cursor: pointer;
+}
+.sublinhado{
+    text-decoration: underline;
+    color: gray;
 }
 .destaque {
     font-weight: bold;
