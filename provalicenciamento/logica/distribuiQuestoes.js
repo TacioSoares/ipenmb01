@@ -1,10 +1,11 @@
+console.log(secaoA.length,secaoB.length,secaoC.length,secaoD.length,secaoE.length,secaoF.length,secaoG.length)
 const refresh = document.querySelector('#refresh')
 
 function sorteiaQuestao(X) {
     numeroDoBanco = []
     if (X == 'A') {
         while (numeroDoBanco.length < 6) {
-            var numero = Math.floor(Math.random() * 93)
+            var numero = Math.round(Math.random() * 93)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -12,7 +13,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'B') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.floor(Math.random() * 77)
+            var numero = Math.round(Math.random() * 77)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -20,7 +21,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'C') {
         while (numeroDoBanco.length < 4) {
-            var numero = Math.floor(Math.random() * 53)
+            var numero = Math.round(Math.random() * 53)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -28,7 +29,8 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'D') {
         while (numeroDoBanco.length < 1) {
-            var numero = Math.floor(Math.random() * 11)
+            var numero = Math.round(Math.random() * 11)
+            console.log(`Seção D = ${numero}`)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -36,7 +38,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'E') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.floor(Math.random() * 40)
+            var numero = Math.round(Math.random() * 40)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -44,7 +46,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'F') {
         while (numeroDoBanco.length < 3) {
-            var numero = Math.floor(Math.random() * 36)
+            var numero = Math.round(Math.random() * 36)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
@@ -52,7 +54,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'G') {
         while (numeroDoBanco.length < 7) {
-            var numero = Math.floor(Math.random() * 57)
+            var numero = Math.round(Math.random() * 57)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
