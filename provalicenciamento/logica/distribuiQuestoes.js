@@ -1,4 +1,4 @@
-console.log(secaoA.length,secaoB.length,secaoC.length,secaoD.length,secaoE.length,secaoF.length,secaoG.length)
+
 const refresh = document.querySelector('#refresh')
 
 function sorteiaQuestao(X) {
@@ -30,7 +30,6 @@ function sorteiaQuestao(X) {
     } else if (X == 'D') {
         while (numeroDoBanco.length < 5) {
             var numero = Math.round(Math.random() * 11)
-            console.log(`Seção D = ${numero}`)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
