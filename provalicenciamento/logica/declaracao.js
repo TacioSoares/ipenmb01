@@ -2237,6 +2237,7 @@ const secaoE = [
                     <li>- Falha em Tanques de Armazenamento de Líquidos.</li>
                     <li>- Falha no Revestimento do Elemento Combustível.</li>
                     <li>- Manuseio de Elementos Combustíveis.</li>
+                    <li>Manuseio de varetas combustíveis</li>
                 </td>
             </tr>
             <tr>
