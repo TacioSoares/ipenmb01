@@ -686,7 +686,7 @@ const secaoG = [
         pergunta: `Cite exemplos de condições de alerta`,
         resposta: `Linha de Alimentação do Tanque do Moderador - 2,5 10<sup>-1</sup> mGy/h <br><br>
         Tanque de Decaimento - 2,5 10<sup>-2</sup> mGy/h <br><br>
-        Tanque do Moderador - (Plataforma) - 2,5 101 mGy/h <br><br>
+        Tanque do Moderador - (Plataforma) - 2,5 10<sup>1</sup> mGy/h <br><br>
         Linha de Exaustão (Chaminé) - 10<sup>3</sup> cpm
         .
         `
