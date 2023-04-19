@@ -2449,9 +2449,9 @@ const secaoE = [
     {
         pergunta: `O que é um acidente básico de projeto? Cite 3 um acidente básico de projeto no reator IPEN/MB-01.`,
         resposta: `Em inglês Design Basic Accident (acidente básico de projeto) ou Maximum Credible Accident (máximo acidente crível) É um acidente postulado (teórico) para o qual uma Instalação Nuclear deve ser projetada e construída para resistir sem perdas dos sistemas, estruturas e componentes necessários para assegurar o bem estar e segurança do público.
-        Acidentes do reator IPEN/MB-01:
-        Classe 1: falha no subsistema de controle de reatividade; injeção de água fria no núcleo; aumento de moderação por falha estrutural; carregamento e operação com elementos combustíveis em posição incorreta; e retirada incontrolada da barra de controle.
-        Classe 2: falha ou vazamento no sistema de esgoto quente; falha em tanques de armazenamento de líquidos; falha no revestimento da vareta combustível; manuseio de varetas combustíveis; falha no revestimento das placas combustíveis; e manuseio do elemento combustível.
+        Acidentes do reator IPEN/MB-01: <br><br>
+        Classe 1: falha no subsistema de controle de reatividade; injeção de água fria no núcleo; aumento de moderação por falha estrutural; carregamento e operação com elementos combustíveis em posição incorreta; e retirada incontrolada da barra de controle.<br><br>
+        Classe 2: falha ou vazamento no sistema de esgoto quente; falha em tanques de armazenamento de líquidos; falha no revestimento da vareta combustível; manuseio de varetas combustíveis; falha no revestimento das placas combustíveis; e manuseio do elemento combustível.<br><br>
         Classe 3: movimento incorreto da fonte de nêutrons; presença indevida de pessoas na célula crítica; perda de potência elétrica; e falha ou operação incorreta com aparato experimental.
 
         `
