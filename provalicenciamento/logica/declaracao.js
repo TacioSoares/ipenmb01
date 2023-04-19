@@ -638,15 +638,15 @@ const secaoA = [
     {
         pergunta: `Cite os procedimentos para manuseio no núcleo (os dez mandamentos).`,
         resposta: `Para qualquer manuseio no núcleo com movimentação ou não de varetas os procedimentos são os seguintes: <br><br>
-        1)	Quando se tratar de uma montagem experimental no núcleo, deve se ter uma rotina do experimento que será realizado com as devidas aprovações, indicando passo a passo as etapas das atividades.<br>
-        2)	A mesa de controle deve estar ligada e o sistema de ventilação e condicionamento em operação.
-        3)	Todos os monitores de radiação devem estar ligados e de prontidão.<br>
-        4)	A fonte de nêutrons de partida do reator deve estar na sua blindagem apropriada.<br>
-        5)	O manuseio no núcleo só pode ser feito por um operador licenciado ou acompanhado deste.<br>
-        6)	O manuseio nunca pode ser feito apenas por uma só pessoa, deve se ter pelo menos duas pessoas no manuseio.<br>
-        7)	A proteção radiológica deve ter sido avisada com antecedência e, durante o manuseio ela deve estar presente com seus respectivos aparatos de medição da radiação.<br>
-        8)	Todas as pessoas participantes bem como os observadores devem na entrada da célula crítica, trocar o seu crachá o qual é substituído por um dosímetro de bolso individual apropriado fornecido pela Proteção Radiológica.<br>
-        9)	O sistema de incêndio e de comunicação devem estar operáveis.<br>
+        1)	Quando se tratar de uma montagem experimental no núcleo, deve se ter uma rotina do experimento que será realizado com as devidas aprovações, indicando passo a passo as etapas das atividades.<br><br>
+        2)	A mesa de controle deve estar ligada e o sistema de ventilação e condicionamento em operação.<br><br>
+        3)	Todos os monitores de radiação devem estar ligados e de prontidão.<br><br>
+        4)	A fonte de nêutrons de partida do reator deve estar na sua blindagem apropriada.<br><br>
+        5)	O manuseio no núcleo só pode ser feito por um operador licenciado ou acompanhado deste.<br><br>
+        6)	O manuseio nunca pode ser feito apenas por uma só pessoa, deve se ter pelo menos duas pessoas no manuseio.<br><br>
+        7)	A proteção radiológica deve ter sido avisada com antecedência e, durante o manuseio ela deve estar presente com seus respectivos aparatos de medição da radiação.<br><br>
+        8)	Todas as pessoas participantes bem como os observadores devem na entrada da célula crítica, trocar o seu crachá o qual é substituído por um dosímetro de bolso individual apropriado fornecido pela Proteção Radiológica.<br><br>
+        9)	O sistema de incêndio e de comunicação devem estar operáveis.<br><br>
         10)	Uso de luvas apropriadas quando houver manuseio em material de potencial de contaminação
         `
     },
