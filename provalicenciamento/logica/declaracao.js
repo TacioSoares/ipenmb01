@@ -2238,8 +2238,8 @@ const secaoE = [
                     <li>- Falha no Revestimento do Elemento Combustível.</li>
                     <li>- Falha no revestimento das placas combustíveis
                     <li>- Manuseio de Elementos Combustíveis.</li>
-                    <li>- Manuseio de varetas combustíveis</li>
                     <li>- Manuseio do elemento combustível</li>
+                    <li>- Manuseio de varetas combustíveis</li>
                 </td>
             </tr>
             <tr>
