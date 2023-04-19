@@ -1602,7 +1602,7 @@ const secaoC = [
     },
     {
         pergunta: `Qual a temperatura máxima e mínima permitida para o moderador?`,
-        resposta: `Máxima 95°C <br>
+        resposta: `Máxima 90°C <br>
         Mínima 18°C
         `
     },
