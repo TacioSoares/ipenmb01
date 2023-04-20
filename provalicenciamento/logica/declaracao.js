@@ -2150,21 +2150,6 @@ const secaoE = [
         resposta: `É de 20 pcm/s, limite este definido nas Especificações Técnicas de Projeto.`
     },
     {
-        pergunta: `Qual é a ordem de grandeza da taxa de reatividade durante o processo de enchimento do tanque do moderador (região 75% da parte ativa do núcleo), nos seguintes modos de operação: <br>
-        a)	Enchimento rápido?<br>
-        b)	Enchimento lento?<br>
-        Sabendo que taxa de inserção de reatividade positiva devido ao moderador no trecho final da parte ativa é de aproximadamente 30 pcm/s.<br>
-        Compare e verifique se estes valores são maiores, menores ou iguais ao valor da taxa de reatividade inserida pela barra de controle que é aproximadamente de 13 pcm/s.
-        `,
-        resposta: `Sendo a reatividade inserida por nível de água no TQ-201 é de aproximadamente 30 pcm/mm tem-se que: <br><br>
-        a.	Enchimento do TQ-201 com bomba rápida = 1,5mm/s
-        Taxa de inserção de reatividade com bomba rápida = 30 x 1,5 = 45 pcm/s que é equivalente a taxa de inserção de reatividade aproximadamente a 4 barras de controle (portanto acima do valor da especificação técnica de projeto que é 20 pcm/s).<br><br>
-        b.	Enchimento do TQ-201 com bomba lenta = 0,4 mm/s
-        Taxa de inserção de reatividade com bomba lenta = 30 x 0,4 = 12 pcm/s que é equivalente a taxa de inserção de reatividade de 1 barra de controle.
-        (Em razão dos resultados acima, fica claro porque há intertravamento da bomba rápida nesta região da parte ativa do núcleo).
-        `
-    },
-    {
         pergunta: `Qual é o valor da pressão de intertravamento da Célula Crítica?`,
         resposta: `A depressão no interior da célula crítica deve ser igual ou maior que -5 mm de coluna de água (depressão ≥-5 mm de CA ou -50 Pascal) para habilitar a partida do reator`
     },
