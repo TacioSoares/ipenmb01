@@ -1302,7 +1302,7 @@ const secaoB = [
         resposta: `As Chaves de Bloqueio permitem o bloqueio manual do ramal de CO2 que cobre a referida área, quando no caso de disparo do alarme, não for possível o abandono da área.`
     },
     {
-        pergunta: `70)	Qual a Potência Nominal do Reator IPEN/MB-01, por que ele é chamado de Reator de Potência Zero?`,
+        pergunta: `Qual a Potência Nominal do Reator IPEN/MB-01, por que ele é chamado de Reator de Potência Zero?`,
         resposta: `A potência nominal máxima do reator IPEN/MB-01 é de 100 W. <br>
         Por que possui baixo fluxo neutrônico e, portanto baixa potência (quando comparado a outros reatores nucleares de pesquisa ou de potência) e além do mais devido a sua baixa potência o efeito de realimentação termo hidráulica é desprezível.
         `
