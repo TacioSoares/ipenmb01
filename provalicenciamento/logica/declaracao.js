@@ -2445,7 +2445,7 @@ const secaoE = [
     },
     {
         pergunta: `Qual o acidente mais provável de ocorrer no Reator IPEN/MB-01?`,
-        resposta: `Queda de uma placa durante manuseio no núcleo.`
+        resposta: `Queda de um elemento durante manuseio no núcleo.`
     },
     {
         pergunta: `O que são limites de segurança?`,
