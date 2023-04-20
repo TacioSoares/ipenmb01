@@ -1668,7 +1668,7 @@ const secaoC = [
     {
         pergunta:`Durante o processo de operação do reator, no “start up”, quais os cuidados o operador deve ter para evitar o seu desligamento?`,
         resposta: `1)	Evitar que o período fique excessivamente curto, isto é, menor que aproximadamente 50 segundos. <br><br>
-        2)	Evitar que a contagem mínima nos canais 1; 2 e 9 fiquem abaixo de 5 cps.<br><br>
+        2)	Evitar que a contagem mínima nos canais 1; 2 e 9 fiquem abaixo de 2 cps.<br><br>
         3)	Atenção redobrada durante a transferência da função partida para a potência.<br><br>
         4)	Alongar bastante o período próximo à criticalidade.
         `
