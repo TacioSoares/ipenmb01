@@ -1134,7 +1134,6 @@ const secaoB = [
         pergunta: `Qual a velocidade do enchimento rápido e lento do Tanque do Moderador? Como estes enchimentos são feitos?`,
         resposta: `Enchimento rápido - 15m³/h, pelas bombas de enchimento rápido B202A/B <br><br>
         Enchimento lento - 4,5 m³/h, pelas bombas do sistema de recirculação de água B201A/B
-        
         `
     },
     {
