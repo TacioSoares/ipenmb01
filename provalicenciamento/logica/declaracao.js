@@ -2434,7 +2434,7 @@ const secaoE = [
         Quem atuará primeiro no desligamento do Reator, o período ou potência?<br>
         Esta atuação depende da potência do Reator? Justifique.
         `,
-        resposta: `O desligamento do Reator ocorre primeiro por período se a potência do reator estiver no início do acidente, isto é, menor que 37 W e, se estiver maior que este valor o desligamento será por potência. Após 37 W enquanto o período está encurtando, a potência estando mais próxima dos 110 W atingirá este valor primeiro do que o período de 17 s. Este valor foi determinado teoricamente e posteriormente constatado experimentalmente.`
+        resposta: `O desligamento do Reator ocorre primeiro por período se a potência do reator estiver no início do acidente, a potência estando mais próxima dos 110 W atingirá este valor primeiro do que o período de 17 s. Este valor foi determinado teoricamente e posteriormente constatado experimentalmente.`
     },
     {
         pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
