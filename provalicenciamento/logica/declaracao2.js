@@ -742,7 +742,7 @@ const secaoG = [
     },
     {
         pergunta: `O que significa termo fonte?`,
-        resposta: `São tipos, quantidades e formas químicas de radionuclídios que compreendem a fonte de potencial de exposição à radioatividade.`
+        resposta: `Quantidade e tipo de material radioativo disponível para liberação para o meio ambiente em caso de acidente severo em uma instalação nuclear`
     },
     {
         pergunta: `Quais são os termos fontes na célula crítica em operação normal e em acidentes?`,
