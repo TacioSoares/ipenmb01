@@ -1591,8 +1591,8 @@ const secaoC = [
     },
     {
         pergunta: `O que significa faixa de Partida e faixa de Potência do Reator. Quais são os valores em watt?`,
-        resposta: `Faixa de partida é a faixa correspondente à região de baixo fluxo nêutrônico da ordem de grandeza da fonte de partida esta região é monitorada por canais nucleares compostos por detectores de pulso (normalmente BF3 e Boro-10). O máximo valor desta faixa corresponde a 100 mW. <br><br>
-        Faixa de potência é a faixa correspondente a região de fluxo nêutrônico mais elevado do que a faixa de partida e os detectores dos canais nucleares correspondentes são do tipo corrente (normalmente Câmara de ionização compensada e não compensada) A faixa correspondente a esta região vai de 100 mW até 100 W). 
+        resposta: `Faixa de partida é a faixa correspondente à região de baixo fluxo nêutrônico da ordem de grandeza da fonte de partida esta região é monitorada por canais nucleares compostos por detectores de pulso (normalmente BF3 e Boro-10). O máximo valor desta faixa corresponde a 0,1 mW. <br><br>
+        Faixa de potência é a faixa correspondente a região de fluxo nêutrônico mais elevado do que a faixa de partida e os detectores dos canais nucleares correspondentes são do tipo corrente (normalmente Câmara de ionização compensada e não compensada) A faixa correspondente a esta região vai de 0,1 mW até 100 W). 
         `
     },
     {
