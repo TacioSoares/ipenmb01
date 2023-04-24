@@ -1975,12 +1975,12 @@ const secaoE = [
                 </tr>
                 <tr>
                     <td>Desligamento por sobrepotência</td>
-                    <td>P &ge; 110 mW / P &ge; 2,2 mW</td>
+                    <td>P &ge; P &ge; 2,2 mW</td>
                     <td>Scram de magnetos</td>
                 </tr>
                 <tr>
                     <td>Desligamento por sobrepotência</td>
-                    <td>P &ge; 120 mW / P &ge; 2,4 mW</td>
+                    <td>P &ge; P &ge; 2,4 mW</td>
                     <td>Scram de válvulas</td>
                 </tr>
                 <tr>
