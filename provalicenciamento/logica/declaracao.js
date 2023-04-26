@@ -587,7 +587,7 @@ const secaoA = [
         `
     },
     {
-        pergunta: `Considerem que num dado instante existam 100 nêutrons num reator onde os valores de ε, P<sub>F</sub>, p, P<sub>T</sub>, f, η, são dados por: <br>
+        pergunta: `Considerem que num dado instante existam 1000 nêutrons num reator onde os valores de ε, P<sub>F</sub>, p, P<sub>T</sub>, f, η, são dados por: <br>
         ε = 1,175; P<sub>F</sub> = 0,98; P<sub>T</sub> = 0,98; p = 0,87; η = 2,05; f = 0,498 e que por efeito didático os fatores atuam na forma sequencial como aqui foram apresentados. <br>
         Pergunta-se: <br>
         Quantos nêutrons são ganhos devido ao fator ε?<br>
