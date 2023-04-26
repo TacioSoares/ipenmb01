@@ -2384,20 +2384,6 @@ const secaoE = [
     },
     {
         pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
-        Cerca de 20 varetas do arranjo retangular padrão do núcleo (26x28) foram removidas para montagem de um experimento. Ao concluir esta operação o operador retornou estas varetas para o núcleo, no entanto, ele confundiu a sequência de retorno e as 20 varetas foram colocadas, portanto em posições diferentes das originais. Pergunta-se: <br>
-        a)	Em que classe de acidente este evento seria classificado?<br>
-        b)	Haveria algum risco severo em razão deste equívoco? Justifique.<br>
-        c)	Qual seria o evento iniciador limitante desta classe?<br>
-        d)	Qual seria a ações que poderia evitar esta situação?
-        `,
-        resposta: `a)	Classe I (Carregamento e Operação com varetas combustíveis em posição incorreta) <br>
-        b)	Não, como a quantidade de combustível é praticamente a mesma em cada vareta e, portanto a variação de reatividade do núcleo para mais ou para menos seria desprezível.<br>
-        c)	Retirada incontrolada de elemento de controle.<br>
-        d)	Para evitar este erro de troca, o correto e seria seguir uma planilha adequada com posições do núcleo e do cesto conferindo a identificação de cada vareta disponível no tampão inferior desta e assinalando cada item efetuado.
-        `
-    },
-    {
-        pergunta: `Considere a seguinte situação hipotética, porém possível de ocorrer: <br>
         Durante o processo para alcançar a criticalidade do reator, a última barra de controle por alguma razão técnica no MAB (mecanismo de acionamento das barras) disparou e o operador não conseguiu detê-la. Pergunta-se:<br>
         a)	O que aconteceria com a reatividade do reator?<br>
         b)	Qual a sua classe de evento?<br>
