@@ -1,19 +1,5 @@
 const secaoF = [
     {
-        pergunta: `O núcleo de referência do Reator IPEN/MB-01 é constituído por 680 varetas combustíveis arranjados numa configuração retangular 26x28. Ela pode ser alterada para outras geometrias ou também por inserção de materiais experimentais, que geralmente são absorvedores ou espalhadores de nêutrons, exemplo do Gd<sub>2</sub>O<sub>3</sub>, Cd, Cu, Aço inox, etc. <br>Pergunta-se:<br>
-        Quais os procedimentos administrativos e operacionais para tais alterações?
-        `,
-        resposta: `Para se alterar a geometria do núcleo por remanejamento de varetas combustíveis, ou por remoção de varetas combustíveis ou por troca ou adição de elementos especiais, tais como varetas de materiais diversos, é necessário efetuar os seguintes procedimentos: <br><br>
-        1)	O interessado deve fazer uma proposta de trabalho ao responsável pela Instalação, que deve ser aprovada esclarecendo o motivo e o escopo deste trabalho.<br><br>
-        2)	O interessado deve fazer um relatório esclarecendo o escopo da alteração fornecendo detalhadamente informações teóricas baseadas em cálculos ou metodologias de cálculos já consagrados.<br><br>
-        3)	Este relatório pode ser feito por uma pessoa (por exemplo, um pesquisador ou por um aluno orientado por um pesquisador da Área, ou mesmo por um membro do grupo de operação que deseja fazer a alteração).<br><br>
-        4)	Este relatório passa por um comitê de revisão de segurança que poderá aprovar ou solicitar esclarecimentos adicionais ao autor.<br><br>
-        5)	O relatório se aprovado é informado ao interessado.<br><br>
-        6)	As alterações e manuseios que serão efetuados, só poderão ser feitos pela equipe de operação coordenada por um operador sênior do Reator.<br>
-        Quando as alterações envolvem condições não pertinentes às especificações técnicas de projeto o processo é mais complexo e envolve autorização da CNEN e o procedimento para tal deve seguir os passos da “Autorização para Alteração de Projeto”.
-        `
-    },
-    {
         pergunta: `Quais os procedimentos iniciais para ligar o Reator IPEN/MB-01 ou “fazer o start up” em condições normais de operação?`,
         resposta: `Os procedimentos iniciais para ligar o Reator são os seguintes: <br><br>
         a)	Preencher a capa da “Lista de verificação inicial e final de operação do reator IPEN/MB-01” colocando o número da operação, o número da configuração do núcleo a potência da respectiva operação, a data, a finalidade da operação e as assinaturas dos supervisores do reator e da proteção radiológica.<br>

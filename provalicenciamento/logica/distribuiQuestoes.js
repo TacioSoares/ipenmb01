@@ -45,7 +45,7 @@ function sorteiaQuestao(X) {
         return numeroDoBanco
     } else if (X == 'F') {
         while (numeroDoBanco.length < 5) {
-            var numero = Math.round(Math.random() * 36)
+            var numero = Math.round(Math.random() * 35)
             if (numeroDoBanco.indexOf(numero) == -1) {
                 numeroDoBanco.push(numero)
             }
