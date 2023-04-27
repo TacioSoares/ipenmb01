@@ -361,7 +361,7 @@ const secaoG = [
     },
     {
         pergunta: `Como deve ser classificado um trabalhador exposto que recebe anualmente doses equivalentes iguais ou menores de 10 mSv em todo o corpo?`,
-        resposta: `Deve ser classificado como IOE (Indivíduo Operacionalmente Exposto).`
+        resposta: `Deve ser classificado como IOE (Indivíduo Ocupacionalmente Exposto).`
     },
     {
         pergunta: `Quais são os limites de dose estabelecidos pela CNEN?`,
